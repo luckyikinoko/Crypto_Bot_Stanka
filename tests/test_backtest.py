@@ -84,4 +84,23 @@ class BacktestTests(unittest.TestCase):
         p=size_trade(100,99.2,1000,1000,Config(step=.1))
         self.assertAlmostEqual(p['q']/.1,round(p['q']/.1))
 
+    def test_disabled_early_exit_keeps_three_hour_maximum(self):
+        df=self.frame(200)
+        t,_,_=run(df,Config(warmup_hours=0,early_time_exit=False),signals=self.signals(df))
+        self.assertEqual(t.iloc[0].reason,'time')
+        self.assertEqual((t.iloc[0].exit_time-t.iloc[0].entry_time).total_seconds(),10800)
+    def test_disabled_early_exit_still_honors_stop(self):
+        df=self.frame(200);df.loc[df.index[70],'low']=98
+        t,_,_=run(df,Config(warmup_hours=0,early_time_exit=False),signals=self.signals(df))
+        self.assertEqual(t.iloc[0].reason,'stop')
+        self.assertAlmostEqual(t.iloc[0].r,-1)
+    def test_disabled_early_exit_still_honors_regime(self):
+        df=self.frame(200);sig=self.signals(df);sig.loc[df.index[70],'regime_exit']=True
+        t,_,_=run(df,Config(warmup_hours=0,early_time_exit=False),signals=sig)
+        self.assertEqual(t.iloc[0].reason,'regime')
+    def test_bootstrap_preserves_zero_and_constant_daily_pnl(self):
+        from research_experiment import bootstrap
+        self.assertEqual(bootstrap([np.zeros(90)])['summed_episode_pnl_95pct_interval'],[0.,0.])
+        self.assertEqual(bootstrap([np.ones(90),np.ones(91)])['summed_episode_pnl_95pct_interval'],[181.,181.])
+
 if __name__=='__main__':unittest.main()

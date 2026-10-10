@@ -21,6 +21,7 @@ class Config:
     risk: float = .0025
     exposure: float = .35
     reward: float = 1.5
+    early_time_exit: bool = True
     step: float = .00001  # Research assumption, not current exchange metadata
     min_notional: float = 5.
     warmup_hours: int = 1000
@@ -184,7 +185,7 @@ def run(df, c=Config(), start=None, end=None, signals=None, events=None):
                 sell(o,t,'stop_gap')
             elif o >= pos['target']:
                 sell(pos['target'],t,'target')
-            elif age >= 180 or (age >= 60 and not pos['time_checked'] and mark(o)-cash-pos['cost'] < .3*pos['risk']) or regime[i]:
+            elif age >= 180 or (c.early_time_exit and age >= 60 and not pos['time_checked'] and mark(o)-cash-pos['cost'] < .3*pos['risk']) or regime[i]:
                 sell(o,t,'regime' if regime[i] else 'time')
             elif age >= 60:
                 pos['time_checked'] = True

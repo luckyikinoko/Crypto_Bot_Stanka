@@ -109,3 +109,26 @@ it does not claim the complete validation program is finished.
 - https://github.com/binance/binance-public-data
 - https://github.com/binance/binance-spot-api-docs/blob/master/faqs/commission_faq.md
 - https://github.com/binance/binance-spot-api-docs/blob/master/filters.md
+
+## Experiment 001 — time-exit diagnostic
+
+The single candidate disables only the 60-minute early exit. Default `Config()`
+retains original V1. `Config(early_time_exit=False)` selects the research candidate.
+The exact protocol was committed before candidate evaluation:
+[research/EXPERIMENT_001.md](research/EXPERIMENT_001.md).
+
+```bash
+python research_experiment.py
+```
+
+This runs original V1 and the candidate over continuous development history, plus
+fixed independent quarterly episodes for original V1, candidate, and stressed
+candidate. Each episode resets to 1,000 USDT and retains risk halts. Pooled episode
+results are diagnostic and must not be presented as a continuous strategy return.
+A seeded seven-day block bootstrap describes realized-P&L uncertainty; it does
+not reconstruct unobserved trades after risk halts. The runner rejects archives
+from the reserved holdout or later dates. See `reports/experiment_001` for outputs.
+
+Experiment 001 outcome: **rejected**. Both versions lost in all eight later
+development quarters; removing the early exit worsened net results.
+See [the experiment report](reports/experiment_001/RESULTS.md).
