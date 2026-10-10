@@ -156,3 +156,12 @@ attribution. This is not a zero-cost strategy rerun. See
 [the audit](reports/execution_audit/AUDIT.md). Actual account rates are still
 unverified. Drawdown reporting now uses the risk engine's observed open/close
 peak instead of close-only peaks; old result snapshots remain preserved.
+
+## User-reported BNB fee setting
+
+The account settings supplied imply a conditional 0.075% standard spot fee per
+side, assuming discount eligibility and sufficient BNB. Stored as research
+metadata in `config/binance_fee_assumptions.json`; historical defaults remain
+unchanged. A complete V1 rerun using `--fee 0.00075` is preserved in
+[the BNB fee report](reports/bnb_fee_v1/RESULTS.md). It still fails the screen.
+BNB balances and depletion are not modeled; fees remain quote-equivalent costs.

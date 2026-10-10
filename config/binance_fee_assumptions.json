@@ -1,0 +1,14 @@
+{
+  "symbol": "BTCUSDT",
+  "standard_maker_rate_user_reported": 0.001,
+  "standard_taker_rate_user_reported": 0.001,
+  "bnb_payment_enabled_user_reported": true,
+  "assumed_standard_commission_discount": 0.25,
+  "conditional_effective_fee_rate": 0.00075,
+  "sufficient_bnb_balance_verified": false,
+  "account_symbol_discount_verified": false,
+  "special_or_tax_commission_verified": false,
+  "execution_cost_per_side_assumed": 0.0002,
+  "account_api_accessed": false,
+  "notes": "Research assumption only. Use 0.075% per side when eligible and funded with sufficient BNB; use 0.10% standard fallback absent the discount. This metadata does not override historical Config defaults or implement BNB inventory accounting."
+}
