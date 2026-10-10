@@ -132,3 +132,19 @@ from the reserved holdout or later dates. See `reports/experiment_001` for outpu
 Experiment 001 outcome: **rejected**. Both versions lost in all eight later
 development quarters; removing the early exit worsened net results.
 See [the experiment report](reports/experiment_001/RESULTS.md).
+
+## Experiment 002 — trend-breakout entry
+
+`python breakout_experiment.py` tests one pre-registered replacement entry:
+15-minute close above the preceding 20-bar high, volume >=1.2 times its prior
+20-bar average, and a rising hourly EMA200 with EMA50 above EMA200. All original
+exit/risk rules remain, including the 60-minute exit. Baseline stays unchanged.
+
+Protocol: [research/EXPERIMENT_002.md](research/EXPERIMENT_002.md).
+These are **reused development periods**, not fresh out-of-sample evidence.
+The six-month final holdout remains sealed. Results go to `reports/experiment_002`.
+
+Experiment 002 outcome: **rejected**. The breakout candidate lost in all eight
+quarterly episodes and hit its drawdown halt in the continuous run. See
+[the breakout report](reports/experiment_002/RESULTS.md). No tested candidate
+has met the research gates; original V1 remains only a reproducible reference.
