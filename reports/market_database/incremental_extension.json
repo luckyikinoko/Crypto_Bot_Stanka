@@ -1,0 +1,34 @@
+{
+  "from_cutoff": "2026-10-10 18:27:01.504000+00:00",
+  "to_cutoff": "2026-10-10 18:31:57.701000+00:00",
+  "new_snapshot": "a4e0ec967b0f9ca39187429a5011b44d2ba23aa4ac4a61ce51a77196144c9569",
+  "intervals": {
+    "5m": {
+      "old_rows": 921113,
+      "new_rows": 921114,
+      "old_candles_unchanged": true
+    },
+    "15m": {
+      "old_rows": 307030,
+      "new_rows": 307031,
+      "old_candles_unchanged": true
+    },
+    "1h": {
+      "old_rows": 76746,
+      "new_rows": 76746,
+      "old_candles_unchanged": true
+    },
+    "4h": {
+      "old_rows": 19161,
+      "new_rows": 19161,
+      "old_candles_unchanged": true
+    },
+    "1d": {
+      "old_rows": 3172,
+      "new_rows": 3172,
+      "old_candles_unchanged": true
+    }
+  },
+  "written_partitions": 2,
+  "reused_partitions": 528
+}

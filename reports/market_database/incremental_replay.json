@@ -1,0 +1,10 @@
+{
+  "original_snapshot": "74fe6cd4cbc1728eda5308444343de8b871675cef734a21a82704ae7ef0714d8",
+  "replayed_snapshot": "59556e8712a7d921f008d5645e2ee25c7cfd7f5971ae51d7194ade75a8ef99bc",
+  "same_cutoff": "2026-10-10 18:27:01.504000+00:00",
+  "all_partition_bytes_identical": true,
+  "written_partitions": 0,
+  "reused_partitions": 530,
+  "all_archive_downloads_reused": true,
+  "rest_tail_refetched": true
+}

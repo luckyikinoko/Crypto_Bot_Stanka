@@ -1,0 +1,2595 @@
+{
+  "start": "2018-01-01 00:00:00+00:00",
+  "cutoff": "2026-10-10 18:31:57.701000+00:00",
+  "primary_research_interval": "15m",
+  "reserved_from": "2026-04-01 00:00:00+00:00",
+  "reserved_handling": "mechanical integrity only; no predictive/outcome analysis",
+  "intervals": {
+    "5m": {
+      "interval": "5m",
+      "rows": 921114,
+      "expected_rows": 922974,
+      "missing_candles": 1860,
+      "gaps": [
+        {
+          "start": "2018-01-04 03:00:00+00:00",
+          "end_exclusive": "2018-01-04 05:05:00+00:00",
+          "candles": 25
+        },
+        {
+          "start": "2018-02-08 00:25:00+00:00",
+          "end_exclusive": "2018-02-10 06:15:00+00:00",
+          "candles": 646
+        },
+        {
+          "start": "2018-02-11 04:00:00+00:00",
+          "end_exclusive": "2018-02-11 04:35:00+00:00",
+          "candles": 7
+        },
+        {
+          "start": "2018-06-26 02:00:00+00:00",
+          "end_exclusive": "2018-06-26 12:00:00+00:00",
+          "candles": 120
+        },
+        {
+          "start": "2018-06-27 13:00:00+00:00",
+          "end_exclusive": "2018-06-27 14:45:00+00:00",
+          "candles": 21
+        },
+        {
+          "start": "2018-07-04 00:20:00+00:00",
+          "end_exclusive": "2018-07-04 08:00:00+00:00",
+          "candles": 92
+        },
+        {
+          "start": "2018-10-19 06:00:00+00:00",
+          "end_exclusive": "2018-10-19 09:30:00+00:00",
+          "candles": 42
+        },
+        {
+          "start": "2018-11-14 02:00:00+00:00",
+          "end_exclusive": "2018-11-14 09:00:00+00:00",
+          "candles": 84
+        },
+        {
+          "start": "2019-03-12 02:00:00+00:00",
+          "end_exclusive": "2019-03-12 08:00:00+00:00",
+          "candles": 72
+        },
+        {
+          "start": "2019-05-15 03:00:00+00:00",
+          "end_exclusive": "2019-05-15 13:00:00+00:00",
+          "candles": 120
+        },
+        {
+          "start": "2019-06-07 21:10:00+00:00",
+          "end_exclusive": "2019-06-07 22:15:00+00:00",
+          "candles": 13
+        },
+        {
+          "start": "2019-08-15 02:00:00+00:00",
+          "end_exclusive": "2019-08-15 10:00:00+00:00",
+          "candles": 96
+        },
+        {
+          "start": "2019-11-13 02:00:00+00:00",
+          "end_exclusive": "2019-11-13 04:20:00+00:00",
+          "candles": 28
+        },
+        {
+          "start": "2019-11-25 02:00:00+00:00",
+          "end_exclusive": "2019-11-25 04:00:00+00:00",
+          "candles": 24
+        },
+        {
+          "start": "2020-02-09 02:00:00+00:00",
+          "end_exclusive": "2020-02-09 03:00:00+00:00",
+          "candles": 12
+        },
+        {
+          "start": "2020-02-19 11:35:00+00:00",
+          "end_exclusive": "2020-02-19 17:30:00+00:00",
+          "candles": 71
+        },
+        {
+          "start": "2020-03-04 09:20:00+00:00",
+          "end_exclusive": "2020-03-04 11:30:00+00:00",
+          "candles": 26
+        },
+        {
+          "start": "2020-04-25 02:00:00+00:00",
+          "end_exclusive": "2020-04-25 04:30:00+00:00",
+          "candles": 30
+        },
+        {
+          "start": "2020-06-28 02:00:00+00:00",
+          "end_exclusive": "2020-06-28 05:30:00+00:00",
+          "candles": 42
+        },
+        {
+          "start": "2020-11-30 06:00:00+00:00",
+          "end_exclusive": "2020-11-30 07:00:00+00:00",
+          "candles": 12
+        },
+        {
+          "start": "2020-12-21 14:05:00+00:00",
+          "end_exclusive": "2020-12-21 18:00:00+00:00",
+          "candles": 47
+        },
+        {
+          "start": "2020-12-25 02:00:00+00:00",
+          "end_exclusive": "2020-12-25 03:00:00+00:00",
+          "candles": 12
+        },
+        {
+          "start": "2021-02-11 03:40:00+00:00",
+          "end_exclusive": "2021-02-11 05:00:00+00:00",
+          "candles": 16
+        },
+        {
+          "start": "2021-03-06 02:00:00+00:00",
+          "end_exclusive": "2021-03-06 03:30:00+00:00",
+          "candles": 18
+        },
+        {
+          "start": "2021-04-20 02:00:00+00:00",
+          "end_exclusive": "2021-04-20 04:30:00+00:00",
+          "candles": 30
+        },
+        {
+          "start": "2021-04-25 04:00:00+00:00",
+          "end_exclusive": "2021-04-25 08:45:00+00:00",
+          "candles": 57
+        },
+        {
+          "start": "2021-08-13 01:55:00+00:00",
+          "end_exclusive": "2021-08-13 06:30:00+00:00",
+          "candles": 55
+        },
+        {
+          "start": "2021-09-29 07:00:00+00:00",
+          "end_exclusive": "2021-09-29 09:00:00+00:00",
+          "candles": 24
+        },
+        {
+          "start": "2021-12-24 04:55:00+00:00",
+          "end_exclusive": "2021-12-24 05:00:00+00:00",
+          "candles": 1
+        },
+        {
+          "start": "2023-03-24 12:35:00+00:00",
+          "end_exclusive": "2023-03-24 14:00:00+00:00",
+          "candles": 17
+        }
+      ],
+      "zero_volume_candles": 54,
+      "first_open": "2018-01-01 00:00:00+00:00",
+      "last_available_at": "2026-10-10 18:30:00+00:00",
+      "quality_status": "gaps_documented"
+    },
+    "15m": {
+      "interval": "15m",
+      "rows": 307031,
+      "expected_rows": 307658,
+      "missing_candles": 627,
+      "gaps": [
+        {
+          "start": "2018-01-04 03:00:00+00:00",
+          "end_exclusive": "2018-01-04 05:15:00+00:00",
+          "candles": 9
+        },
+        {
+          "start": "2018-02-08 00:15:00+00:00",
+          "end_exclusive": "2018-02-10 06:15:00+00:00",
+          "candles": 216
+        },
+        {
+          "start": "2018-02-11 04:00:00+00:00",
+          "end_exclusive": "2018-02-11 04:45:00+00:00",
+          "candles": 3
+        },
+        {
+          "start": "2018-06-26 02:00:00+00:00",
+          "end_exclusive": "2018-06-26 12:00:00+00:00",
+          "candles": 40
+        },
+        {
+          "start": "2018-06-27 13:00:00+00:00",
+          "end_exclusive": "2018-06-27 14:45:00+00:00",
+          "candles": 7
+        },
+        {
+          "start": "2018-07-04 00:15:00+00:00",
+          "end_exclusive": "2018-07-04 08:00:00+00:00",
+          "candles": 31
+        },
+        {
+          "start": "2018-10-19 06:00:00+00:00",
+          "end_exclusive": "2018-10-19 09:30:00+00:00",
+          "candles": 14
+        },
+        {
+          "start": "2018-11-14 02:00:00+00:00",
+          "end_exclusive": "2018-11-14 09:00:00+00:00",
+          "candles": 28
+        },
+        {
+          "start": "2019-03-12 02:00:00+00:00",
+          "end_exclusive": "2019-03-12 08:00:00+00:00",
+          "candles": 24
+        },
+        {
+          "start": "2019-05-15 03:00:00+00:00",
+          "end_exclusive": "2019-05-15 13:00:00+00:00",
+          "candles": 40
+        },
+        {
+          "start": "2019-06-07 21:00:00+00:00",
+          "end_exclusive": "2019-06-07 22:15:00+00:00",
+          "candles": 5
+        },
+        {
+          "start": "2019-08-15 02:00:00+00:00",
+          "end_exclusive": "2019-08-15 10:00:00+00:00",
+          "candles": 32
+        },
+        {
+          "start": "2019-11-13 02:00:00+00:00",
+          "end_exclusive": "2019-11-13 04:30:00+00:00",
+          "candles": 10
+        },
+        {
+          "start": "2019-11-25 02:00:00+00:00",
+          "end_exclusive": "2019-11-25 04:00:00+00:00",
+          "candles": 8
+        },
+        {
+          "start": "2020-02-09 02:00:00+00:00",
+          "end_exclusive": "2020-02-09 03:00:00+00:00",
+          "candles": 4
+        },
+        {
+          "start": "2020-02-19 11:30:00+00:00",
+          "end_exclusive": "2020-02-19 17:30:00+00:00",
+          "candles": 24
+        },
+        {
+          "start": "2020-03-04 09:15:00+00:00",
+          "end_exclusive": "2020-03-04 11:30:00+00:00",
+          "candles": 9
+        },
+        {
+          "start": "2020-04-25 02:00:00+00:00",
+          "end_exclusive": "2020-04-25 04:30:00+00:00",
+          "candles": 10
+        },
+        {
+          "start": "2020-06-28 02:00:00+00:00",
+          "end_exclusive": "2020-06-28 05:30:00+00:00",
+          "candles": 14
+        },
+        {
+          "start": "2020-11-30 06:00:00+00:00",
+          "end_exclusive": "2020-11-30 07:00:00+00:00",
+          "candles": 4
+        },
+        {
+          "start": "2020-12-21 14:00:00+00:00",
+          "end_exclusive": "2020-12-21 18:00:00+00:00",
+          "candles": 16
+        },
+        {
+          "start": "2020-12-25 02:00:00+00:00",
+          "end_exclusive": "2020-12-25 03:00:00+00:00",
+          "candles": 4
+        },
+        {
+          "start": "2021-02-11 03:30:00+00:00",
+          "end_exclusive": "2021-02-11 05:00:00+00:00",
+          "candles": 6
+        },
+        {
+          "start": "2021-03-06 02:00:00+00:00",
+          "end_exclusive": "2021-03-06 03:30:00+00:00",
+          "candles": 6
+        },
+        {
+          "start": "2021-04-20 02:00:00+00:00",
+          "end_exclusive": "2021-04-20 04:30:00+00:00",
+          "candles": 10
+        },
+        {
+          "start": "2021-04-25 04:00:00+00:00",
+          "end_exclusive": "2021-04-25 08:45:00+00:00",
+          "candles": 19
+        },
+        {
+          "start": "2021-08-13 01:45:00+00:00",
+          "end_exclusive": "2021-08-13 06:30:00+00:00",
+          "candles": 19
+        },
+        {
+          "start": "2021-09-29 07:00:00+00:00",
+          "end_exclusive": "2021-09-29 09:00:00+00:00",
+          "candles": 8
+        },
+        {
+          "start": "2021-12-24 04:45:00+00:00",
+          "end_exclusive": "2021-12-24 05:00:00+00:00",
+          "candles": 1
+        },
+        {
+          "start": "2023-03-24 12:30:00+00:00",
+          "end_exclusive": "2023-03-24 14:00:00+00:00",
+          "candles": 6
+        }
+      ],
+      "zero_volume_candles": 13,
+      "first_open": "2018-01-01 00:00:00+00:00",
+      "last_available_at": "2026-10-10 18:30:00+00:00",
+      "quality_status": "gaps_documented"
+    },
+    "1h": {
+      "interval": "1h",
+      "rows": 76746,
+      "expected_rows": 76914,
+      "missing_candles": 168,
+      "gaps": [
+        {
+          "start": "2018-01-04 03:00:00+00:00",
+          "end_exclusive": "2018-01-04 06:00:00+00:00",
+          "candles": 3
+        },
+        {
+          "start": "2018-02-08 00:00:00+00:00",
+          "end_exclusive": "2018-02-10 07:00:00+00:00",
+          "candles": 55
+        },
+        {
+          "start": "2018-02-11 04:00:00+00:00",
+          "end_exclusive": "2018-02-11 05:00:00+00:00",
+          "candles": 1
+        },
+        {
+          "start": "2018-06-26 02:00:00+00:00",
+          "end_exclusive": "2018-06-26 12:00:00+00:00",
+          "candles": 10
+        },
+        {
+          "start": "2018-06-27 13:00:00+00:00",
+          "end_exclusive": "2018-06-27 15:00:00+00:00",
+          "candles": 2
+        },
+        {
+          "start": "2018-07-04 00:00:00+00:00",
+          "end_exclusive": "2018-07-04 08:00:00+00:00",
+          "candles": 8
+        },
+        {
+          "start": "2018-10-19 06:00:00+00:00",
+          "end_exclusive": "2018-10-19 10:00:00+00:00",
+          "candles": 4
+        },
+        {
+          "start": "2018-11-14 02:00:00+00:00",
+          "end_exclusive": "2018-11-14 09:00:00+00:00",
+          "candles": 7
+        },
+        {
+          "start": "2019-03-12 02:00:00+00:00",
+          "end_exclusive": "2019-03-12 08:00:00+00:00",
+          "candles": 6
+        },
+        {
+          "start": "2019-05-15 03:00:00+00:00",
+          "end_exclusive": "2019-05-15 13:00:00+00:00",
+          "candles": 10
+        },
+        {
+          "start": "2019-06-07 21:00:00+00:00",
+          "end_exclusive": "2019-06-07 23:00:00+00:00",
+          "candles": 2
+        },
+        {
+          "start": "2019-08-15 02:00:00+00:00",
+          "end_exclusive": "2019-08-15 10:00:00+00:00",
+          "candles": 8
+        },
+        {
+          "start": "2019-11-13 02:00:00+00:00",
+          "end_exclusive": "2019-11-13 05:00:00+00:00",
+          "candles": 3
+        },
+        {
+          "start": "2019-11-25 02:00:00+00:00",
+          "end_exclusive": "2019-11-25 04:00:00+00:00",
+          "candles": 2
+        },
+        {
+          "start": "2020-02-09 02:00:00+00:00",
+          "end_exclusive": "2020-02-09 03:00:00+00:00",
+          "candles": 1
+        },
+        {
+          "start": "2020-02-19 11:00:00+00:00",
+          "end_exclusive": "2020-02-19 18:00:00+00:00",
+          "candles": 7
+        },
+        {
+          "start": "2020-03-04 09:00:00+00:00",
+          "end_exclusive": "2020-03-04 12:00:00+00:00",
+          "candles": 3
+        },
+        {
+          "start": "2020-04-25 02:00:00+00:00",
+          "end_exclusive": "2020-04-25 05:00:00+00:00",
+          "candles": 3
+        },
+        {
+          "start": "2020-06-28 02:00:00+00:00",
+          "end_exclusive": "2020-06-28 06:00:00+00:00",
+          "candles": 4
+        },
+        {
+          "start": "2020-11-30 06:00:00+00:00",
+          "end_exclusive": "2020-11-30 07:00:00+00:00",
+          "candles": 1
+        },
+        {
+          "start": "2020-12-21 14:00:00+00:00",
+          "end_exclusive": "2020-12-21 18:00:00+00:00",
+          "candles": 4
+        },
+        {
+          "start": "2020-12-25 02:00:00+00:00",
+          "end_exclusive": "2020-12-25 03:00:00+00:00",
+          "candles": 1
+        },
+        {
+          "start": "2021-02-11 03:00:00+00:00",
+          "end_exclusive": "2021-02-11 05:00:00+00:00",
+          "candles": 2
+        },
+        {
+          "start": "2021-03-06 02:00:00+00:00",
+          "end_exclusive": "2021-03-06 04:00:00+00:00",
+          "candles": 2
+        },
+        {
+          "start": "2021-04-20 02:00:00+00:00",
+          "end_exclusive": "2021-04-20 05:00:00+00:00",
+          "candles": 3
+        },
+        {
+          "start": "2021-04-25 04:00:00+00:00",
+          "end_exclusive": "2021-04-25 09:00:00+00:00",
+          "candles": 5
+        },
+        {
+          "start": "2021-08-13 01:00:00+00:00",
+          "end_exclusive": "2021-08-13 07:00:00+00:00",
+          "candles": 6
+        },
+        {
+          "start": "2021-09-29 07:00:00+00:00",
+          "end_exclusive": "2021-09-29 09:00:00+00:00",
+          "candles": 2
+        },
+        {
+          "start": "2021-12-24 04:00:00+00:00",
+          "end_exclusive": "2021-12-24 05:00:00+00:00",
+          "candles": 1
+        },
+        {
+          "start": "2023-03-24 12:00:00+00:00",
+          "end_exclusive": "2023-03-24 14:00:00+00:00",
+          "candles": 2
+        }
+      ],
+      "zero_volume_candles": 0,
+      "first_open": "2018-01-01 00:00:00+00:00",
+      "last_available_at": "2026-10-10 18:00:00+00:00",
+      "quality_status": "gaps_documented"
+    },
+    "4h": {
+      "interval": "4h",
+      "rows": 19161,
+      "expected_rows": 19228,
+      "missing_candles": 67,
+      "gaps": [
+        {
+          "start": "2018-01-04 00:00:00+00:00",
+          "end_exclusive": "2018-01-04 08:00:00+00:00",
+          "candles": 2
+        },
+        {
+          "start": "2018-02-08 00:00:00+00:00",
+          "end_exclusive": "2018-02-10 08:00:00+00:00",
+          "candles": 14
+        },
+        {
+          "start": "2018-02-11 04:00:00+00:00",
+          "end_exclusive": "2018-02-11 08:00:00+00:00",
+          "candles": 1
+        },
+        {
+          "start": "2018-06-26 00:00:00+00:00",
+          "end_exclusive": "2018-06-26 12:00:00+00:00",
+          "candles": 3
+        },
+        {
+          "start": "2018-06-27 12:00:00+00:00",
+          "end_exclusive": "2018-06-27 16:00:00+00:00",
+          "candles": 1
+        },
+        {
+          "start": "2018-07-04 00:00:00+00:00",
+          "end_exclusive": "2018-07-04 08:00:00+00:00",
+          "candles": 2
+        },
+        {
+          "start": "2018-10-19 04:00:00+00:00",
+          "end_exclusive": "2018-10-19 12:00:00+00:00",
+          "candles": 2
+        },
+        {
+          "start": "2018-11-14 00:00:00+00:00",
+          "end_exclusive": "2018-11-14 12:00:00+00:00",
+          "candles": 3
+        },
+        {
+          "start": "2019-03-12 00:00:00+00:00",
+          "end_exclusive": "2019-03-12 08:00:00+00:00",
+          "candles": 2
+        },
+        {
+          "start": "2019-05-15 00:00:00+00:00",
+          "end_exclusive": "2019-05-15 16:00:00+00:00",
+          "candles": 4
+        },
+        {
+          "start": "2019-06-07 20:00:00+00:00",
+          "end_exclusive": "2019-06-08 00:00:00+00:00",
+          "candles": 1
+        },
+        {
+          "start": "2019-08-15 00:00:00+00:00",
+          "end_exclusive": "2019-08-15 12:00:00+00:00",
+          "candles": 3
+        },
+        {
+          "start": "2019-11-13 00:00:00+00:00",
+          "end_exclusive": "2019-11-13 08:00:00+00:00",
+          "candles": 2
+        },
+        {
+          "start": "2019-11-25 00:00:00+00:00",
+          "end_exclusive": "2019-11-25 04:00:00+00:00",
+          "candles": 1
+        },
+        {
+          "start": "2020-02-09 00:00:00+00:00",
+          "end_exclusive": "2020-02-09 04:00:00+00:00",
+          "candles": 1
+        },
+        {
+          "start": "2020-02-19 08:00:00+00:00",
+          "end_exclusive": "2020-02-19 20:00:00+00:00",
+          "candles": 3
+        },
+        {
+          "start": "2020-03-04 08:00:00+00:00",
+          "end_exclusive": "2020-03-04 12:00:00+00:00",
+          "candles": 1
+        },
+        {
+          "start": "2020-04-25 00:00:00+00:00",
+          "end_exclusive": "2020-04-25 08:00:00+00:00",
+          "candles": 2
+        },
+        {
+          "start": "2020-06-28 00:00:00+00:00",
+          "end_exclusive": "2020-06-28 08:00:00+00:00",
+          "candles": 2
+        },
+        {
+          "start": "2020-11-30 04:00:00+00:00",
+          "end_exclusive": "2020-11-30 08:00:00+00:00",
+          "candles": 1
+        },
+        {
+          "start": "2020-12-21 12:00:00+00:00",
+          "end_exclusive": "2020-12-21 20:00:00+00:00",
+          "candles": 2
+        },
+        {
+          "start": "2020-12-25 00:00:00+00:00",
+          "end_exclusive": "2020-12-25 04:00:00+00:00",
+          "candles": 1
+        },
+        {
+          "start": "2021-02-11 00:00:00+00:00",
+          "end_exclusive": "2021-02-11 08:00:00+00:00",
+          "candles": 2
+        },
+        {
+          "start": "2021-03-06 00:00:00+00:00",
+          "end_exclusive": "2021-03-06 04:00:00+00:00",
+          "candles": 1
+        },
+        {
+          "start": "2021-04-20 00:00:00+00:00",
+          "end_exclusive": "2021-04-20 08:00:00+00:00",
+          "candles": 2
+        },
+        {
+          "start": "2021-04-25 04:00:00+00:00",
+          "end_exclusive": "2021-04-25 12:00:00+00:00",
+          "candles": 2
+        },
+        {
+          "start": "2021-08-13 00:00:00+00:00",
+          "end_exclusive": "2021-08-13 08:00:00+00:00",
+          "candles": 2
+        },
+        {
+          "start": "2021-09-29 04:00:00+00:00",
+          "end_exclusive": "2021-09-29 12:00:00+00:00",
+          "candles": 2
+        },
+        {
+          "start": "2021-12-24 04:00:00+00:00",
+          "end_exclusive": "2021-12-24 08:00:00+00:00",
+          "candles": 1
+        },
+        {
+          "start": "2023-03-24 12:00:00+00:00",
+          "end_exclusive": "2023-03-24 16:00:00+00:00",
+          "candles": 1
+        }
+      ],
+      "zero_volume_candles": 0,
+      "first_open": "2018-01-01 00:00:00+00:00",
+      "last_available_at": "2026-10-10 16:00:00+00:00",
+      "quality_status": "gaps_documented"
+    },
+    "1d": {
+      "interval": "1d",
+      "rows": 3172,
+      "expected_rows": 3204,
+      "missing_candles": 32,
+      "gaps": [
+        {
+          "start": "2018-01-04 00:00:00+00:00",
+          "end_exclusive": "2018-01-05 00:00:00+00:00",
+          "candles": 1
+        },
+        {
+          "start": "2018-02-08 00:00:00+00:00",
+          "end_exclusive": "2018-02-12 00:00:00+00:00",
+          "candles": 4
+        },
+        {
+          "start": "2018-06-26 00:00:00+00:00",
+          "end_exclusive": "2018-06-28 00:00:00+00:00",
+          "candles": 2
+        },
+        {
+          "start": "2018-07-04 00:00:00+00:00",
+          "end_exclusive": "2018-07-05 00:00:00+00:00",
+          "candles": 1
+        },
+        {
+          "start": "2018-10-19 00:00:00+00:00",
+          "end_exclusive": "2018-10-20 00:00:00+00:00",
+          "candles": 1
+        },
+        {
+          "start": "2018-11-14 00:00:00+00:00",
+          "end_exclusive": "2018-11-15 00:00:00+00:00",
+          "candles": 1
+        },
+        {
+          "start": "2019-03-12 00:00:00+00:00",
+          "end_exclusive": "2019-03-13 00:00:00+00:00",
+          "candles": 1
+        },
+        {
+          "start": "2019-05-15 00:00:00+00:00",
+          "end_exclusive": "2019-05-16 00:00:00+00:00",
+          "candles": 1
+        },
+        {
+          "start": "2019-06-07 00:00:00+00:00",
+          "end_exclusive": "2019-06-08 00:00:00+00:00",
+          "candles": 1
+        },
+        {
+          "start": "2019-08-15 00:00:00+00:00",
+          "end_exclusive": "2019-08-16 00:00:00+00:00",
+          "candles": 1
+        },
+        {
+          "start": "2019-11-13 00:00:00+00:00",
+          "end_exclusive": "2019-11-14 00:00:00+00:00",
+          "candles": 1
+        },
+        {
+          "start": "2019-11-25 00:00:00+00:00",
+          "end_exclusive": "2019-11-26 00:00:00+00:00",
+          "candles": 1
+        },
+        {
+          "start": "2020-02-09 00:00:00+00:00",
+          "end_exclusive": "2020-02-10 00:00:00+00:00",
+          "candles": 1
+        },
+        {
+          "start": "2020-02-19 00:00:00+00:00",
+          "end_exclusive": "2020-02-20 00:00:00+00:00",
+          "candles": 1
+        },
+        {
+          "start": "2020-03-04 00:00:00+00:00",
+          "end_exclusive": "2020-03-05 00:00:00+00:00",
+          "candles": 1
+        },
+        {
+          "start": "2020-04-25 00:00:00+00:00",
+          "end_exclusive": "2020-04-26 00:00:00+00:00",
+          "candles": 1
+        },
+        {
+          "start": "2020-06-28 00:00:00+00:00",
+          "end_exclusive": "2020-06-29 00:00:00+00:00",
+          "candles": 1
+        },
+        {
+          "start": "2020-11-30 00:00:00+00:00",
+          "end_exclusive": "2020-12-01 00:00:00+00:00",
+          "candles": 1
+        },
+        {
+          "start": "2020-12-21 00:00:00+00:00",
+          "end_exclusive": "2020-12-22 00:00:00+00:00",
+          "candles": 1
+        },
+        {
+          "start": "2020-12-25 00:00:00+00:00",
+          "end_exclusive": "2020-12-26 00:00:00+00:00",
+          "candles": 1
+        },
+        {
+          "start": "2021-02-11 00:00:00+00:00",
+          "end_exclusive": "2021-02-12 00:00:00+00:00",
+          "candles": 1
+        },
+        {
+          "start": "2021-03-06 00:00:00+00:00",
+          "end_exclusive": "2021-03-07 00:00:00+00:00",
+          "candles": 1
+        },
+        {
+          "start": "2021-04-20 00:00:00+00:00",
+          "end_exclusive": "2021-04-21 00:00:00+00:00",
+          "candles": 1
+        },
+        {
+          "start": "2021-04-25 00:00:00+00:00",
+          "end_exclusive": "2021-04-26 00:00:00+00:00",
+          "candles": 1
+        },
+        {
+          "start": "2021-08-13 00:00:00+00:00",
+          "end_exclusive": "2021-08-14 00:00:00+00:00",
+          "candles": 1
+        },
+        {
+          "start": "2021-09-29 00:00:00+00:00",
+          "end_exclusive": "2021-09-30 00:00:00+00:00",
+          "candles": 1
+        },
+        {
+          "start": "2021-12-24 00:00:00+00:00",
+          "end_exclusive": "2021-12-25 00:00:00+00:00",
+          "candles": 1
+        },
+        {
+          "start": "2023-03-24 00:00:00+00:00",
+          "end_exclusive": "2023-03-25 00:00:00+00:00",
+          "candles": 1
+        }
+      ],
+      "zero_volume_candles": 0,
+      "first_open": "2018-01-01 00:00:00+00:00",
+      "last_available_at": "2026-10-10 00:00:00+00:00",
+      "quality_status": "gaps_documented"
+    }
+  },
+  "identical_duplicates_removed": 0,
+  "incomplete_rows_dropped": 1,
+  "archive_fallbacks": [],
+  "quarantined_timestamp_rows": [
+    {
+      "open_time_raw": 1515034800000,
+      "close_time_raw": 1515034814838,
+      "open_time_utc": "2018-01-04 03:00:00+00:00",
+      "reason": "nonstandard_close_boundary",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-01.zip"
+    },
+    {
+      "open_time_raw": 1518049500000,
+      "close_time_raw": 1518049694788,
+      "open_time_utc": "2018-02-08 00:25:00+00:00",
+      "reason": "nonstandard_close_boundary",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518170294789,
+      "close_time_raw": 1518170594788,
+      "open_time_utc": "2018-02-09 09:58:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518170594789,
+      "close_time_raw": 1518170894788,
+      "open_time_utc": "2018-02-09 10:03:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518170894789,
+      "close_time_raw": 1518171194788,
+      "open_time_utc": "2018-02-09 10:08:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518171194789,
+      "close_time_raw": 1518171494788,
+      "open_time_utc": "2018-02-09 10:13:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518171494789,
+      "close_time_raw": 1518171794788,
+      "open_time_utc": "2018-02-09 10:18:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518171794789,
+      "close_time_raw": 1518172094788,
+      "open_time_utc": "2018-02-09 10:23:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518172094789,
+      "close_time_raw": 1518172394788,
+      "open_time_utc": "2018-02-09 10:28:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518172394789,
+      "close_time_raw": 1518172694788,
+      "open_time_utc": "2018-02-09 10:33:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518172694789,
+      "close_time_raw": 1518172994788,
+      "open_time_utc": "2018-02-09 10:38:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518172994789,
+      "close_time_raw": 1518173294788,
+      "open_time_utc": "2018-02-09 10:43:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518173294789,
+      "close_time_raw": 1518173594788,
+      "open_time_utc": "2018-02-09 10:48:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518173594789,
+      "close_time_raw": 1518173894788,
+      "open_time_utc": "2018-02-09 10:53:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518173894789,
+      "close_time_raw": 1518174194788,
+      "open_time_utc": "2018-02-09 10:58:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518174194789,
+      "close_time_raw": 1518174494788,
+      "open_time_utc": "2018-02-09 11:03:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518174494789,
+      "close_time_raw": 1518174794788,
+      "open_time_utc": "2018-02-09 11:08:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518174794789,
+      "close_time_raw": 1518175094788,
+      "open_time_utc": "2018-02-09 11:13:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518175094789,
+      "close_time_raw": 1518175394788,
+      "open_time_utc": "2018-02-09 11:18:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518175394789,
+      "close_time_raw": 1518175694788,
+      "open_time_utc": "2018-02-09 11:23:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518175694789,
+      "close_time_raw": 1518175994788,
+      "open_time_utc": "2018-02-09 11:28:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518175994789,
+      "close_time_raw": 1518176294788,
+      "open_time_utc": "2018-02-09 11:33:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518176294789,
+      "close_time_raw": 1518176594788,
+      "open_time_utc": "2018-02-09 11:38:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518176594789,
+      "close_time_raw": 1518176894788,
+      "open_time_utc": "2018-02-09 11:43:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518176894789,
+      "close_time_raw": 1518177194788,
+      "open_time_utc": "2018-02-09 11:48:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518177194789,
+      "close_time_raw": 1518177494788,
+      "open_time_utc": "2018-02-09 11:53:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518177494789,
+      "close_time_raw": 1518177794788,
+      "open_time_utc": "2018-02-09 11:58:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518177794789,
+      "close_time_raw": 1518178094788,
+      "open_time_utc": "2018-02-09 12:03:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518178094789,
+      "close_time_raw": 1518178394788,
+      "open_time_utc": "2018-02-09 12:08:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518178394789,
+      "close_time_raw": 1518178694788,
+      "open_time_utc": "2018-02-09 12:13:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518178694789,
+      "close_time_raw": 1518178994788,
+      "open_time_utc": "2018-02-09 12:18:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518178994789,
+      "close_time_raw": 1518179294788,
+      "open_time_utc": "2018-02-09 12:23:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518179294789,
+      "close_time_raw": 1518179594788,
+      "open_time_utc": "2018-02-09 12:28:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518179594789,
+      "close_time_raw": 1518179894788,
+      "open_time_utc": "2018-02-09 12:33:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518179894789,
+      "close_time_raw": 1518180194788,
+      "open_time_utc": "2018-02-09 12:38:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518180194789,
+      "close_time_raw": 1518180494788,
+      "open_time_utc": "2018-02-09 12:43:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518180494789,
+      "close_time_raw": 1518180794788,
+      "open_time_utc": "2018-02-09 12:48:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518180794789,
+      "close_time_raw": 1518181094788,
+      "open_time_utc": "2018-02-09 12:53:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518181094789,
+      "close_time_raw": 1518181394788,
+      "open_time_utc": "2018-02-09 12:58:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518181394789,
+      "close_time_raw": 1518181694788,
+      "open_time_utc": "2018-02-09 13:03:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518181694789,
+      "close_time_raw": 1518181994788,
+      "open_time_utc": "2018-02-09 13:08:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518181994789,
+      "close_time_raw": 1518182294788,
+      "open_time_utc": "2018-02-09 13:13:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518182294789,
+      "close_time_raw": 1518182594788,
+      "open_time_utc": "2018-02-09 13:18:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518182594789,
+      "close_time_raw": 1518182894788,
+      "open_time_utc": "2018-02-09 13:23:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518182894789,
+      "close_time_raw": 1518183194788,
+      "open_time_utc": "2018-02-09 13:28:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518183194789,
+      "close_time_raw": 1518183494788,
+      "open_time_utc": "2018-02-09 13:33:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518183494789,
+      "close_time_raw": 1518183794788,
+      "open_time_utc": "2018-02-09 13:38:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518183794789,
+      "close_time_raw": 1518184094788,
+      "open_time_utc": "2018-02-09 13:43:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518184094789,
+      "close_time_raw": 1518184394788,
+      "open_time_utc": "2018-02-09 13:48:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518184394789,
+      "close_time_raw": 1518184694788,
+      "open_time_utc": "2018-02-09 13:53:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518184694789,
+      "close_time_raw": 1518184994788,
+      "open_time_utc": "2018-02-09 13:58:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518184994789,
+      "close_time_raw": 1518185294788,
+      "open_time_utc": "2018-02-09 14:03:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518185294789,
+      "close_time_raw": 1518185594788,
+      "open_time_utc": "2018-02-09 14:08:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518185594789,
+      "close_time_raw": 1518185894788,
+      "open_time_utc": "2018-02-09 14:13:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518185894789,
+      "close_time_raw": 1518186194788,
+      "open_time_utc": "2018-02-09 14:18:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518186194789,
+      "close_time_raw": 1518186494788,
+      "open_time_utc": "2018-02-09 14:23:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518186494789,
+      "close_time_raw": 1518186794788,
+      "open_time_utc": "2018-02-09 14:28:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518186794789,
+      "close_time_raw": 1518187094788,
+      "open_time_utc": "2018-02-09 14:33:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518187094789,
+      "close_time_raw": 1518187394788,
+      "open_time_utc": "2018-02-09 14:38:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518187394789,
+      "close_time_raw": 1518187694788,
+      "open_time_utc": "2018-02-09 14:43:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518187694789,
+      "close_time_raw": 1518187994788,
+      "open_time_utc": "2018-02-09 14:48:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518187994789,
+      "close_time_raw": 1518188294788,
+      "open_time_utc": "2018-02-09 14:53:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518188294789,
+      "close_time_raw": 1518188594788,
+      "open_time_utc": "2018-02-09 14:58:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518188594789,
+      "close_time_raw": 1518188894788,
+      "open_time_utc": "2018-02-09 15:03:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518188894789,
+      "close_time_raw": 1518189194788,
+      "open_time_utc": "2018-02-09 15:08:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518189194789,
+      "close_time_raw": 1518189494788,
+      "open_time_utc": "2018-02-09 15:13:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518189494789,
+      "close_time_raw": 1518189794788,
+      "open_time_utc": "2018-02-09 15:18:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518189794789,
+      "close_time_raw": 1518190094788,
+      "open_time_utc": "2018-02-09 15:23:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518190094789,
+      "close_time_raw": 1518190394788,
+      "open_time_utc": "2018-02-09 15:28:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518190394789,
+      "close_time_raw": 1518190694788,
+      "open_time_utc": "2018-02-09 15:33:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518190694789,
+      "close_time_raw": 1518190994788,
+      "open_time_utc": "2018-02-09 15:38:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518190994789,
+      "close_time_raw": 1518191294788,
+      "open_time_utc": "2018-02-09 15:43:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518191294789,
+      "close_time_raw": 1518191594788,
+      "open_time_utc": "2018-02-09 15:48:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518191594789,
+      "close_time_raw": 1518191894788,
+      "open_time_utc": "2018-02-09 15:53:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518191894789,
+      "close_time_raw": 1518192194788,
+      "open_time_utc": "2018-02-09 15:58:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518192194789,
+      "close_time_raw": 1518192494788,
+      "open_time_utc": "2018-02-09 16:03:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518192494789,
+      "close_time_raw": 1518192794788,
+      "open_time_utc": "2018-02-09 16:08:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518192794789,
+      "close_time_raw": 1518193094788,
+      "open_time_utc": "2018-02-09 16:13:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518193094789,
+      "close_time_raw": 1518193394788,
+      "open_time_utc": "2018-02-09 16:18:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518193394789,
+      "close_time_raw": 1518193694788,
+      "open_time_utc": "2018-02-09 16:23:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518193694789,
+      "close_time_raw": 1518193994788,
+      "open_time_utc": "2018-02-09 16:28:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518193994789,
+      "close_time_raw": 1518194294788,
+      "open_time_utc": "2018-02-09 16:33:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518194294789,
+      "close_time_raw": 1518194594788,
+      "open_time_utc": "2018-02-09 16:38:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518194594789,
+      "close_time_raw": 1518194894788,
+      "open_time_utc": "2018-02-09 16:43:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518194894789,
+      "close_time_raw": 1518195194788,
+      "open_time_utc": "2018-02-09 16:48:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518195194789,
+      "close_time_raw": 1518195494788,
+      "open_time_utc": "2018-02-09 16:53:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518195494789,
+      "close_time_raw": 1518195794788,
+      "open_time_utc": "2018-02-09 16:58:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518195794789,
+      "close_time_raw": 1518196094788,
+      "open_time_utc": "2018-02-09 17:03:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518196094789,
+      "close_time_raw": 1518196394788,
+      "open_time_utc": "2018-02-09 17:08:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518196394789,
+      "close_time_raw": 1518196694788,
+      "open_time_utc": "2018-02-09 17:13:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518196694789,
+      "close_time_raw": 1518196994788,
+      "open_time_utc": "2018-02-09 17:18:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518196994789,
+      "close_time_raw": 1518197294788,
+      "open_time_utc": "2018-02-09 17:23:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518197294789,
+      "close_time_raw": 1518197594788,
+      "open_time_utc": "2018-02-09 17:28:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518197594789,
+      "close_time_raw": 1518197894788,
+      "open_time_utc": "2018-02-09 17:33:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518197894789,
+      "close_time_raw": 1518198194788,
+      "open_time_utc": "2018-02-09 17:38:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518198194789,
+      "close_time_raw": 1518198494788,
+      "open_time_utc": "2018-02-09 17:43:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518198494789,
+      "close_time_raw": 1518198794788,
+      "open_time_utc": "2018-02-09 17:48:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518198794789,
+      "close_time_raw": 1518199094788,
+      "open_time_utc": "2018-02-09 17:53:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518199094789,
+      "close_time_raw": 1518199394788,
+      "open_time_utc": "2018-02-09 17:58:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518199394789,
+      "close_time_raw": 1518199694788,
+      "open_time_utc": "2018-02-09 18:03:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518199694789,
+      "close_time_raw": 1518199994788,
+      "open_time_utc": "2018-02-09 18:08:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518199994789,
+      "close_time_raw": 1518200294788,
+      "open_time_utc": "2018-02-09 18:13:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518200294789,
+      "close_time_raw": 1518200594788,
+      "open_time_utc": "2018-02-09 18:18:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518200594789,
+      "close_time_raw": 1518200894788,
+      "open_time_utc": "2018-02-09 18:23:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518200894789,
+      "close_time_raw": 1518201194788,
+      "open_time_utc": "2018-02-09 18:28:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518201194789,
+      "close_time_raw": 1518201494788,
+      "open_time_utc": "2018-02-09 18:33:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518201494789,
+      "close_time_raw": 1518201794788,
+      "open_time_utc": "2018-02-09 18:38:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518201794789,
+      "close_time_raw": 1518202094788,
+      "open_time_utc": "2018-02-09 18:43:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518202094789,
+      "close_time_raw": 1518202394788,
+      "open_time_utc": "2018-02-09 18:48:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518202394789,
+      "close_time_raw": 1518202694788,
+      "open_time_utc": "2018-02-09 18:53:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518202694789,
+      "close_time_raw": 1518202994788,
+      "open_time_utc": "2018-02-09 18:58:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518202994789,
+      "close_time_raw": 1518203294788,
+      "open_time_utc": "2018-02-09 19:03:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518203294789,
+      "close_time_raw": 1518203594788,
+      "open_time_utc": "2018-02-09 19:08:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518203594789,
+      "close_time_raw": 1518203894788,
+      "open_time_utc": "2018-02-09 19:13:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518203894789,
+      "close_time_raw": 1518204194788,
+      "open_time_utc": "2018-02-09 19:18:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518204194789,
+      "close_time_raw": 1518204494788,
+      "open_time_utc": "2018-02-09 19:23:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518204494789,
+      "close_time_raw": 1518204794788,
+      "open_time_utc": "2018-02-09 19:28:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518204794789,
+      "close_time_raw": 1518205094788,
+      "open_time_utc": "2018-02-09 19:33:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518205094789,
+      "close_time_raw": 1518205394788,
+      "open_time_utc": "2018-02-09 19:38:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518205394789,
+      "close_time_raw": 1518205694788,
+      "open_time_utc": "2018-02-09 19:43:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518205694789,
+      "close_time_raw": 1518205994788,
+      "open_time_utc": "2018-02-09 19:48:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518205994789,
+      "close_time_raw": 1518206294788,
+      "open_time_utc": "2018-02-09 19:53:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518206294789,
+      "close_time_raw": 1518206594788,
+      "open_time_utc": "2018-02-09 19:58:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518206594789,
+      "close_time_raw": 1518206894788,
+      "open_time_utc": "2018-02-09 20:03:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518206894789,
+      "close_time_raw": 1518207194788,
+      "open_time_utc": "2018-02-09 20:08:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518207194789,
+      "close_time_raw": 1518207494788,
+      "open_time_utc": "2018-02-09 20:13:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518207494789,
+      "close_time_raw": 1518207794788,
+      "open_time_utc": "2018-02-09 20:18:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518207794789,
+      "close_time_raw": 1518208094788,
+      "open_time_utc": "2018-02-09 20:23:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518208094789,
+      "close_time_raw": 1518208394788,
+      "open_time_utc": "2018-02-09 20:28:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518208394789,
+      "close_time_raw": 1518208694788,
+      "open_time_utc": "2018-02-09 20:33:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518208694789,
+      "close_time_raw": 1518208994788,
+      "open_time_utc": "2018-02-09 20:38:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518208994789,
+      "close_time_raw": 1518209294788,
+      "open_time_utc": "2018-02-09 20:43:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518209294789,
+      "close_time_raw": 1518209594788,
+      "open_time_utc": "2018-02-09 20:48:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518209594789,
+      "close_time_raw": 1518209894788,
+      "open_time_utc": "2018-02-09 20:53:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518209894789,
+      "close_time_raw": 1518210194788,
+      "open_time_utc": "2018-02-09 20:58:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518210194789,
+      "close_time_raw": 1518210494788,
+      "open_time_utc": "2018-02-09 21:03:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518210494789,
+      "close_time_raw": 1518210794788,
+      "open_time_utc": "2018-02-09 21:08:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518210794789,
+      "close_time_raw": 1518211094788,
+      "open_time_utc": "2018-02-09 21:13:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518211094789,
+      "close_time_raw": 1518211394788,
+      "open_time_utc": "2018-02-09 21:18:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518211394789,
+      "close_time_raw": 1518211694788,
+      "open_time_utc": "2018-02-09 21:23:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518211694789,
+      "close_time_raw": 1518211994788,
+      "open_time_utc": "2018-02-09 21:28:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518211994789,
+      "close_time_raw": 1518212294788,
+      "open_time_utc": "2018-02-09 21:33:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518212294789,
+      "close_time_raw": 1518212594788,
+      "open_time_utc": "2018-02-09 21:38:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518212594789,
+      "close_time_raw": 1518212894788,
+      "open_time_utc": "2018-02-09 21:43:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518212894789,
+      "close_time_raw": 1518213194788,
+      "open_time_utc": "2018-02-09 21:48:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518213194789,
+      "close_time_raw": 1518213494788,
+      "open_time_utc": "2018-02-09 21:53:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518213494789,
+      "close_time_raw": 1518213794788,
+      "open_time_utc": "2018-02-09 21:58:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518213794789,
+      "close_time_raw": 1518214094788,
+      "open_time_utc": "2018-02-09 22:03:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518214094789,
+      "close_time_raw": 1518214394788,
+      "open_time_utc": "2018-02-09 22:08:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518214394789,
+      "close_time_raw": 1518214694788,
+      "open_time_utc": "2018-02-09 22:13:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518214694789,
+      "close_time_raw": 1518214994788,
+      "open_time_utc": "2018-02-09 22:18:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518214994789,
+      "close_time_raw": 1518215294788,
+      "open_time_utc": "2018-02-09 22:23:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518215294789,
+      "close_time_raw": 1518215594788,
+      "open_time_utc": "2018-02-09 22:28:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518215594789,
+      "close_time_raw": 1518215894788,
+      "open_time_utc": "2018-02-09 22:33:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518215894789,
+      "close_time_raw": 1518216194788,
+      "open_time_utc": "2018-02-09 22:38:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518216194789,
+      "close_time_raw": 1518216494788,
+      "open_time_utc": "2018-02-09 22:43:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518216494789,
+      "close_time_raw": 1518216794788,
+      "open_time_utc": "2018-02-09 22:48:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518216794789,
+      "close_time_raw": 1518217094788,
+      "open_time_utc": "2018-02-09 22:53:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518217094789,
+      "close_time_raw": 1518217394788,
+      "open_time_utc": "2018-02-09 22:58:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518217394789,
+      "close_time_raw": 1518217694788,
+      "open_time_utc": "2018-02-09 23:03:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518217694789,
+      "close_time_raw": 1518217994788,
+      "open_time_utc": "2018-02-09 23:08:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518217994789,
+      "close_time_raw": 1518218294788,
+      "open_time_utc": "2018-02-09 23:13:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518218294789,
+      "close_time_raw": 1518218594788,
+      "open_time_utc": "2018-02-09 23:18:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518218594789,
+      "close_time_raw": 1518218894788,
+      "open_time_utc": "2018-02-09 23:23:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518218894789,
+      "close_time_raw": 1518219194788,
+      "open_time_utc": "2018-02-09 23:28:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518219194789,
+      "close_time_raw": 1518219494788,
+      "open_time_utc": "2018-02-09 23:33:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518219494789,
+      "close_time_raw": 1518219794788,
+      "open_time_utc": "2018-02-09 23:38:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518219794789,
+      "close_time_raw": 1518220094788,
+      "open_time_utc": "2018-02-09 23:43:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518220094789,
+      "close_time_raw": 1518220394788,
+      "open_time_utc": "2018-02-09 23:48:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518220394789,
+      "close_time_raw": 1518220694788,
+      "open_time_utc": "2018-02-09 23:53:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518220694789,
+      "close_time_raw": 1518220994788,
+      "open_time_utc": "2018-02-09 23:58:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518220994789,
+      "close_time_raw": 1518221294788,
+      "open_time_utc": "2018-02-10 00:03:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518221294789,
+      "close_time_raw": 1518221594788,
+      "open_time_utc": "2018-02-10 00:08:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518221594789,
+      "close_time_raw": 1518221894788,
+      "open_time_utc": "2018-02-10 00:13:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518221894789,
+      "close_time_raw": 1518222194788,
+      "open_time_utc": "2018-02-10 00:18:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518222194789,
+      "close_time_raw": 1518222494788,
+      "open_time_utc": "2018-02-10 00:23:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518222494789,
+      "close_time_raw": 1518222794788,
+      "open_time_utc": "2018-02-10 00:28:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518222794789,
+      "close_time_raw": 1518223094788,
+      "open_time_utc": "2018-02-10 00:33:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518223094789,
+      "close_time_raw": 1518223394788,
+      "open_time_utc": "2018-02-10 00:38:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518223394789,
+      "close_time_raw": 1518223694788,
+      "open_time_utc": "2018-02-10 00:43:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518223694789,
+      "close_time_raw": 1518223994788,
+      "open_time_utc": "2018-02-10 00:48:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518223994789,
+      "close_time_raw": 1518224294788,
+      "open_time_utc": "2018-02-10 00:53:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518224294789,
+      "close_time_raw": 1518224594788,
+      "open_time_utc": "2018-02-10 00:58:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518224594789,
+      "close_time_raw": 1518224894788,
+      "open_time_utc": "2018-02-10 01:03:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518224894789,
+      "close_time_raw": 1518225194788,
+      "open_time_utc": "2018-02-10 01:08:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518225194789,
+      "close_time_raw": 1518225494788,
+      "open_time_utc": "2018-02-10 01:13:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518225494789,
+      "close_time_raw": 1518225794788,
+      "open_time_utc": "2018-02-10 01:18:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518225794789,
+      "close_time_raw": 1518226094788,
+      "open_time_utc": "2018-02-10 01:23:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518226094789,
+      "close_time_raw": 1518226394788,
+      "open_time_utc": "2018-02-10 01:28:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518226394789,
+      "close_time_raw": 1518226694788,
+      "open_time_utc": "2018-02-10 01:33:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518226694789,
+      "close_time_raw": 1518226994788,
+      "open_time_utc": "2018-02-10 01:38:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518226994789,
+      "close_time_raw": 1518227294788,
+      "open_time_utc": "2018-02-10 01:43:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518227294789,
+      "close_time_raw": 1518227594788,
+      "open_time_utc": "2018-02-10 01:48:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518227594789,
+      "close_time_raw": 1518227894788,
+      "open_time_utc": "2018-02-10 01:53:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518227894789,
+      "close_time_raw": 1518228194788,
+      "open_time_utc": "2018-02-10 01:58:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518228194789,
+      "close_time_raw": 1518228494788,
+      "open_time_utc": "2018-02-10 02:03:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518228494789,
+      "close_time_raw": 1518228794788,
+      "open_time_utc": "2018-02-10 02:08:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518228794789,
+      "close_time_raw": 1518229094788,
+      "open_time_utc": "2018-02-10 02:13:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518229094789,
+      "close_time_raw": 1518229394788,
+      "open_time_utc": "2018-02-10 02:18:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518229394789,
+      "close_time_raw": 1518229694788,
+      "open_time_utc": "2018-02-10 02:23:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518229694789,
+      "close_time_raw": 1518229994788,
+      "open_time_utc": "2018-02-10 02:28:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518229994789,
+      "close_time_raw": 1518230294788,
+      "open_time_utc": "2018-02-10 02:33:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518230294789,
+      "close_time_raw": 1518230594788,
+      "open_time_utc": "2018-02-10 02:38:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518230594789,
+      "close_time_raw": 1518230894788,
+      "open_time_utc": "2018-02-10 02:43:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518230894789,
+      "close_time_raw": 1518231194788,
+      "open_time_utc": "2018-02-10 02:48:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518231194789,
+      "close_time_raw": 1518231494788,
+      "open_time_utc": "2018-02-10 02:53:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518231494789,
+      "close_time_raw": 1518231794788,
+      "open_time_utc": "2018-02-10 02:58:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518231794789,
+      "close_time_raw": 1518232094788,
+      "open_time_utc": "2018-02-10 03:03:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518232094789,
+      "close_time_raw": 1518232394788,
+      "open_time_utc": "2018-02-10 03:08:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518232394789,
+      "close_time_raw": 1518232694788,
+      "open_time_utc": "2018-02-10 03:13:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518232694789,
+      "close_time_raw": 1518232994788,
+      "open_time_utc": "2018-02-10 03:18:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518232994789,
+      "close_time_raw": 1518233294788,
+      "open_time_utc": "2018-02-10 03:23:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518233294789,
+      "close_time_raw": 1518233594788,
+      "open_time_utc": "2018-02-10 03:28:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518233594789,
+      "close_time_raw": 1518233894788,
+      "open_time_utc": "2018-02-10 03:33:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518233894789,
+      "close_time_raw": 1518234194788,
+      "open_time_utc": "2018-02-10 03:38:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518234194789,
+      "close_time_raw": 1518234494788,
+      "open_time_utc": "2018-02-10 03:43:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518234494789,
+      "close_time_raw": 1518234794788,
+      "open_time_utc": "2018-02-10 03:48:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518234794789,
+      "close_time_raw": 1518235094788,
+      "open_time_utc": "2018-02-10 03:53:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518235094789,
+      "close_time_raw": 1518235394788,
+      "open_time_utc": "2018-02-10 03:58:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518235394789,
+      "close_time_raw": 1518235694788,
+      "open_time_utc": "2018-02-10 04:03:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518235694789,
+      "close_time_raw": 1518235994788,
+      "open_time_utc": "2018-02-10 04:08:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518235994789,
+      "close_time_raw": 1518236294788,
+      "open_time_utc": "2018-02-10 04:13:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518236294789,
+      "close_time_raw": 1518236594788,
+      "open_time_utc": "2018-02-10 04:18:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518236594789,
+      "close_time_raw": 1518236894788,
+      "open_time_utc": "2018-02-10 04:23:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518236894789,
+      "close_time_raw": 1518237194788,
+      "open_time_utc": "2018-02-10 04:28:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518237194789,
+      "close_time_raw": 1518237494788,
+      "open_time_utc": "2018-02-10 04:33:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518237494789,
+      "close_time_raw": 1518237794788,
+      "open_time_utc": "2018-02-10 04:38:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518237794789,
+      "close_time_raw": 1518238094788,
+      "open_time_utc": "2018-02-10 04:43:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518238094789,
+      "close_time_raw": 1518238394788,
+      "open_time_utc": "2018-02-10 04:48:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518238394789,
+      "close_time_raw": 1518238694788,
+      "open_time_utc": "2018-02-10 04:53:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518238694789,
+      "close_time_raw": 1518238994788,
+      "open_time_utc": "2018-02-10 04:58:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518238994789,
+      "close_time_raw": 1518239294788,
+      "open_time_utc": "2018-02-10 05:03:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518239294789,
+      "close_time_raw": 1518239594788,
+      "open_time_utc": "2018-02-10 05:08:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518239594789,
+      "close_time_raw": 1518239894788,
+      "open_time_utc": "2018-02-10 05:13:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518239894789,
+      "close_time_raw": 1518240194788,
+      "open_time_utc": "2018-02-10 05:18:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518240194789,
+      "close_time_raw": 1518240494788,
+      "open_time_utc": "2018-02-10 05:23:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518240494789,
+      "close_time_raw": 1518240794788,
+      "open_time_utc": "2018-02-10 05:28:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518240794789,
+      "close_time_raw": 1518241094788,
+      "open_time_utc": "2018-02-10 05:33:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518241094789,
+      "close_time_raw": 1518241394788,
+      "open_time_utc": "2018-02-10 05:38:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518241394789,
+      "close_time_raw": 1518241694788,
+      "open_time_utc": "2018-02-10 05:43:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518241694789,
+      "close_time_raw": 1518241994788,
+      "open_time_utc": "2018-02-10 05:48:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518241994789,
+      "close_time_raw": 1518242294788,
+      "open_time_utc": "2018-02-10 05:53:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518242294789,
+      "close_time_raw": 1518242399999,
+      "open_time_utc": "2018-02-10 05:58:14.789000+00:00",
+      "reason": "off_grid_open",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1518321600000,
+      "close_time_raw": 1518321600999,
+      "open_time_utc": "2018-02-11 04:00:00+00:00",
+      "reason": "nonstandard_close_boundary",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02.zip"
+    },
+    {
+      "open_time_raw": 1530663600000,
+      "close_time_raw": 1530663745551,
+      "open_time_utc": "2018-07-04 00:20:00+00:00",
+      "reason": "nonstandard_close_boundary",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2018-07.zip"
+    },
+    {
+      "open_time_raw": 1559941800000,
+      "close_time_raw": 1559941993524,
+      "open_time_utc": "2019-06-07 21:10:00+00:00",
+      "reason": "nonstandard_close_boundary",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2019-06.zip"
+    },
+    {
+      "open_time_raw": 1582112100000,
+      "close_time_raw": 1582112132286,
+      "open_time_utc": "2020-02-19 11:35:00+00:00",
+      "reason": "nonstandard_close_boundary",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2020-02.zip"
+    },
+    {
+      "open_time_raw": 1583313600000,
+      "close_time_raw": 1583313706694,
+      "open_time_utc": "2020-03-04 09:20:00+00:00",
+      "reason": "nonstandard_close_boundary",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2020-03.zip"
+    },
+    {
+      "open_time_raw": 1608559500000,
+      "close_time_raw": 1608558440521,
+      "open_time_utc": "2020-12-21 14:05:00+00:00",
+      "reason": "nonstandard_close_boundary",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2020-12.zip"
+    },
+    {
+      "open_time_raw": 1613014800000,
+      "close_time_raw": 1613014854773,
+      "open_time_utc": "2021-02-11 03:40:00+00:00",
+      "reason": "nonstandard_close_boundary",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2021-02.zip"
+    },
+    {
+      "open_time_raw": 1619323200000,
+      "close_time_raw": 1619323258146,
+      "open_time_utc": "2021-04-25 04:00:00+00:00",
+      "reason": "nonstandard_close_boundary",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2021-04.zip"
+    },
+    {
+      "open_time_raw": 1628819700000,
+      "close_time_raw": 1628819999000,
+      "open_time_utc": "2021-08-13 01:55:00+00:00",
+      "reason": "nonstandard_close_boundary",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2021-08.zip"
+    },
+    {
+      "open_time_raw": 1640321700000,
+      "close_time_raw": 1640321994362,
+      "open_time_utc": "2021-12-24 04:55:00+00:00",
+      "reason": "nonstandard_close_boundary",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2021-12.zip"
+    },
+    {
+      "open_time_raw": 1679661300000,
+      "close_time_raw": 1679661581646,
+      "open_time_utc": "2023-03-24 12:35:00+00:00",
+      "reason": "nonstandard_close_boundary",
+      "source": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2023-03.zip"
+    }
+  ],
+  "snapshot_id": "a4e0ec967b0f9ca39187429a5011b44d2ba23aa4ac4a61ce51a77196144c9569",
+  "written_partitions": 2,
+  "reused_partitions": 528
+}

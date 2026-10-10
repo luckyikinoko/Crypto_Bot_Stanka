@@ -3,3 +3,5 @@ __pycache__/
 data/
 .env
 *.pyc
+
+reports/market_database/replay/

@@ -3,6 +3,7 @@
 Milestone 1 adds a separate historical market database while preserving the
 original strategy experiments below. No live trading is enabled.
 
+- [Milestone 1 coverage, gaps and verification results](reports/market_database/MILESTONE_1.md)
 - [Architecture, existing-code assessment and roadmap](docs/RESEARCH_ENGINE_PLAN.md)
 - [Database commands, schema and integrity policy](docs/MARKET_DATABASE.md)
 - `python -m market_data sync --start 2018-01-01`
