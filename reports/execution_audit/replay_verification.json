@@ -1,0 +1,8 @@
+{
+  "identical_trade_ledgers": true,
+  "identical_final_equity": true,
+  "final_equity": 955.4582527378045,
+  "old_max_drawdown": 0.050389219531954854,
+  "corrected_max_drawdown": 0.050389293248487066,
+  "unit_tests_passed": 25
+}

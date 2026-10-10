@@ -1,0 +1,122 @@
+{
+  "account_fees_verified": false,
+  "fee_scenarios": [
+    {
+      "fee_per_side": 0.001,
+      "execution_per_side": 0.0002,
+      "break_even_reference_move": 0.0024028829789979333,
+      "base_asset_buy_fee_break_even": 0.002403885382883608
+    },
+    {
+      "fee_per_side": 0.00075,
+      "execution_per_side": 0.0002,
+      "break_even_reference_move": 0.0019018064308382598,
+      "base_asset_buy_fee_break_even": 0.0019023700009215272
+    },
+    {
+      "fee_per_side": 0.0005,
+      "execution_per_side": 0.0002,
+      "break_even_reference_move": 0.0014009805462842362,
+      "base_asset_buy_fee_break_even": 0.0014012308965918319
+    },
+    {
+      "fee_per_side": 0,
+      "execution_per_side": 0.0002,
+      "break_even_reference_move": 0.0004000800160031126,
+      "base_asset_buy_fee_break_even": 0.0004000800160031126
+    }
+  ],
+  "decomposition": {
+    "original_v1": {
+      "trades": 304,
+      "gross_reference_pnl": 16.598844431818733,
+      "explicit_fees": 187.74958554566294,
+      "execution_cost": 37.54991777308251,
+      "net_pnl": -208.70065888691403,
+      "max_affordable_equal_fee_per_side": -0.00011159051712616552,
+      "note": "Fixed original quantities and decisions. Negative fee capacity means even zero fees cannot cover modeled execution costs."
+    },
+    "no_60m_exit": {
+      "trades": 293,
+      "gross_reference_pnl": -15.83231859535844,
+      "explicit_fees": 180.39016064006836,
+      "execution_cost": 36.07803149471717,
+      "net_pnl": -232.30051073013286,
+      "max_affordable_equal_fee_per_side": -0.00028776708167388404,
+      "note": "Fixed original quantities and decisions. Negative fee capacity means even zero fees cannot cover modeled execution costs."
+    },
+    "breakout": {
+      "trades": 369,
+      "gross_reference_pnl": 7.315583325837174,
+      "explicit_fees": 217.52306223340918,
+      "execution_cost": 43.5046127393,
+      "net_pnl": -253.71209164685703,
+      "max_affordable_equal_fee_per_side": -0.0001663687015155701,
+      "note": "Fixed original quantities and decisions. Negative fee capacity means even zero fees cannot cover modeled execution costs."
+    }
+  },
+  "sensitivity": [
+    {
+      "strategy": "original_v1",
+      "fee_per_side": 0.001,
+      "fixed_trade_net_pnl": -208.70065888691704
+    },
+    {
+      "strategy": "original_v1",
+      "fee_per_side": 0.00075,
+      "fixed_trade_net_pnl": -161.7632625005159
+    },
+    {
+      "strategy": "original_v1",
+      "fee_per_side": 0.0005,
+      "fixed_trade_net_pnl": -114.82586611408473
+    },
+    {
+      "strategy": "original_v1",
+      "fee_per_side": 0,
+      "fixed_trade_net_pnl": -20.95107334126381
+    },
+    {
+      "strategy": "no_60m_exit",
+      "fee_per_side": 0.001,
+      "fixed_trade_net_pnl": -232.30051073013428
+    },
+    {
+      "strategy": "no_60m_exit",
+      "fee_per_side": 0.00075,
+      "fixed_trade_net_pnl": -187.20297057013173
+    },
+    {
+      "strategy": "no_60m_exit",
+      "fee_per_side": 0.0005,
+      "fixed_trade_net_pnl": -142.10543041009925
+    },
+    {
+      "strategy": "no_60m_exit",
+      "fee_per_side": 0,
+      "fixed_trade_net_pnl": -51.91035009007557
+    },
+    {
+      "strategy": "breakout",
+      "fee_per_side": 0.001,
+      "fixed_trade_net_pnl": -253.71209164686007
+    },
+    {
+      "strategy": "breakout",
+      "fee_per_side": 0.00075,
+      "fixed_trade_net_pnl": -199.33132608852537
+    },
+    {
+      "strategy": "breakout",
+      "fee_per_side": 0.0005,
+      "fixed_trade_net_pnl": -144.95056053015514
+    },
+    {
+      "strategy": "breakout",
+      "fee_per_side": 0,
+      "fixed_trade_net_pnl": -36.18902941346281
+    }
+  ],
+  "holdout_accessed": false,
+  "new_strategy_backtest": false
+}

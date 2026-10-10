@@ -148,3 +148,11 @@ Experiment 002 outcome: **rejected**. The breakout candidate lost in all eight
 quarterly episodes and hit its drawdown halt in the continuous run. See
 [the breakout report](reports/experiment_002/RESULTS.md). No tested candidate
 has met the research gates; original V1 remains only a reproducible reference.
+
+## Execution/cost audit
+
+Run `python cost_audit.py` for fee scenarios and reconciled fixed-trade cost
+attribution. This is not a zero-cost strategy rerun. See
+[the audit](reports/execution_audit/AUDIT.md). Actual account rates are still
+unverified. Drawdown reporting now uses the risk engine's observed open/close
+peak instead of close-only peaks; old result snapshots remain preserved.

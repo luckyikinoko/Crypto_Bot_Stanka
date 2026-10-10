@@ -1,0 +1,4 @@
+,trades,gross_reference_pnl,explicit_fees,execution_cost,net_pnl,max_affordable_equal_fee_per_side,note
+original_v1,304,16.598844431818733,187.74958554566294,37.54991777308251,-208.70065888691403,-0.00011159051712616552,Fixed original quantities and decisions. Negative fee capacity means even zero fees cannot cover modeled execution costs.
+no_60m_exit,293,-15.83231859535844,180.39016064006836,36.07803149471717,-232.30051073013286,-0.00028776708167388404,Fixed original quantities and decisions. Negative fee capacity means even zero fees cannot cover modeled execution costs.
+breakout,369,7.315583325837174,217.52306223340918,43.5046127393,-253.71209164685703,-0.0001663687015155701,Fixed original quantities and decisions. Negative fee capacity means even zero fees cannot cover modeled execution costs.

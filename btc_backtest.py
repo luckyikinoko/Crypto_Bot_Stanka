@@ -209,15 +209,15 @@ def run(df, c=Config(), start=None, end=None, signals=None, events=None):
                 sell(pos['target'],t+pd.Timedelta(minutes=1),'target')
         eq = mark(close)
         peak = max(peak,eq)
-        curve.append((t+pd.Timedelta(minutes=1),eq, bool(pos)))
+        curve.append((t+pd.Timedelta(minutes=1),eq, bool(pos),peak))
     if pos:
         sell(data.close.iloc[-1],data.index[-1]+pd.Timedelta(minutes=1),'end_of_data')
-        curve[-1] = (curve[-1][0],cash,False)
+        curve[-1] = (curve[-1][0],cash,False,peak)
     ledger = pd.DataFrame(trades)
-    equity = pd.DataFrame(curve, columns=['time','equity','invested']).set_index('time')
+    equity = pd.DataFrame(curve, columns=['time','equity','invested','peak']).set_index('time')
     pnl = ledger.pnl if len(ledger) else pd.Series(dtype=float)
     gross_loss = -pnl[pnl<0].sum()
-    dd = equity.equity / equity.equity.cummax().clip(lower=c.equity)-1
+    dd = equity.equity / equity.peak.clip(lower=c.equity)-1
     # Equal-cost full-allocation BTC benchmark, including terminal liquidation.
     bh = c.equity/(data.open.iloc[0]*(1+c.slippage)*(1+c.fee))*data.close.iloc[-1]*(1-c.slippage)*(1-c.fee)
     summary = dict(config=asdict(c),start=str(data.index[0]),end=str(end),trades=len(ledger),final_equity=cash,net_return=cash/c.equity-1,net_profit=float(pnl.sum()),win_rate=float((pnl>0).mean()) if len(pnl) else None,profit_factor=float(pnl[pnl>0].sum()/gross_loss) if gross_loss else None,expectancy_r=float(ledger.r.mean()) if len(ledger) else None,max_drawdown=float(-dd.min()),fees=float((ledger.entry_fee+ledger.exit_fee).sum()) if len(ledger) else 0.,exposure_fraction=float(equity.invested.mean()),halted=bool(halted),buy_hold_final_equity=float(bh),cash_final_equity=c.equity,news_filter=events is not None)
