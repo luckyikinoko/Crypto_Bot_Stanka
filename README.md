@@ -1,3 +1,20 @@
+# BTC Research Engine V1 — current development priority
+
+Milestone 1 adds a separate historical market database while preserving the
+original strategy experiments below. No live trading is enabled.
+
+- [Architecture, existing-code assessment and roadmap](docs/RESEARCH_ENGINE_PLAN.md)
+- [Database commands, schema and integrity policy](docs/MARKET_DATABASE.md)
+- `python -m market_data sync --start 2018-01-01`
+- `python -m market_data.verify --native`
+
+The database stores UTC 5m/15m/1h/4h/1d candles as monthly Parquet partitions.
+Mechanical ingestion can include reserved dates; the research reader blocks them.
+2024–2025 and 2026 Q1 are already-used development data, not clean validation.
+Later milestones require user review; no indicators or patterns are added here.
+
+---
+
 # Crypto Bot Stanka — BTC Spot V1 research
 
 Offline, long-only BTCUSDT backtester starting with **1,000 USDT**. No live trading,
