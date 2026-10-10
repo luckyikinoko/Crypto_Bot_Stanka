@@ -1,0 +1,111 @@
+# Crypto Bot Stanka — BTC Spot V1 research
+
+Offline, long-only BTCUSDT backtester starting with **1,000 USDT**. No live trading,
+API keys, leverage, shorting, or authenticated exchange endpoints. A profitable
+strategy has **not** been established.
+
+## Run
+
+Python 3.11+:
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+python -m unittest discover -s tests -v
+python btc_backtest.py download --from-month 2023-11 --to-month 2026-03
+python btc_backtest.py run --start 2024-01-01 --end 2026-04-01 --out reports/baseline
+python btc_backtest.py run --start 2024-01-01 --end 2026-04-01 --slippage 0.0004 --out reports/stress
+```
+
+On Windows activate with `.venv\Scripts\activate`. All dates use UTC; `--end` is
+exclusive. Downloads are official Binance monthly one-minute klines with SHA256
+verification. Timestamp units switch from milliseconds to microseconds in 2025.
+The importer normalizes both, rejects duplicate/missing minutes and invalid OHLCV,
+and verifies checksums again on load. Raw market data stays out of Git.
+
+**Holdout:** April–September 2026 is reserved and must not be downloaded for
+strategy development. The January 2024–March 2026 run is a development baseline,
+not out-of-sample evidence. November–December 2023 supplies indicator warm-up.
+
+## Frozen V1 rules
+
+Only closed candles inform decisions. Bars are UTC-aligned and right-labeled by
+completion time. A signal at 12:05 uses data strictly before 12:05, then buys at
+the 12:05 one-minute open with adverse execution cost. EMA uses alpha 2/(n+1);
+RSI14 and ATR14 use Wilder smoothing with an initial arithmetic-mean seed.
+At least 1,000 hours of input precede scored trading.
+
+All entry conditions must hold:
+
+- Hourly close above EMA200; EMA200 above its value five hours earlier.
+- 15-minute EMA20 above EMA50; close above EMA50.
+- At least one preceding three 5-minute candles has low <= its EMA20.
+- Current 5-minute close above EMA20 and previous candle high.
+- RSI14 in [45,65] and increasing.
+- Volume >= 1.2 times mean volume of the preceding 20 five-minute candles.
+
+Stop = min(lowest low of latest three 5-minute candles minus 0.1 ATR,
+signal close minus 1.5 ATR). Accept only 0.4–1.2% stop distance, checked both at
+signal close and next-minute reference entry. One position at a time, no scaling.
+
+Risk budget = 0.25% of equity; entry notional <=35% of equity; available cash caps
+size. Quantity is rounded down to the configured step. Sizing uses expected stop
+execution and both fees, rather than a price-distance-only shortcut. The target
+produces 1.5 times planned stop loss **net of modeled costs**. Fees default to
+0.10% per side, combined spread/slippage to 0.02% per side. These are assumptions,
+not verified account fees. Stress doubles execution costs while retaining fees.
+
+Exit at stop, target, hourly close below EMA200, 180 minutes, or at 60 minutes if
+net liquidation profit <0.3 times planned risk. The 60-minute test happens once.
+Wait three full five-minute candles after an exit before re-entry.
+
+## Execution and accounting assumptions
+
+- All fills are market-like, adverse-price fills; targets also incur modeled
+  slippage and taker fees. No guaranteed maker fills or queue priority.
+- Both barriers inside one minute: stop first. A stop gapped through fills at the
+  open, not the stop. Intraminute exits are timestamped at minute end because exact
+  ordering is unknown. Partial fills and latency are not simulated.
+- Fees use a **quote-currency equivalent model**. Actual Binance buy commissions
+  deducted in BTC or paid in BNB are not yet reproduced. No BNB discount assumed.
+- Quantity step 0.00001 BTC and minimum notional 5 USDT are research assumptions,
+  not historical/current exchange metadata. Price tick rounding is not modeled.
+  A live adapter must fetch symbol filters and use actual fee-asset accounting.
+- Equity is marked to liquidation value, including modeled sell costs. Daily
+  equity reference resets at UTC midnight. A 1% daily loss closes exposure and
+  pauses until midnight; three consecutive net losses pause entries for the day.
+  A 5% equity-peak drawdown closes exposure and permanently halts that simulation.
+- Peak equity is sampled at minute opens/closes; intraminute highs do not raise
+  the peak. Risk thresholds are checked against minute lows conservatively before
+  profit targets. Gaps can exceed any loss threshold.
+- Signals skipped during pauses/cooldowns are not queued. New signals are needed.
+- Open positions are liquidated at the scoring period end and tagged accordingly.
+
+Optional `--events events.csv` accepts a `time` column of UTC scheduled event
+announcements. It blocks new entries from 30 minutes before to 30 minutes after.
+No event dataset ships with this version; default runs have **no news filter**.
+Historical event records must have been knowable at decision time.
+
+## Outputs and research gates
+
+Each run writes trade-level `trades.csv`, `daily_equity.csv`, and `summary.json`
+with parameters and input hashes. Equity, net returns, net R expectancy, fees,
+profit factor, drawdown, and exposure are included. Full-exposure buy-and-hold
+with equivalent costs and cash are benchmarks; their risk differs from the bot.
+Tests cover causality, stop/target ordering, gaps, risk limits, cash conservation,
+fee-adjusted targets, Wilder initialization, and input validation.
+
+Before any paper/live progression: walk-forward evaluation on development data,
+block-bootstrap uncertainty, sensitivity checks, and one final sealed holdout
+run. Provisional gates: positive unseen net expectancy; profit factor >1.20;
+max drawdown <5%; positive expectancy under doubled execution costs; >=200 unseen
+trades. Meeting thresholds is not proof of future profitability. Do not repeatedly
+retune on the final holdout. This checkpoint implements the baseline simulator;
+it does not claim the complete validation program is finished.
+
+## Sources
+
+- https://github.com/binance/binance-public-data
+- https://github.com/binance/binance-spot-api-docs/blob/master/faqs/commission_faq.md
+- https://github.com/binance/binance-spot-api-docs/blob/master/filters.md
