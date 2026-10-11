@@ -1,0 +1,26 @@
+{
+  "snapshot_id": "731876df485256348d5ca6a5ad5a852e4a545022a0e3bb893f08e8dea7aae8e1",
+  "verified_partitions": 495,
+  "timeframes": {
+    "5m": {
+      "rows": 865596,
+      "status": "passed"
+    },
+    "15m": {
+      "rows": 288525,
+      "status": "passed"
+    },
+    "1h": {
+      "rows": 72120,
+      "status": "passed"
+    },
+    "4h": {
+      "rows": 18005,
+      "status": "passed"
+    },
+    "1d": {
+      "rows": 2980,
+      "status": "passed"
+    }
+  }
+}

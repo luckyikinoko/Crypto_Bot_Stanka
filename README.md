@@ -1,3 +1,9 @@
+## Technical indicator checkpoint
+
+Milestone 2 is complete. See [results](reports/indicators/MILESTONE_2.md) and
+[definitions and usage](docs/INDICATORS.md). Build development-only features with
+`python -m research.indicators`. Reserved data remains blocked; no live trading.
+
 # BTC Research Engine V1 — current development priority
 
 Milestone 1 adds a separate historical market database while preserving the

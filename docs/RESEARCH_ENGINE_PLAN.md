@@ -1,7 +1,8 @@
 # BTC Research Engine V1 — architecture and milestone plan
 
-Scope of this checkpoint: **Milestone 1 only**. No strategy search, indicator
-expansion, pattern recognition, live execution, or automatic milestone progression.
+Status: **Milestones 1 and 2 complete**. See `INDICATORS.md` and the milestone
+reports. No strategy search, chart-pattern recognition, live execution, or automatic
+milestone progression. The assessment below records the original pre-Milestone-1 state.
 
 ## Existing implementation assessment
 
