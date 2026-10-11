@@ -1,7 +1,8 @@
 # BTC Research Engine V1 — architecture and milestone plan
 
-Status: **Milestones 1–3 complete**. See `INDICATORS.md`, `PATTERNS.md` and the milestone
-reports. No strategy search, outcome analysis, live execution, or automatic
+Status: **Milestones 1–4 complete**. See `INDICATORS.md`, `PATTERNS.md`,
+`STATISTICAL_RESEARCH.md` and the milestone reports. No strategy selection,
+live execution, or automatic
 milestone progression. The assessment below records the original pre-Milestone-1 state.
 
 ## Existing implementation assessment

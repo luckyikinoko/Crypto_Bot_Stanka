@@ -1,3 +1,9 @@
+## Statistical research checkpoint
+
+Milestone 4 is complete. [Results and charts](reports/statistics/MILESTONE_4.md)
+show no established robust profitable edge. See the
+[research protocol](docs/STATISTICAL_RESEARCH.md). Reserved data remains blocked.
+
 ## Chart-pattern checkpoint
 
 Milestone 3 is complete: bull flags, resistance breakouts/retests and engulfing

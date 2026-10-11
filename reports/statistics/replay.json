@@ -1,0 +1,12 @@
+{
+  "summaries_identical": true,
+  "label_files_identical": true,
+  "reused_horizons": [
+    1,
+    4,
+    12,
+    24
+  ],
+  "snapshot_id": "b7858d6207a000be21d5d0939063dd98fb4f51887eb6bd68bbec909997fd3c94",
+  "note": "Second analysis run reused checksum-verified label inputs; adding joint regime slices leaves primary statistics unchanged."
+}
