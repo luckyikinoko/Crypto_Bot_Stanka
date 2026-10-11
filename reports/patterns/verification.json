@@ -1,0 +1,36 @@
+{
+  "snapshot_id": "b3461a92fd0f4f6bd1c9d11956e9b7541cb196cf8d544f9b8e3eb53f766a02d4",
+  "verified_partitions": 5,
+  "timeframes": {
+    "5m": {
+      "events": 156355,
+      "prefix_candles": 1000,
+      "prefix_events": 187,
+      "status": "passed"
+    },
+    "15m": {
+      "events": 47798,
+      "prefix_candles": 1000,
+      "prefix_events": 163,
+      "status": "passed"
+    },
+    "1h": {
+      "events": 11023,
+      "prefix_candles": 1000,
+      "prefix_events": 146,
+      "status": "passed"
+    },
+    "4h": {
+      "events": 2767,
+      "prefix_candles": 1000,
+      "prefix_events": 163,
+      "status": "passed"
+    },
+    "1d": {
+      "events": 479,
+      "prefix_candles": 1000,
+      "prefix_events": 113,
+      "status": "passed"
+    }
+  }
+}

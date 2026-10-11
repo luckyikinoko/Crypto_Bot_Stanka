@@ -1,3 +1,10 @@
+## Chart-pattern checkpoint
+
+Milestone 3 is complete: bull flags, resistance breakouts/retests and engulfing
+candles. See [results](reports/patterns/MILESTONE_3.md) and
+[definitions](docs/PATTERNS.md). Run `python -m research.patterns` and
+`python -m research.patterns.verify`. Frequencies are not profitability evidence.
+
 ## Technical indicator checkpoint
 
 Milestone 2 is complete. See [results](reports/indicators/MILESTONE_2.md) and

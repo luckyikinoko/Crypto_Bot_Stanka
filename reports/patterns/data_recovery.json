@@ -1,0 +1,8 @@
+{
+  "original_source_snapshot": "a4e0ec967b0f9ca39187429a5011b44d2ba23aa4ac4a61ce51a77196144c9569",
+  "restored_development_snapshot": "ed2167a0ac3a875972f5cead7bdfc7b332a0b436ca2db8b84eb06fef9ff1a44d",
+  "matched_partitions": 495,
+  "all_logical_hashes_match": true,
+  "cutoff": "2026-04-01 00:00:00+00:00",
+  "reserved_data_downloaded": false
+}
