@@ -1,0 +1,13 @@
+{
+  "unit_tests_passed": 107,
+  "source_snapshot": "ed2167a0ac3a875972f5cead7bdfc7b332a0b436ca2db8b84eb06fef9ff1a44d",
+  "report_sha256": "10c8f37a534219e2595a32ff33b2970461db19671194cafeca50efce3e9f81c4",
+  "missing_slot_classifications_reconcile": true,
+  "prior_4h_training_coverage_reconciles": true,
+  "all_higher_timeframes_exact_reaggregation": true,
+  "quarantine_records_exact_match": true,
+  "development_archives_verified": 99,
+  "source_partition_checksums_verified": true,
+  "reserved_daily_archive_skipped": true,
+  "market_data_changed": false
+}
