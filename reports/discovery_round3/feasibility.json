@@ -1,0 +1,57 @@
+{
+  "source_snapshot": "e723d225549faf2ca16d4eb688093168810d0d71aa4adef3642ff5d2cfdbee9b",
+  "feature_sha256": "82b0c76a3a57de9cb073d0dfd3a1dc889c9da9f45e697bf6e9b12e9214d19683",
+  "registry_sha256": "b27f9df11e4a5c4f8ca5debb7bd9c965dea3438e8bd11bccafa65cf602d03ec1",
+  "code_sha256": "256aae542b4373bd4d0fb4783e2dc1e698aba3c80e001dc27e5dd55a38c88df1",
+  "columns_read": [
+    "observation_id",
+    "available_at",
+    "breakout"
+  ],
+  "results": {
+    "training": {
+      "raw_events": 615,
+      "boundary_purged": 0,
+      "timing_eligible": 615,
+      "scheduled_nonoverlap": 241,
+      "active_28day_blocks": 78,
+      "block_origin": "2018-01-01 00:00:00+00:00",
+      "counts_by_year": {
+        "2018": 77,
+        "2019": 110,
+        "2020": 133,
+        "2021": 116,
+        "2022": 77,
+        "2023": 102
+      },
+      "execution_paths_checked": false
+    },
+    "reused_recent": {
+      "raw_events": 265,
+      "boundary_purged": 0,
+      "timing_eligible": 265,
+      "scheduled_nonoverlap": 100,
+      "active_28day_blocks": 29,
+      "block_origin": "2024-01-01 00:00:00+00:00",
+      "counts_by_year": {
+        "2024": 125,
+        "2025": 117,
+        "2026": 23
+      },
+      "execution_paths_checked": false
+    }
+  },
+  "feasibility": {
+    "passed": true,
+    "checks": {
+      "training_observations": true,
+      "training_nonoverlap": true,
+      "training_active_28day_blocks": true,
+      "recent_observations": true
+    }
+  },
+  "new_return_tests": 0,
+  "prior_return_tests": 33,
+  "selected_strategy": null,
+  "decision": "propose_outcome_screen"
+}

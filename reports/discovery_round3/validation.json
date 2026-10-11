@@ -1,0 +1,14 @@
+{
+  "unit_tests_passed": 97,
+  "independent_copy_replay_byte_identical": true,
+  "feature_checksum_verified": true,
+  "restored_feature_from_verified_replay": true,
+  "outcome_label_files_read": false,
+  "new_return_tests": 0,
+  "feasibility_report_sha256": "059a3164257bb62da981b39c4173df9084eaa84a687693b629562ad2649ab3ae",
+  "runtime": {
+    "python": "3.12.14",
+    "pandas": "2.2.3",
+    "pyarrow": "23.0.1"
+  }
+}
