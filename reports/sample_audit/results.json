@@ -1,0 +1,192 @@
+{
+  "source_snapshot": "e723d225549faf2ca16d4eb688093168810d0d71aa4adef3642ff5d2cfdbee9b",
+  "audit_code_sha256": "71871e5be0430b4c7dc6bffbcf597f3930f94c03c77ab6e9ea54fab49b42fcfd",
+  "scope": "Descriptive sample counts only; no new return tests or parameter selection",
+  "results": {
+    "training": {
+      "decisions": 13078,
+      "segments": 31,
+      "unknown_trend": 4464,
+      "unknown_volatility": 5595,
+      "candidates": {
+        "trend_breakout_4h": {
+          "funnel": {
+            "event": 615,
+            "positive_atr": 615,
+            "bullish_trend": 143,
+            "normal_volatility": 55
+          },
+          "trend_at_raw_event": {
+            "unknown": 205,
+            "ranging": 182,
+            "bullish": 143,
+            "bearish": 85
+          },
+          "volatility_after_bullish_event": {
+            "normal": 55,
+            "high": 41,
+            "low": 25,
+            "unknown": 22
+          },
+          "incomplete_by_status": {
+            "path_gap": 4
+          },
+          "complete_crossing_pool_boundary": 0,
+          "usable": 51,
+          "nonoverlap": 23,
+          "overlap_or_cooldown_removed": 28,
+          "usable_by_year": {
+            "2019": 16,
+            "2020": 13,
+            "2021": 3,
+            "2022": 3,
+            "2023": 16
+          },
+          "usable_by_quarter": {
+            "2019Q1": 5,
+            "2019Q2": 11,
+            "2020Q1": 5,
+            "2020Q2": 1,
+            "2020Q4": 7,
+            "2021Q3": 3,
+            "2022Q3": 1,
+            "2022Q4": 2,
+            "2023Q1": 11,
+            "2023Q3": 1,
+            "2023Q4": 4
+          }
+        },
+        "trend_rsi_recovery_4h": {
+          "funnel": {
+            "event": 455,
+            "positive_atr": 455,
+            "bullish_trend": 57,
+            "normal_volatility": 28
+          },
+          "trend_at_raw_event": {
+            "unknown": 148,
+            "bearish": 130,
+            "ranging": 120,
+            "bullish": 57
+          },
+          "volatility_after_bullish_event": {
+            "normal": 28,
+            "unknown": 11,
+            "low": 9,
+            "high": 9
+          },
+          "incomplete_by_status": {
+            "path_gap": 4
+          },
+          "complete_crossing_pool_boundary": 0,
+          "usable": 24,
+          "nonoverlap": 16,
+          "overlap_or_cooldown_removed": 8,
+          "usable_by_year": {
+            "2018": 2,
+            "2019": 3,
+            "2020": 10,
+            "2022": 3,
+            "2023": 6
+          },
+          "usable_by_quarter": {
+            "2018Q2": 2,
+            "2019Q1": 1,
+            "2019Q2": 2,
+            "2020Q1": 3,
+            "2020Q2": 1,
+            "2020Q3": 6,
+            "2022Q1": 1,
+            "2022Q2": 1,
+            "2022Q4": 1,
+            "2023Q1": 4,
+            "2023Q4": 2
+          }
+        }
+      }
+    },
+    "reused_recent": {
+      "decisions": 4926,
+      "segments": 1,
+      "unknown_trend": 0,
+      "unknown_volatility": 0,
+      "candidates": {
+        "trend_breakout_4h": {
+          "funnel": {
+            "event": 265,
+            "positive_atr": 265,
+            "bullish_trend": 88,
+            "normal_volatility": 48
+          },
+          "trend_at_raw_event": {
+            "ranging": 135,
+            "bullish": 88,
+            "bearish": 42
+          },
+          "volatility_after_bullish_event": {
+            "normal": 48,
+            "low": 20,
+            "high": 20
+          },
+          "incomplete_by_status": {},
+          "complete_crossing_pool_boundary": 0,
+          "usable": 48,
+          "nonoverlap": 20,
+          "overlap_or_cooldown_removed": 28,
+          "usable_by_year": {
+            "2024": 19,
+            "2025": 27,
+            "2026": 2
+          },
+          "usable_by_quarter": {
+            "2024Q1": 5,
+            "2024Q3": 5,
+            "2024Q4": 9,
+            "2025Q1": 2,
+            "2025Q2": 9,
+            "2025Q3": 10,
+            "2025Q4": 6,
+            "2026Q1": 2
+          }
+        },
+        "trend_rsi_recovery_4h": {
+          "funnel": {
+            "event": 194,
+            "positive_atr": 194,
+            "bullish_trend": 51,
+            "normal_volatility": 22
+          },
+          "trend_at_raw_event": {
+            "bearish": 77,
+            "ranging": 66,
+            "bullish": 51
+          },
+          "volatility_after_bullish_event": {
+            "normal": 22,
+            "high": 21,
+            "low": 8
+          },
+          "incomplete_by_status": {},
+          "complete_crossing_pool_boundary": 0,
+          "usable": 22,
+          "nonoverlap": 17,
+          "overlap_or_cooldown_removed": 5,
+          "usable_by_year": {
+            "2024": 9,
+            "2025": 10,
+            "2026": 3
+          },
+          "usable_by_quarter": {
+            "2024Q2": 2,
+            "2024Q3": 2,
+            "2024Q4": 5,
+            "2025Q1": 2,
+            "2025Q2": 4,
+            "2025Q3": 4,
+            "2026Q1": 3
+          }
+        }
+      }
+    }
+  }
+}
