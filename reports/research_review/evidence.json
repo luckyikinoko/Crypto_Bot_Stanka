@@ -1,0 +1,405 @@
+{
+  "scope": "Reconciliation only; no new data scan, hypothesis, p-value or strategy selection",
+  "sources": [
+    {
+      "path": "reports/discovery/results.json",
+      "sha256": "a8d62b6d6ee306906a31bda3e7a2a67c720fa5bf30f1e94ca80a6b3451103aa4",
+      "snapshot_id": "b675865f382ec1658faab6d798c7aade8c697a3e77a5cf1370fad7e21344dad1"
+    },
+    {
+      "path": "reports/discovery_round2/results.json",
+      "sha256": "609139dcf2efb904a66fd0f943188b1097700e6491af3d1a5a2fde999b664b0f",
+      "snapshot_id": "e723d225549faf2ca16d4eb688093168810d0d71aa4adef3642ff5d2cfdbee9b"
+    },
+    {
+      "path": "reports/discovery_round3/outcomes.json",
+      "sha256": "ed45e0d20718fa470403f8f632e1cc1092d6c5db52cb089186292e12259bfbeb",
+      "snapshot_id": "a41476e1527d37d9c386b6b2f03567781e05b45e4c25370d1da2408445fc0579"
+    },
+    {
+      "path": "reports/discovery_round4/results.json",
+      "sha256": "a7a3104c3d221c2c6dc42074afba1c8f63a2a7d2b8a2fbac1029903ffacac6ca",
+      "snapshot_id": "831b82f75c2e12f5b8ddc206df6fb661599c18e667152aae0a82b69a43709461"
+    }
+  ],
+  "candidates": [
+    {
+      "round": 1,
+      "candidate": "trend_breakout",
+      "execution": "15m; 2ATR stop/3ATR take; max24h",
+      "training_n": 326,
+      "training_mean_net": -0.004943806130081928,
+      "training_mean_stress": -0.0055406608496734,
+      "training_nonoverlap_n": 115,
+      "training_nonoverlap_mean": -0.00408428859350022,
+      "recent_n": 240,
+      "recent_mean_net": -0.0027506461747144736,
+      "recent_mean_stress": -0.0033488163957602875,
+      "active_blocks": 38,
+      "net_ci95": [
+        -0.006682806434225648,
+        -0.0034802006313595373
+      ],
+      "failed_gates": [
+        "positive_net_ci",
+        "positive_excess_ci",
+        "multiplicity",
+        "positive_stress",
+        "positive_training_years",
+        "positive_nonoverlap",
+        "recent_standard",
+        "recent_stress"
+      ],
+      "source": "reports/discovery/results.json"
+    },
+    {
+      "round": 1,
+      "candidate": "trend_retest",
+      "execution": "15m; 2ATR stop/3ATR take; max24h",
+      "training_n": 209,
+      "training_mean_net": -0.004743997819218163,
+      "training_mean_stress": -0.005340972387853425,
+      "training_nonoverlap_n": 94,
+      "training_nonoverlap_mean": -0.004905994357939605,
+      "recent_n": 135,
+      "recent_mean_net": -0.0027209233391355557,
+      "recent_mean_stress": -0.003319111388535992,
+      "active_blocks": 37,
+      "net_ci95": [
+        -0.006905089838373032,
+        -0.003139001886547925
+      ],
+      "failed_gates": [
+        "positive_net_ci",
+        "positive_excess_ci",
+        "multiplicity",
+        "positive_stress",
+        "positive_training_years",
+        "positive_nonoverlap",
+        "recent_standard",
+        "recent_stress"
+      ],
+      "source": "reports/discovery/results.json"
+    },
+    {
+      "round": 1,
+      "candidate": "range_rsi_recovery",
+      "execution": "15m; 2ATR stop/3ATR take; max24h",
+      "training_n": 38,
+      "training_mean_net": 0.0009415975349961864,
+      "training_mean_stress": 0.00034121263190769585,
+      "training_nonoverlap_n": 37,
+      "training_nonoverlap_mean": 0.0013259955280443187,
+      "recent_n": 26,
+      "recent_mean_net": -0.0028777351613484955,
+      "recent_mean_stress": -0.003475829151863845,
+      "active_blocks": 25,
+      "net_ci95": null,
+      "failed_gates": [
+        "training_count",
+        "training_nonoverlap_count",
+        "active_blocks",
+        "positive_net_ci",
+        "positive_excess_ci",
+        "multiplicity",
+        "recent_count",
+        "recent_standard",
+        "recent_stress"
+      ],
+      "source": "reports/discovery/results.json"
+    },
+    {
+      "round": 2,
+      "candidate": "trend_breakout_4h",
+      "execution": "4h; fixed72h",
+      "training_n": 51,
+      "training_mean_net": 0.031050906210986634,
+      "training_mean_stress": 0.03043246113893722,
+      "training_nonoverlap_n": 23,
+      "training_nonoverlap_mean": 0.0218365685872482,
+      "recent_n": 48,
+      "recent_mean_net": 0.007293567935325274,
+      "recent_mean_stress": 0.006689372992627465,
+      "active_blocks": 16,
+      "net_ci95": null,
+      "failed_gates": [
+        "training_count",
+        "training_nonoverlap_count",
+        "active_blocks",
+        "positive_net_ci",
+        "positive_excess_ci",
+        "multiplicity",
+        "positive_training_years"
+      ],
+      "source": "reports/discovery_round2/results.json"
+    },
+    {
+      "round": 2,
+      "candidate": "trend_rsi_recovery_4h",
+      "execution": "4h; fixed72h",
+      "training_n": 24,
+      "training_mean_net": 0.009746263134702482,
+      "training_mean_stress": 0.009140597016090782,
+      "training_nonoverlap_n": 16,
+      "training_nonoverlap_mean": -0.0048376080075546515,
+      "recent_n": 22,
+      "recent_mean_net": -0.01365184420474307,
+      "recent_mean_stress": -0.014243475667944356,
+      "active_blocks": 13,
+      "net_ci95": null,
+      "failed_gates": [
+        "training_count",
+        "training_nonoverlap_count",
+        "active_blocks",
+        "positive_net_ci",
+        "positive_excess_ci",
+        "multiplicity",
+        "positive_training_years",
+        "positive_nonoverlap",
+        "recent_count",
+        "recent_standard",
+        "recent_stress"
+      ],
+      "source": "reports/discovery_round2/results.json"
+    },
+    {
+      "round": 3,
+      "candidate": "unfiltered_breakout_4h",
+      "execution": "4h; fixed72h",
+      "training_n": 598,
+      "training_mean_net": 0.007293390560280079,
+      "training_mean_stress": 0.006689195723975391,
+      "training_nonoverlap_n": 232,
+      "training_nonoverlap_mean": 0.002018487215285498,
+      "recent_n": 265,
+      "recent_mean_net": 0.003768290468135038,
+      "recent_mean_stress": 0.003166210057769286,
+      "active_blocks": 78,
+      "net_ci95": [
+        -0.0020388950090222823,
+        0.01626891472801756
+      ],
+      "failed_gates": [
+        "positive_net_ci",
+        "positive_excess_ci",
+        "multiplicity"
+      ],
+      "source": "reports/discovery_round3/outcomes.json"
+    },
+    {
+      "round": 4,
+      "candidate": "lower_band_reentry_1h",
+      "execution": "1h; fixed24h",
+      "training_n": 1554,
+      "training_mean_net": -0.0013088755572112508,
+      "training_mean_stress": -0.0019079105812731402,
+      "training_nonoverlap_n": 860,
+      "training_nonoverlap_mean": -0.0014595344924302103,
+      "recent_n": 612,
+      "recent_mean_net": 0.00023056962010488212,
+      "recent_mean_stress": -0.00036938879413868917,
+      "active_blocks": 79,
+      "net_ci95": [
+        -0.003207587375705501,
+        0.0006848433108606985
+      ],
+      "failed_gates": [
+        "positive_net_ci",
+        "positive_excess_ci",
+        "multiplicity",
+        "positive_stress",
+        "positive_training_years",
+        "positive_nonoverlap",
+        "recent_stress"
+      ],
+      "source": "reports/discovery_round4/results.json"
+    }
+  ],
+  "tracked_test_ledger": [
+    {
+      "id": "M4/bull_flag/1h",
+      "p": 1.0,
+      "by_q": 1.0
+    },
+    {
+      "id": "M4/resistance_breakout/1h",
+      "p": 0.8166,
+      "by_q": 1.0
+    },
+    {
+      "id": "M4/resistance_retest/1h",
+      "p": 0.9682,
+      "by_q": 1.0
+    },
+    {
+      "id": "M4/bullish_engulfing/1h",
+      "p": 0.9978,
+      "by_q": 1.0
+    },
+    {
+      "id": "M4/bearish_engulfing/1h",
+      "p": 0.0002,
+      "by_q": 0.029027469933118027
+    },
+    {
+      "id": "M4/trend_rsi_volume/1h",
+      "p": 0.3436,
+      "by_q": 1.0
+    },
+    {
+      "id": "M4/trend_rsi_volume_flag/1h",
+      "p": 1.0,
+      "by_q": 1.0
+    },
+    {
+      "id": "M4/bull_flag/4h",
+      "p": 1.0,
+      "by_q": 1.0
+    },
+    {
+      "id": "M4/resistance_breakout/4h",
+      "p": 0.936,
+      "by_q": 1.0
+    },
+    {
+      "id": "M4/resistance_retest/4h",
+      "p": 0.9858,
+      "by_q": 1.0
+    },
+    {
+      "id": "M4/bullish_engulfing/4h",
+      "p": 0.8478,
+      "by_q": 1.0
+    },
+    {
+      "id": "M4/bearish_engulfing/4h",
+      "p": 0.0036,
+      "by_q": 0.2612472293980622
+    },
+    {
+      "id": "M4/trend_rsi_volume/4h",
+      "p": 0.6042,
+      "by_q": 1.0
+    },
+    {
+      "id": "M4/trend_rsi_volume_flag/4h",
+      "p": 1.0,
+      "by_q": 1.0
+    },
+    {
+      "id": "M4/bull_flag/12h",
+      "p": 1.0,
+      "by_q": 1.0
+    },
+    {
+      "id": "M4/resistance_breakout/12h",
+      "p": 0.0558,
+      "by_q": 1.0
+    },
+    {
+      "id": "M4/resistance_retest/12h",
+      "p": 0.1996,
+      "by_q": 1.0
+    },
+    {
+      "id": "M4/bullish_engulfing/12h",
+      "p": 0.4438,
+      "by_q": 1.0
+    },
+    {
+      "id": "M4/bearish_engulfing/12h",
+      "p": 0.091,
+      "by_q": 1.0
+    },
+    {
+      "id": "M4/trend_rsi_volume/12h",
+      "p": 0.2518,
+      "by_q": 1.0
+    },
+    {
+      "id": "M4/trend_rsi_volume_flag/12h",
+      "p": 1.0,
+      "by_q": 1.0
+    },
+    {
+      "id": "M4/bull_flag/24h",
+      "p": 1.0,
+      "by_q": 1.0
+    },
+    {
+      "id": "M4/resistance_breakout/24h",
+      "p": 0.047,
+      "by_q": 1.0
+    },
+    {
+      "id": "M4/resistance_retest/24h",
+      "p": 0.0996,
+      "by_q": 1.0
+    },
+    {
+      "id": "M4/bullish_engulfing/24h",
+      "p": 0.318,
+      "by_q": 1.0
+    },
+    {
+      "id": "M4/bearish_engulfing/24h",
+      "p": 0.3924,
+      "by_q": 1.0
+    },
+    {
+      "id": "M4/trend_rsi_volume/24h",
+      "p": 0.2392,
+      "by_q": 1.0
+    },
+    {
+      "id": "M4/trend_rsi_volume_flag/24h",
+      "p": 1.0,
+      "by_q": 1.0
+    },
+    {
+      "id": "M5/trend_breakout",
+      "p": 0.9944,
+      "by_q": 1.0
+    },
+    {
+      "id": "M5/trend_retest",
+      "p": 0.9726,
+      "by_q": 1.0
+    },
+    {
+      "id": "M5/range_rsi_recovery",
+      "p": 1.0,
+      "by_q": 1.0
+    },
+    {
+      "id": "M5R2/trend_breakout_4h",
+      "p": 1.0,
+      "by_q": 1.0
+    },
+    {
+      "id": "M5R2/trend_rsi_recovery_4h",
+      "p": 1.0,
+      "by_q": 1.0
+    },
+    {
+      "id": "M5R3/unfiltered_breakout_4h",
+      "p": 0.0306,
+      "by_q": 1.0
+    },
+    {
+      "id": "M5R4/lower_band_reentry_1h",
+      "p": 0.5332,
+      "by_q": 1.0
+    }
+  ],
+  "tracked_tests": 35,
+  "discovery_candidates": 7,
+  "passed_candidates": 0,
+  "legacy_experiments_not_in_35_test_family": [
+    "reports/experiment_001/RESULTS.md",
+    "reports/experiment_002/RESULTS.md",
+    "reports/bnb_fee_v1/RESULTS.md"
+  ],
+  "selected_strategy": null,
+  "recommended_next_step": "Development-only data coverage and warm-up audit"
+}

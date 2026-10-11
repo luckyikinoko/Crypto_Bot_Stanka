@@ -1,4 +1,10 @@
-## Strategy discovery checkpoint
+## Current research checkpoint
+
+Four discovery rounds are complete: seven registered candidates, none passing the statistical criteria. The cumulative Research Engine ledger contains 35 tests; earlier project experiments are disclosed separately.
+
+See the [consolidated evidence review](reports/research_review/REVIEW.md) for results, limitations and the recommended next step: a development-only data coverage and warm-up audit. Reserved data remains blocked. No strategy is selected and paper/live trading is inactive.
+
+## Initial discovery checkpoint (round 1)
 
 Milestone 5 is complete: **none of the three registered candidates passed**.
 [Results and rejection reasons](reports/discovery/MILESTONE_5.md). No strategy is
