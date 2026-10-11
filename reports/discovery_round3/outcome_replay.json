@@ -1,0 +1,7 @@
+{
+  "snapshot_id": "a41476e1527d37d9c386b6b2f03567781e05b45e4c25370d1da2408445fc0579",
+  "byte_identical": true,
+  "source": "verified independent round-two replay",
+  "separate_output_directory": true,
+  "unit_tests_passed": 100
+}

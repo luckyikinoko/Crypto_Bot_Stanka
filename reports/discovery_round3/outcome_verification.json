@@ -1,0 +1,8 @@
+{
+  "snapshot_id": "a41476e1527d37d9c386b6b2f03567781e05b45e4c25370d1da2408445fc0579",
+  "status": "passed",
+  "candidate_rows": 863,
+  "test_family": 34,
+  "metrics_recomputed": true,
+  "boundary_checks_passed": true
+}
