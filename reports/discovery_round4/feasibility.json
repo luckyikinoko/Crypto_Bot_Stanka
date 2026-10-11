@@ -1,0 +1,27 @@
+{
+  "counts": {
+    "training": {
+      "raw": 1578,
+      "timing_eligible": 1578,
+      "boundary_purged": 0,
+      "scheduled_nonoverlap": 874,
+      "active_28day_blocks": 79
+    },
+    "reused_recent": {
+      "raw": 613,
+      "timing_eligible": 612,
+      "boundary_purged": 1,
+      "scheduled_nonoverlap": 334,
+      "active_28day_blocks": 30
+    }
+  },
+  "gates": {
+    "passed": true,
+    "checks": {
+      "training_observations": true,
+      "training_nonoverlap": true,
+      "training_active_28day_blocks": true,
+      "recent_observations": true
+    }
+  }
+}
