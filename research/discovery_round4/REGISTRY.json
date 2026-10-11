@@ -1,0 +1,56 @@
+{
+  "version": 4,
+  "registered_after": "359e153b71136939346309ced7a7348ec4cefaf0",
+  "candidate": "lower_band_reentry_1h",
+  "rule": "Within one contiguous segment: prior close < prior lower Bollinger Band AND current close >= current lower Bollinger Band. Bands use 20 completed 1h closes, SMA +/- 2 population standard deviations (ddof=0). Each re-entry is one event. No other filters.",
+  "hypothesis": "Recovery inside the lower band after a downside excursion may mark temporary selling exhaustion and positive subsequent long-only returns. Unproven; no claim of causal mechanism.",
+  "execution": {
+    "hold_hours": 24,
+    "delay_minutes": 5,
+    "cooldown_minutes": 60,
+    "secondary_exit": null
+  },
+  "periods": {
+    "training": [
+      "2018-01-01",
+      "2024-01-01"
+    ],
+    "reused_recent": [
+      "2024-01-01",
+      "2026-04-01"
+    ]
+  },
+  "reserved_from": "2026-04-01",
+  "feasibility_gates": {
+    "training_observations": 100,
+    "training_nonoverlap": 50,
+    "training_active_28day_blocks": 30,
+    "recent_observations": 30
+  },
+  "outcome_gates": {
+    "minimum_training_observations": 100,
+    "minimum_training_nonoverlap_observations": 50,
+    "minimum_active_28day_blocks": 30,
+    "training_net_ci95_lower_positive": true,
+    "training_excess_ci95_lower_positive": true,
+    "combined_exploratory_by_q_below": 0.05,
+    "training_stress_mean_positive": true,
+    "minimum_positive_training_years": 4,
+    "training_nonoverlap_mean_positive": true,
+    "minimum_reused_observations": 30,
+    "reused_standard_and_stress_means_positive": true
+  },
+  "bootstrap": {
+    "primary_block_days": 28,
+    "sensitivity_block_days": 7,
+    "draws": 4999,
+    "seed": 20261011
+  },
+  "costs": "Reuse frozen standard, conditional BNB and stress assumptions; standard primary.",
+  "baseline": "Unconditional completed 1h decisions with identical 5m execution and holding period.",
+  "prior_tests": 34,
+  "multiplicity": "Append exactly one primary comparison as test 35 if evaluated. Preserve every prior p-value; BY correction across 35 tests.",
+  "adaptive_disclosure": "Prior rounds and their results were seen. This is adaptive exploratory research on reused development history, not fresh validation.",
+  "workflow": "Commit registration; calculate feature-only counts; if all feasibility gates pass, evaluate one fixed primary outcome and unchanged gates. If feasibility fails, stop without testing returns. No grid, alternate exit or automatic additional round.",
+  "selection": "No automatic strategy promotion or trading. Stop after this registered round for review."
+}
