@@ -1,3 +1,9 @@
+## Strategy discovery checkpoint
+
+Milestone 5 is complete: **none of the three registered candidates passed**.
+[Results and rejection reasons](reports/discovery/MILESTONE_5.md). No strategy is
+selected for paper/live trading; reserved data remains blocked.
+
 ## Statistical research checkpoint
 
 Milestone 4 is complete. [Results and charts](reports/statistics/MILESTONE_4.md)

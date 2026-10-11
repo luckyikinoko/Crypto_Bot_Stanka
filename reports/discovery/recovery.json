@@ -1,0 +1,12 @@
+{
+  "registered_commit": "fe71eb70fa95804eca8271a1af34636b96214714",
+  "reconstructed_code_checkpoint": "da1b01a142e8bbb28d7b6aabf4756854f6640791",
+  "restored_market_partitions_matching_prior_logical_hashes": 495,
+  "statistics_snapshot": "b7858d6207a000be21d5d0939063dd98fb4f51887eb6bd68bbec909997fd3c94",
+  "statistics_snapshot_exactly_matches_original": true,
+  "candidate_counts_and_means_match_recorded_previous_run": true,
+  "comparison_tolerance": 1e-14,
+  "original_uncommitted_discovery_snapshot": "aada955e2804dfe7cf468e40d0a256ad4330b5dc0b5db4b7db8f7a1d08debcad",
+  "recovered_discovery_snapshot": "b675865f382ec1658faab6d798c7aade8c697a3e77a5cf1370fad7e21344dad1",
+  "note": "Discovery snapshot ID changed with reconstructed code hashes; source data and recorded numerical results match. Two fresh runs are byte-identical."
+}
