@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "registered_after": "bd83c1a1600637a0f890b342339a432ca561ac9c",
+  "scope": "Exploratory candidate screening only; no final strategy or live activation",
+  "candidates": [
+    {"id": "trend_breakout", "rule": "resistance_breakout AND trend_1h=bullish AND trend_4h=bullish AND volatility in [low,normal]"},
+    {"id": "trend_retest", "rule": "resistance_retest AND trend_1h=bullish AND trend_4h=bullish AND volatility in [low,normal]"},
+    {"id": "range_rsi_recovery", "rule": "trend=ranging AND trend_1h=ranging AND trend_4h=ranging AND volatility in [low,normal] AND RSI crosses upward through 30 within same segment"}
+  ],
+  "primary_exit": {"stop_atr": 2, "take_atr": 3, "maximum_hours": 24, "entry_delay_minutes": 5, "same_bar": "stop_first", "trailing_stop": false},
+  "secondary_exit": "24h fixed hold, descriptive only; never substitute to rescue failed primary exit",
+  "screening_pool": ["2018-01-01", "2024-01-01"],
+  "reused_stability_pool": ["2024-01-01", "2026-04-01"],
+  "reserved_from": "2026-04-01",
+  "bootstrap": {"primary_block_days": 28, "sensitivity_block_days": 7, "draws": 4999, "seed": 20261011},
+  "gates": {
+    "minimum_training_observations": 100,
+    "minimum_training_nonoverlap_observations": 50,
+    "minimum_active_28day_blocks": 30,
+    "training_net_ci95_lower_positive": true,
+    "training_excess_ci95_lower_positive": true,
+    "combined_exploratory_by_q_below": 0.05,
+    "training_stress_mean_positive": true,
+    "minimum_positive_training_years": 4,
+    "training_nonoverlap_mean_positive": true,
+    "minimum_reused_observations": 30,
+    "reused_standard_and_stress_means_positive": true
+  },
+  "multiplicity": "Retain the 28 Milestone 4 primary p-values and add 3 discovery comparisons; BY across all 31. This does not undo adaptive reuse or create fresh validation.",
+  "risk_research_proposal_not_approved": {"risk_fraction_per_trade": 0.005, "capital_fraction_cap": 0.25, "one_position": true, "cooldown_minutes": 60, "maximum_daily_loss_fraction": 0.02, "daily_loss_includes_unrealized": true},
+  "selection": "No automatic deployment. Only candidates passing every gate may be forwarded for separately reviewed Milestone 6 validation. If none pass, selected_strategy is null. No parameter grid or gate relaxation."
+}
