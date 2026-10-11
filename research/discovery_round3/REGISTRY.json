@@ -1,0 +1,57 @@
+{
+  "version": 3,
+  "registered_after": "e541e94045b9e162f634184b71cb5baefa42366f",
+  "candidate": {
+    "id": "unfiltered_breakout_4h",
+    "rule": "Completed 4h close strictly above preceding 20 highs; existing breakout == 1, with gap-reset warm-up. Each qualifying close is an observation."
+  },
+  "economic_hypothesis": "Price moving beyond its recent range may be followed by persistent buying over the next three days; this is an unproven hypothesis.",
+  "adaptive_disclosure": "Prior candidate returns and the sample audit were seen. Raw breakout frequency (615 training, 265 reused recent) is already known. Standalone frequency and outcome analysis are additional adaptive research, not independent confirmation.",
+  "current_scope": "Feature-only feasibility; do not open outcome labels or calculate returns.",
+  "future_execution": {
+    "fixed_hold_hours": 72,
+    "entry_delay_minutes": 5,
+    "cooldown_minutes": 60,
+    "secondary_exit": null
+  },
+  "periods": {
+    "training": [
+      "2018-01-01",
+      "2024-01-01"
+    ],
+    "reused_recent": [
+      "2024-01-01",
+      "2026-04-01"
+    ]
+  },
+  "reserved_from": "2026-04-01",
+  "feasibility_gates": {
+    "training_observations": 100,
+    "training_nonoverlap": 50,
+    "training_active_28day_blocks": 30,
+    "recent_observations": 30
+  },
+  "outcome_gates_if_later_authorized": {
+    "minimum_training_observations": 100,
+    "minimum_training_nonoverlap_observations": 50,
+    "minimum_active_28day_blocks": 30,
+    "training_net_ci95_lower_positive": true,
+    "training_excess_ci95_lower_positive": true,
+    "combined_exploratory_by_q_below": 0.05,
+    "training_stress_mean_positive": true,
+    "minimum_positive_training_years": 4,
+    "training_nonoverlap_mean_positive": true,
+    "minimum_reused_observations": 30,
+    "reused_standard_and_stress_means_positive": true
+  },
+  "bootstrap_if_later_authorized": {
+    "primary_block_days": 28,
+    "sensitivity_block_days": 7,
+    "draws": 4999,
+    "seed": 20261011
+  },
+  "costs_if_later_authorized": "Reuse standard, conditional BNB and stress from research.statistics.outcomes.SCENARIOS; standard primary.",
+  "multiplicity": "No new p-value at feasibility stage. Preserve all 33 prior tests; append this candidate as test 34 if its returns are evaluated.",
+  "decision": "Feasibility pass permits proposing a later outcome screen only; no strategy promotion, reserved evaluation or trading.",
+  "limits": "Timing-derived counts do not check future execution-path completeness and are not power calculations. No threshold sweep or alternate candidate in this round."
+}
