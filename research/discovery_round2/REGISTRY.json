@@ -1,0 +1,65 @@
+{
+  "version": 2,
+  "registered_after": "01f186e0c95d18f50d97d05d8099206b7b4d0083",
+  "scope": "Exploratory candidate screening only; no final strategy or live activation",
+  "candidates": [
+    {
+      "id": "trend_breakout_4h",
+      "rule": "breakout == 1 AND trend=bullish AND volatility=normal"
+    },
+    {
+      "id": "trend_rsi_recovery_4h",
+      "rule": "RSI crosses upward through 40 within same contiguous segment AND trend=bullish AND volatility=normal"
+    }
+  ],
+  "primary_exit": {
+    "fixed_hold_hours": 72,
+    "entry_delay_minutes": 5
+  },
+  "secondary_exit": {
+    "stop_atr": 2,
+    "take_atr": 3,
+    "maximum_hours": 72,
+    "same_bar": "stop_first",
+    "descriptive_only": true
+  },
+  "screening_pool": [
+    "2018-01-01",
+    "2024-01-01"
+  ],
+  "reused_stability_pool": [
+    "2024-01-01",
+    "2026-04-01"
+  ],
+  "reserved_from": "2026-04-01",
+  "bootstrap": {
+    "primary_block_days": 28,
+    "sensitivity_block_days": 7,
+    "draws": 4999,
+    "seed": 20261011
+  },
+  "gates": {
+    "minimum_training_observations": 100,
+    "minimum_training_nonoverlap_observations": 50,
+    "minimum_active_28day_blocks": 30,
+    "training_net_ci95_lower_positive": true,
+    "training_excess_ci95_lower_positive": true,
+    "combined_exploratory_by_q_below": 0.05,
+    "training_stress_mean_positive": true,
+    "minimum_positive_training_years": 4,
+    "training_nonoverlap_mean_positive": true,
+    "minimum_reused_observations": 30,
+    "reused_standard_and_stress_means_positive": true
+  },
+  "multiplicity": "Preserve 31 earlier exploratory tests; add two, BY across all 33. Adaptive reuse remains; this is not fresh validation.",
+  "risk_research_proposal_not_approved": {
+    "risk_fraction_per_trade": 0.005,
+    "capital_fraction_cap": 0.25,
+    "one_position": true,
+    "cooldown_minutes": 60,
+    "maximum_daily_loss_fraction": 0.02,
+    "daily_loss_includes_unrealized": true
+  },
+  "selection": "No automatic deployment. Only candidates passing every gate may be forwarded for separately reviewed Milestone 6 validation. If none pass, selected_strategy is null. No parameter grid or gate relaxation.",
+  "timeframe": "4h"
+}
