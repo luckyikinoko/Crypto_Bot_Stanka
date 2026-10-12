@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "focused_tests": 2,
+  "command": "python -m unittest discover -s tests -p test_low_turnover_preflight.py",
+  "checks": [
+    "calendar denominator includes missing and warm-up days",
+    "half-open boundary exclusion",
+    "calendar block counts",
+    "reserved-period rejection"
+  ],
+  "preflight_result": "failed_coverage",
+  "strategy_implemented": false,
+  "backtest_run": false
+}

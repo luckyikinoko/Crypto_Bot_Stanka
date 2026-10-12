@@ -1,0 +1,59 @@
+{
+  "candidate": "daily_ema200_long_cash",
+  "market_snapshot": "70bcba5fa72e2290b889ebaa8f7ac9a7abed5a321d3dbff56dff801156e3d999",
+  "registry_sha256": "2a3735bd40a54ca5967495d921b1e64174fbe008d2fa20fcaa91a1fafd05a429",
+  "source_manifest_sha256": "cc497fe7e39c7133cca441eaf8689a5d9b1c1d624f4a898ddc01fff0c3ea763d",
+  "code_sha256": {
+    "research/low_turnover_v1/preflight.py": "d1c12f3fd6ce84add4e19d06fda680764af16fe0341b83ef454f78c9985b0f97",
+    "research/indicators/engine.py": "378308c9409c3f5bbabee27c1fd4b34da2aeed2d6272863b27e4024f9dcc9aa9",
+    "market_data/store.py": "bd321581e4a4d60fdfd60e17bf6128e5f0f431574f981f4d729b23e9f0074ce2"
+  },
+  "counts": {
+    "training": {
+      "calendar_days": 2191,
+      "observed_daily_decisions": 2158,
+      "eligible_daily_decisions": 337,
+      "calendar_coverage": 0.1538110451848471,
+      "unavailable_or_warming_days": 1854,
+      "active_28day_blocks": 14,
+      "eligible_by_year": {
+        "2022": 172,
+        "2023": 165
+      }
+    },
+    "reused_recent": {
+      "calendar_days": 821,
+      "observed_daily_decisions": 821,
+      "eligible_daily_decisions": 821,
+      "calendar_coverage": 1.0,
+      "unavailable_or_warming_days": 0,
+      "active_28day_blocks": 30,
+      "eligible_by_year": {
+        "2024": 366,
+        "2025": 365,
+        "2026": 90
+      }
+    }
+  },
+  "thresholds": {
+    "training_calendar_coverage": 0.5,
+    "recent_calendar_coverage": 0.8,
+    "training_active_28day_blocks": 30,
+    "block_origin": "2018-01-01"
+  },
+  "checks": {
+    "training_calendar_coverage": false,
+    "recent_calendar_coverage": true,
+    "training_active_28day_blocks": false
+  },
+  "passed": false,
+  "decision": "stop_insufficient_data_coverage",
+  "new_strategy_signals": false,
+  "portfolio_implemented": false,
+  "backtest_run": false,
+  "new_return_tests": 0,
+  "prior_return_tests": 37,
+  "selected_strategy": null,
+  "reserved_pool_read": false,
+  "note": "Counts use decision availability timestamps in half-open UTC pools; denominator includes every calendar day, including missing data and warm-up. Latest boundary candle is not a decision within the pool."
+}
