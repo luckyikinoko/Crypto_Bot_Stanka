@@ -1,0 +1,116 @@
+{
+  "candidate": "confirmed_double_bottom_1h",
+  "market_snapshot": "70bcba5fa72e2290b889ebaa8f7ac9a7abed5a321d3dbff56dff801156e3d999",
+  "registry_sha256": "f682deb4bdf422ecad34948c05370c5959d79e833dccc7fd2d4d8aac948bc6f6",
+  "prior_report_sha256": "e1c6a7931f5469b8caea247759bb11beac7fc0b0f65d73aef2e80926066618ac",
+  "files": {
+    "features": {
+      "path": "features/345487adc0cf8124a1d8b941eb70633384ae4b56cd1a8307cae944230793b553.parquet",
+      "sha256": "345487adc0cf8124a1d8b941eb70633384ae4b56cd1a8307cae944230793b553",
+      "rows": 72139,
+      "columns": [
+        "available_at",
+        "segment_id",
+        "bars_since_gap",
+        "prior_atr",
+        "eligible",
+        "observation_id",
+        "signal"
+      ]
+    },
+    "events": {
+      "path": "events/a05a07b128435e03de6c8eda4dba8455f5efddf5035cc4af8de2d140184010bf.parquet",
+      "sha256": "a05a07b128435e03de6c8eda4dba8455f5efddf5035cc4af8de2d140184010bf",
+      "rows": 235,
+      "columns": [
+        "formation_start",
+        "formation_end",
+        "available_at",
+        "event_id",
+        "parent_event_id",
+        "pattern",
+        "direction",
+        "status",
+        "interval",
+        "parameters",
+        "metrics",
+        "context"
+      ]
+    }
+  },
+  "counts": {
+    "training": {
+      "raw_events": 172,
+      "boundary_purged": 0,
+      "timing_eligible": 172,
+      "scheduled_nonoverlap": 163,
+      "active_28day_blocks": 70,
+      "block_origin": "2018-01-01 00:00:00+00:00",
+      "eligible_baseline_decisions": 51955,
+      "counts_by_year": {
+        "2018": 27,
+        "2019": 28,
+        "2020": 20,
+        "2021": 38,
+        "2022": 29,
+        "2023": 30
+      },
+      "execution_paths_checked": false
+    },
+    "reused_recent": {
+      "raw_events": 63,
+      "boundary_purged": 0,
+      "timing_eligible": 63,
+      "scheduled_nonoverlap": 61,
+      "active_28day_blocks": 29,
+      "block_origin": "2024-01-01 00:00:00+00:00",
+      "eligible_baseline_decisions": 19704,
+      "counts_by_year": {
+        "2024": 35,
+        "2025": 21,
+        "2026": 7
+      },
+      "execution_paths_checked": false
+    }
+  },
+  "feasibility": {
+    "passed": true,
+    "checks": {
+      "training_observations": true,
+      "training_nonoverlap": true,
+      "training_active_28day_blocks": true,
+      "recent_observations": true
+    }
+  },
+  "missing_context_at_events": {
+    "atr": 0,
+    "rsi": 0,
+    "ema_50": 3,
+    "ema_200": 19
+  },
+  "code_sha256": {
+    "research/discovery_round6/__main__.py": "ec71e8491fa8b101ecc7483fc0c6646c9edff40991bf1c6ff2cda86c004b07b3",
+    "research/patterns/double_bottom.py": "a97d6c35d7b36d02c46bf59c50c4769e5f586f7d05877c3c64fc514ab87f5f36",
+    "research/patterns/engine.py": "a654c99b95d96dfe5de18d2225a40a70025aa75d383094f5e7b57fce02a99286",
+    "research/indicators/engine.py": "378308c9409c3f5bbabee27c1fd4b34da2aeed2d6272863b27e4024f9dcc9aa9",
+    "research/discovery/engine.py": "acea0e90d79621e178e903cc397a66672e41feeaa3b31d43a6970cae7c0a7423",
+    "research/discovery_round5/__main__.py": "c081c9a15959294040d9941e202dd10079779d09f4e3f257f5779532e243ee25",
+    "market_data/store.py": "bd321581e4a4d60fdfd60e17bf6128e5f0f431574f981f4d729b23e9f0074ce2"
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "pyarrow": "23.0.1"
+  },
+  "prefix_checks": [
+    1000,
+    10000
+  ],
+  "prior_return_tests": 36,
+  "new_return_tests": 0,
+  "execution_paths_checked": false,
+  "selected_strategy": null,
+  "decision": "propose_outcome_screen",
+  "snapshot_id": "1bd345f39dda0340545890dca49ec01d7b8409ff7332b29e1d682fce2163d8cb"
+}
