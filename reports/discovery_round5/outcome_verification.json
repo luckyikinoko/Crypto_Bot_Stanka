@@ -1,0 +1,22 @@
+{
+  "snapshot_id": "16736aa9e244affa6c4b22be19ada56d2e15dc2067d83c43cf330ca9d5641a61",
+  "status": "passed",
+  "features": 72139,
+  "labels": 66671,
+  "candidate_observations": 2274,
+  "ledger_tests": 36,
+  "checks": [
+    "checksums",
+    "timing",
+    "feature eligibility",
+    "cost formula",
+    "pool boundaries",
+    "quality accounting",
+    "summaries",
+    "bootstrap recomputation",
+    "prior ledger preservation",
+    "BY correction",
+    "decision gates",
+    "nonactivation"
+  ]
+}

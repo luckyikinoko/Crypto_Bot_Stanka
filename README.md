@@ -1,12 +1,14 @@
 ## Current research checkpoint
 
-Four discovery rounds are complete: seven registered candidates, none passing the statistical criteria. The cumulative Research Engine ledger contains 35 tests; earlier project experiments are disclosed separately.
+Five discovery rounds are complete: eight registered candidates, none passing the statistical criteria. The cumulative Research Engine ledger contains 36 tests; earlier project experiments are disclosed separately.
 
 See the [consolidated evidence review](reports/research_review/REVIEW.md) for results and limitations. The [coverage audit](reports/coverage_audit/COVERAGE.md) is now complete: 30 development gaps, exact higher-timeframe reaggregation, and substantial post-gap warm-up loss. The [daily-archive cross-check](reports/daily_recovery/RECOVERY.md) found 240 staged missing-candle candidates and seven conflicting existing candles. The [public-API reconciliation](reports/api_reconciliation/RECONCILIATION.md) confirms all 240 additions and supports the daily values for all seven conflicts. The [repaired snapshot](reports/repair_v1/REPAIR.md) now contains those changes in data/research_repaired_v1, with the original snapshot preserved. Missing 5m candles fell from 1,860 to 1,620. The [controlled research replay](reports/research_revision_v1/REPLAY.md) is complete: all seven candidates remain rejected, with unchanged mean returns and acceptance decisions. The revised 35-test ledger and reports are stored separately; default research inputs still point to the original data. Reserved data remains blocked. No strategy is selected and paper/live trading is inactive.
 
-## Current feasibility checkpoint (round 5)
+## Current outcome checkpoint (round 5)
 
-[Trend pullback reclaim protocol](research/discovery_round5/PROTOCOL.md): one completed 1h close crossing above EMA20 while EMA50 > EMA200, with a fixed 24h outcome planned. The [feature-only feasibility check](reports/discovery_round5/FEASIBILITY.md) passes: 1,603 training signals, 589 scheduled nonoverlapping training events, 74 active training blocks and 680 reused-recent signals. No candidate outcomes have been evaluated. The repaired market snapshot, revised 35-test prior ledger, costs and unchanged acceptance gates are pinned in [REGISTRY.json](research/discovery_round5/REGISTRY.json). Next checkpoint: review and run the single registered outcome screen, with full execution-path validation and unchanged acceptance gates. No candidate is selected for trading.
+The [registered EMA-reclaim outcome screen](reports/discovery_round5/OUTCOMES.md) rejected the eighth candidate. After excluding nine incomplete training paths, 1,594 training observations average -0.1702% net under standard costs; 680 reused-recent observations average -0.1790%. Stress and scheduled nonoverlap means are also negative. Confidence intervals and multiple-testing requirements fail. The prior revised 35 tests are preserved, with one new primary test added (36 total). 132 unit tests and a byte-identical independent rebuild passed.
+
+The frozen [protocol](research/discovery_round5/PROTOCOL.md), [registry](research/discovery_round5/REGISTRY.json) and [feature feasibility report](reports/discovery_round5/FEASIBILITY.md) remain preserved. Next checkpoint: review the cumulative evidence before registering any further hypothesis. No tuning, reserved-data access, strategy promotion or trading is authorized by this failed result.
 
 ## Initial discovery checkpoint (round 1)
 
