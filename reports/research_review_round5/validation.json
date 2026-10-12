@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "unit_tests": 135,
+  "command": "python -m unittest discover -s tests",
+  "source_reports": 5,
+  "candidate_count": 8,
+  "ledger_tests": 36,
+  "new_hypothesis_tests": 0,
+  "market_data_read": false,
+  "source_hashes_unchanged": true,
+  "code_sha256": "e26dd385a094258ab13526e940e6ca5a116e54c88c18020c9631ef35af407fa0"
+}
