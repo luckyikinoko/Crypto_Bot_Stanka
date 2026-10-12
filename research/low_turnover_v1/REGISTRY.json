@@ -1,0 +1,70 @@
+{
+  "status": "specified_not_implemented_or_tested",
+  "candidate": "daily_ema200_long_cash",
+  "registered_after": "24d5ec736a363ee9b8254fe33ede09c1188c9483",
+  "market_snapshot": "70bcba5fa72e2290b889ebaa8f7ac9a7abed5a321d3dbff56dff801156e3d999",
+  "prior_report": "reports/discovery_round6/outcomes.json",
+  "prior_report_sha256": "e4efdc776db922aee6fc5d29e2c2023608454f1a23fc14a8a643c9a2ccac5249",
+  "prior_snapshot": "3f536e42b4ec4bed3f8c0830abd45612711a8855023305d4779645a8c8b388fc",
+  "prior_tests": 37,
+  "primary_test_id_if_evaluated": "PORTFOLIO1/daily_ema200_calmar_excess",
+  "timeframe": "1d",
+  "ema_period": 200,
+  "entry_delay_minutes": 5,
+  "initial_equity": 1000,
+  "invest_fraction": 1.0,
+  "costs": {
+    "standard": {
+      "fee": 0.001,
+      "half_spread": 5e-05,
+      "slippage": 0.00015
+    },
+    "bnb_conditional": {
+      "fee": 0.00075,
+      "half_spread": 5e-05,
+      "slippage": 0.00015
+    },
+    "stress": {
+      "fee": 0.001,
+      "half_spread": 0.0001,
+      "slippage": 0.0004
+    }
+  },
+  "periods": {
+    "training": [
+      "2018-01-01",
+      "2024-01-01"
+    ],
+    "reused_recent": [
+      "2024-01-01",
+      "2026-04-01"
+    ]
+  },
+  "reserved_from": "2026-04-01",
+  "preflight": {
+    "training_calendar_coverage": 0.5,
+    "recent_calendar_coverage": 0.8,
+    "training_active_28day_blocks": 30,
+    "block_origin": "2018-01-01"
+  },
+  "bootstrap": {
+    "block_days": 90,
+    "draws": 4999,
+    "seed": 20261012,
+    "paired": true,
+    "method": "circular moving blocks of daily simple returns; reconstruct portfolio paths"
+  },
+  "gates": {
+    "positive_standard_and_stress_cagr_both_pools": true,
+    "maximum_daily_drawdown_relative_to_buy_hold": 0.75,
+    "minimum_positive_buy_hold_cagr_retained": 0.5,
+    "training_calmar_excess_ci95_lower_positive": true,
+    "combined_by_q_below": 0.05,
+    "recent_calmar_excess_positive": true,
+    "complete_invested_paths_required": true
+  },
+  "protocol_sha256": "f7b91475cfd2c9ee03c426152d0b2017a62a45f9ca9166cc93c81cc44b93295d",
+  "new_return_tests": 0,
+  "selected_strategy": null,
+  "scope_budget": "One specification checkpoint and one results checkpoint; preflight failure stops before implementation. No monetary credit cap supplied."
+}

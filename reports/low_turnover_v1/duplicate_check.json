@@ -1,0 +1,30 @@
+{
+  "scope": "Static repository duplicate check only; no new signal calculation or backtest",
+  "duplicate_found": false,
+  "finding": "No daily EMA200 long/cash switching portfolio found; legacy intraday entries retain short exits and research screens use fixed 24/72h or barrier outcomes. Buy-and-hold already exists as a comparator.",
+  "inspected_files_sha256": {
+    "btc_backtest.py": "b1ec0983b4502cea085d0bdb54828c94ec57fa720ee4ebdb238192a510608697",
+    "research/EXPERIMENT_001.md": "687e20ecbc1aefe8a48f125f50273867232697fe19f275c62487e5af5c2c30ff",
+    "research/EXPERIMENT_002.md": "8787ab9dc18d0cad2f620dbda72cac40e7a3e09d1a0e8d8a0769bd4e9ecd21ed",
+    "breakout_strategy.py": "b76578edd078213ca5e566bdb9127eaf48306dc2bd74aa142aeec945cbfaffc4",
+    "research/discovery/REGISTRY.json": "e020b7eb4941d6d9435b3e7fea919373323da18e087f330209a001183ebeeaf2",
+    "research/discovery_round2/REGISTRY.json": "2628f6496a44d8b5fe6b07e4940cd0abc4d94a6721b67be96d5da9d416be0269",
+    "research/discovery_round3/REGISTRY.json": "b27f9df11e4a5c4f8ca5debb7bd9c965dea3438e8bd11bccafa65cf602d03ec1",
+    "research/discovery_round4/REGISTRY.json": "530ce1e29c0943584768a070c7fcf7716e23c822842b03e7a21603d6ff3cb0df",
+    "research/discovery_round5/REGISTRY.json": "e3af8ea3b4965fc228072db18ada8799bf736e7d0e0843ab974883239a257459",
+    "research/discovery_round6/REGISTRY.json": "f682deb4bdf422ecad34948c05370c5959d79e833dccc7fd2d4d8aac948bc6f6"
+  },
+  "reuse": [
+    "market_data.store.read_market",
+    "research.indicators.calculate",
+    "research.statistics.outcomes.SCENARIOS",
+    "research.statistics.metrics.adjust_by"
+  ],
+  "do_not_reuse_unchanged": [
+    "legacy 180-minute exits and permanent halts",
+    "fixed-horizon event labels as portfolio simulation"
+  ],
+  "historical_candidate_data_read": false,
+  "new_strategy_code": false,
+  "new_return_tests": 0
+}
