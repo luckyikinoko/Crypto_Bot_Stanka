@@ -1,0 +1,19 @@
+{
+  "status": "registered_not_evaluated",
+  "candidate": "trend_pullback_reclaim_1h",
+  "unit_tests": 125,
+  "test_command": "python -m unittest discover -s tests",
+  "test_status": "passed",
+  "historical_feature_scan_performed": false,
+  "candidate_outcomes_evaluated": false,
+  "existing_return_tests": 35,
+  "new_return_tests": 0,
+  "reserved_data_accessed": false,
+  "selected_strategy": null,
+  "files_sha256": {
+    "research/discovery_round5/REGISTRY.json": "e3af8ea3b4965fc228072db18ada8799bf736e7d0e0843ab974883239a257459",
+    "research/discovery_round5/PROTOCOL.md": "02fe335ee167dc49004014fd72c3daf7d583cabb23236edec62ac04b642495e2",
+    "research/discovery_round5/engine.py": "4cb70edbc20f560a1c9c4d530a0d66bfcef42f711cddc1efa2c05d447a10a24b",
+    "tests/test_discovery_round5.py": "700667512ac4548f15e11f54990a7a6956c442e99f117473a52f538b023fe6bc"
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "version": 5,
+  "status": "registered_not_evaluated",
+  "registered_after": "34146258545b89fb157900daff7e3c2188083a9c",
+  "candidate": "trend_pullback_reclaim_1h",
+  "timeframe": "1h",
+  "hypothesis": "A recovery above the short-term average while the medium-term average exceeds the long-term average may identify resumed buying after a pullback. Unproven; no causal or profitability claim.",
+  "rule": {
+    "trend": "EMA50(t) > EMA200(t)",
+    "reclaim": "close(t-1) <= EMA20(t-1) AND close(t) > EMA20(t)",
+    "continuity": "t and t-1 must be consecutive completed 1h candles in the same contiguous segment",
+    "availability": "All current close/EMA20/EMA50/EMA200 and prior close/EMA20 must be finite; decision at current candle available_at",
+    "events": "One event per qualifying upward cross, not each subsequent above-EMA candle",
+    "other_filters": null
+  },
+  "indicator_definition": "Reuse research.indicators.calculate: EMA(n) seeded by n-close SMA, then alpha=2/(n+1); reset at every market gap. EMA200 requires 200 completed contiguous candles. No backfill or reduced warm-up.",
+  "execution": {
+    "hold_hours": 24,
+    "delay_minutes": 5,
+    "cooldown_minutes": 60,
+    "secondary_exit": null
+  },
+  "periods": {
+    "training": [
+      "2018-01-01",
+      "2024-01-01"
+    ],
+    "reused_recent": [
+      "2024-01-01",
+      "2026-04-01"
+    ]
+  },
+  "reserved_from": "2026-04-01",
+  "feasibility_gates": {
+    "training_observations": 100,
+    "training_nonoverlap": 50,
+    "training_active_28day_blocks": 30,
+    "recent_observations": 30
+  },
+  "outcome_gates": {
+    "minimum_training_observations": 100,
+    "minimum_training_nonoverlap_observations": 50,
+    "minimum_active_28day_blocks": 30,
+    "training_net_ci95_lower_positive": true,
+    "training_excess_ci95_lower_positive": true,
+    "combined_exploratory_by_q_below": 0.05,
+    "training_stress_mean_positive": true,
+    "minimum_positive_training_years": 4,
+    "training_nonoverlap_mean_positive": true,
+    "minimum_reused_observations": 30,
+    "reused_standard_and_stress_means_positive": true
+  },
+  "bootstrap": {
+    "primary_block_days": 28,
+    "sensitivity_block_days": 7,
+    "draws": 4999,
+    "seed": 20261011
+  },
+  "costs": {
+    "standard": {
+      "fee": 0.001,
+      "half_spread": 5e-05,
+      "slippage": 0.00015
+    },
+    "bnb_conditional": {
+      "fee": 0.00075,
+      "half_spread": 5e-05,
+      "slippage": 0.00015
+    },
+    "stress": {
+      "fee": 0.001,
+      "half_spread": 0.0001,
+      "slippage": 0.0004
+    }
+  },
+  "market_snapshot": "70bcba5fa72e2290b889ebaa8f7ac9a7abed5a321d3dbff56dff801156e3d999",
+  "prior_report": "reports/research_revision_v1/round4/results.json",
+  "prior_report_sha256": "b36102ecd50cce420cc91bf5a1aa2a6fba21bc80e4b18e6efbb909d00d7fb823",
+  "prior_snapshot": "d12edd7f59c8eaa46696907dd2e98050128bb69c77ee1b0ef8fa021fd79d76ac",
+  "prior_tests": 35,
+  "baseline": "All completed 1h decisions satisfying eligibility_mask, without trend or reclaim filters; same 5m execution, 24h hold, costs, pool boundaries and full-path requirements.",
+  "execution_details": "Entry at the 5m candle open 5 minutes after decision; exit at the final 5m close of the following 24 hours. Require complete decision-to-entry and entry-to-exit paths. Purge labels ending beyond the pool boundary. No stops, targets, trailing exit or alternative horizon in this screen. Scheduled diagnostic uses 60-minute cooldown after the planned exit.",
+  "feasibility_scope": "Later feature-only checkpoint: raw and boundary-purged counts, scheduled nonoverlap counts, annual counts, and active 28-day blocks. Block origin is the earliest eligible baseline decision in the pool, floored to UTC day, matching block_compare. No labels or returns.",
+  "multiplicity": "No new return test at registration or feasibility. If the candidate is evaluated, append M5R5/trend_pullback_reclaim_1h as test 36 to the revised 35-test ledger, preserving its IDs and p-values. Recalculate BY across 36; no alternate primary test.",
+  "adaptive_disclosure": "All four prior rounds, the data audit and revised results were seen before choosing this rule. This is adaptive exploratory research. The new rule and 24h hold were chosen without running this candidate, but the same market history has been repeatedly analyzed. BY does not remove selection bias from the broader research process.",
+  "stopping_rule": "One candidate only. Registration ends this checkpoint. Next checkpoint is feature-only feasibility after review. If any feasibility gate fails, stop without returns or parameter changes. If a later authorized outcome screen fails, reject the candidate; no automatic tuning or additional round. A pass only proposes separate portfolio and walk-forward validation.",
+  "trading": "No live or paper execution; no position-sizing policy selected; fixed-hold outcome screen is not a deployment strategy."
+}
