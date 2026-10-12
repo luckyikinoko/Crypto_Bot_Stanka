@@ -1,0 +1,14 @@
+{
+  "unit_tests_passed": 116,
+  "separate_rebuild_byte_identical": true,
+  "parent_snapshot": "ed2167a0ac3a875972f5cead7bdfc7b332a0b436ca2db8b84eb06fef9ff1a44d",
+  "repaired_snapshot": "70bcba5fa72e2290b889ebaa8f7ac9a7abed5a321d3dbff56dff801156e3d999",
+  "original_catalog_unchanged": true,
+  "all_timeframe_readbacks_verified": true,
+  "approved_added_rows": 240,
+  "approved_corrected_rows": 7,
+  "unplanned_row_changes": 0,
+  "research_outcomes_recomputed": false,
+  "reserved_data_read": false,
+  "results_sha256": "f454d64a2c4b54bb16211ac299831715423725f2f069bafcaaf524517520d332"
+}
