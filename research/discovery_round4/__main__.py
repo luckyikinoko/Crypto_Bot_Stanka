@@ -23,7 +23,7 @@ from .engine import signal_mask,frequency
 CANDIDATE='lower_band_reentry_1h'
 
 
-def run(market='data/research',out='data/research_discovery_round4',report_dir='reports/discovery_round4'):
+def run(market='data/research',out='data/research_discovery_round4',report_dir='reports/discovery_round4',prior_report=None):
     market,out,report_dir=map(Path,(market,out,report_dir))
     if market.resolve()==out.resolve():
         raise ValueError('Separate destination required')
@@ -32,7 +32,10 @@ def run(market='data/research',out='data/research_discovery_round4',report_dir='
     if reg['candidate']!=CANDIDATE or reg['execution']!={'hold_hours':24,'delay_minutes':5,'cooldown_minutes':60,'secondary_exit':None}:
         raise ValueError('Only registered round-four implementation supported')
     source_bytes=(market/'catalog.json').read_bytes();source=json.loads(source_bytes)
-    prior_bytes=(repo/'reports/discovery_round3/outcomes.json').read_bytes();prior=json.loads(prior_bytes)
+    prior_path=Path(prior_report) if prior_report is not None else repo/'reports/discovery_round3/outcomes.json'
+    prior_bytes=prior_path.read_bytes();prior=json.loads(prior_bytes)
+    if prior_report is not None and prior['provenance']['market_snapshot']!=source['snapshot_id']:
+        raise ValueError('Prior report/market snapshot mismatch')
     if len(prior['test_ledger'])!=34:
         raise ValueError('Incomplete previous tests')
     if prior['costs']!={k:vars(v) for k,v in SCENARIOS.items()}:
@@ -78,7 +81,7 @@ def run(market='data/research',out='data/research_discovery_round4',report_dir='
         else:
             for row,q in zip(ledger,adjust_by([x['p'] for x in ledger])):
                 row['by_q']=q
-        if source_bytes!=(market/'catalog.json').read_bytes() or reg_bytes!=reg_path.read_bytes():
+        if prior_bytes!=prior_path.read_bytes() or source_bytes!=(market/'catalog.json').read_bytes() or reg_bytes!=reg_path.read_bytes():
             raise ValueError('Inputs changed')
         paths=[*repo.glob('research/discovery_round4/*.py'),repo/'research/indicators/engine.py',
                repo/'research/statistics/outcomes.py',repo/'research/statistics/metrics.py',

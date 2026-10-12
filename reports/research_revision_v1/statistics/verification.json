@@ -1,0 +1,31 @@
+{
+  "snapshot_id": "71ff61b02fe4db6fb2f40e23b78d86aa38f8c36198f7202fd473796482016dfb",
+  "features_rows": 288605,
+  "horizons": {
+    "1": {
+      "rows": 288605,
+      "complete": 288455,
+      "excluded": 150,
+      "status": "passed"
+    },
+    "4": {
+      "rows": 288605,
+      "complete": 288071,
+      "excluded": 534,
+      "status": "passed"
+    },
+    "12": {
+      "rows": 288605,
+      "complete": 287047,
+      "excluded": 1558,
+      "status": "passed"
+    },
+    "24": {
+      "rows": 288605,
+      "complete": 285538,
+      "excluded": 3067,
+      "status": "passed"
+    }
+  },
+  "status": "passed"
+}

@@ -23,7 +23,7 @@ def pool(frame, start, end):
 
 
 def run(market_root='data/research', out='data/research_discovery_round2',
-        report_dir='reports/discovery_round2'):
+        report_dir='reports/discovery_round2', prior_report=None):
     market_root, out, report_dir = map(Path, (market_root, out, report_dir))
     if out.resolve() == market_root.resolve():
         raise ValueError('Separate destination required')
@@ -35,9 +35,11 @@ def run(market_root='data/research', out='data/research_discovery_round2',
         raise ValueError('Only registered 72h implementation supported')
     source_bytes = (market_root/'catalog.json').read_bytes()
     source = json.loads(source_bytes)
-    prior_path = repo/'reports/discovery/results.json'
+    prior_path = Path(prior_report) if prior_report is not None else repo/'reports/discovery/results.json'
     prior_bytes = prior_path.read_bytes()
     prior = json.loads(prior_bytes)
+    if prior_report is not None and prior['provenance']['market_snapshot'] != source['snapshot_id']:
+        raise ValueError('Prior report/market snapshot mismatch')
     if len(prior['test_ledger']) != 31:
         raise ValueError('Incomplete prior test family')
     with writer_lock(out):

@@ -1,0 +1,191 @@
+{
+  "schema_version": 1,
+  "source_snapshot": "70bcba5fa72e2290b889ebaa8f7ac9a7abed5a321d3dbff56dff801156e3d999",
+  "start": "2018-01-01 00:00:00+00:00",
+  "end_exclusive": "2026-04-01 00:00:00+00:00",
+  "reserved_from": "2026-04-01 00:00:00+00:00",
+  "config": {
+    "pole": 8,
+    "flag": 6,
+    "pole_atr": 3.0,
+    "retracement": 0.5,
+    "flag_width": 0.5,
+    "volume_ratio": 1.0,
+    "breakout_window": 20,
+    "breakout_buffer_atr": 0.1,
+    "retest_bars": 12,
+    "retest_tolerance_atr": 0.25,
+    "engulf_body_atr": 0.5
+  },
+  "indicator_config": {
+    "ema_periods": [
+      20,
+      50,
+      100,
+      200
+    ],
+    "slope": 5,
+    "wilder": 14,
+    "macd_fast": 12,
+    "macd_slow": 26,
+    "macd_signal": 9,
+    "roc": 12,
+    "window": 20,
+    "bands": 2.0,
+    "pivot": 2
+  },
+  "code_sha256": {
+    "research/patterns/engine.py": "a654c99b95d96dfe5de18d2225a40a70025aa75d383094f5e7b57fce02a99286",
+    "research/indicators/engine.py": "378308c9409c3f5bbabee27c1fd4b34da2aeed2d6272863b27e4024f9dcc9aa9",
+    "market_data/schema.py": "a0e41fe14581a35506871f501c7a1a3054a40b8a2b03349fac23fe0fba1dfea5"
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "pandas": "2.2.3",
+    "numpy": "2.3.5",
+    "pyarrow": "23.0.1"
+  },
+  "partitions": [
+    {
+      "interval": "5m",
+      "path": "5m/ea1b56904f1b72c4f0be4736f7a0690abdfd178e25b251676aa19dcbf3b30e58.parquet",
+      "file_sha256": "ea1b56904f1b72c4f0be4736f7a0690abdfd178e25b251676aa19dcbf3b30e58",
+      "rows": 156393
+    },
+    {
+      "interval": "15m",
+      "path": "15m/089358f3f32d622927c473b56cab5c279f29861d72a2267fdcdfe1e3fa727973.parquet",
+      "file_sha256": "089358f3f32d622927c473b56cab5c279f29861d72a2267fdcdfe1e3fa727973",
+      "rows": 47812
+    },
+    {
+      "interval": "1h",
+      "path": "1h/f0f3cd5768eae8a133a382ebcabc5e7cfb7b2c7632dc67d7226980ccc8b75b36.parquet",
+      "file_sha256": "f0f3cd5768eae8a133a382ebcabc5e7cfb7b2c7632dc67d7226980ccc8b75b36",
+      "rows": 11023
+    },
+    {
+      "interval": "4h",
+      "path": "4h/cf235f5792bc6ff661d8dd4d4fb4c3a868951931d334aebdfe40ceab5eb3093b.parquet",
+      "file_sha256": "cf235f5792bc6ff661d8dd4d4fb4c3a868951931d334aebdfe40ceab5eb3093b",
+      "rows": 2767
+    },
+    {
+      "interval": "1d",
+      "path": "1d/4fed0e578b20051f84a97892cb7bd17715f3fa9797574340aaa2e33de04f9ffa.parquet",
+      "file_sha256": "4fed0e578b20051f84a97892cb7bd17715f3fa9797574340aaa2e33de04f9ffa",
+      "rows": 479
+    }
+  ],
+  "summary": {
+    "5m": {
+      "candles": 865836,
+      "events": 156393,
+      "by_pattern": {
+        "bullish_engulfing": 49325,
+        "bearish_engulfing": 48677,
+        "resistance_breakout": 36603,
+        "resistance_retest": 21742,
+        "bull_flag": 46
+      },
+      "by_year": {
+        "2018": 15078,
+        "2019": 15707,
+        "2020": 18961,
+        "2021": 19107,
+        "2022": 17440,
+        "2023": 20341,
+        "2024": 22289,
+        "2025": 22406,
+        "2026": 5064
+      }
+    },
+    "15m": {
+      "candles": 288605,
+      "events": 47812,
+      "by_pattern": {
+        "bullish_engulfing": 15262,
+        "bearish_engulfing": 15042,
+        "resistance_breakout": 10930,
+        "resistance_retest": 6555,
+        "bull_flag": 23
+      },
+      "by_year": {
+        "2018": 4737,
+        "2019": 4569,
+        "2020": 5909,
+        "2021": 5995,
+        "2022": 5328,
+        "2023": 5900,
+        "2024": 6792,
+        "2025": 7001,
+        "2026": 1581
+      }
+    },
+    "1h": {
+      "candles": 72140,
+      "events": 11023,
+      "by_pattern": {
+        "bearish_engulfing": 3381,
+        "bullish_engulfing": 3352,
+        "resistance_breakout": 2693,
+        "resistance_retest": 1587,
+        "bull_flag": 10
+      },
+      "by_year": {
+        "2018": 1200,
+        "2019": 1085,
+        "2020": 1354,
+        "2021": 1433,
+        "2022": 1191,
+        "2023": 1257,
+        "2024": 1530,
+        "2025": 1613,
+        "2026": 360
+      }
+    },
+    "4h": {
+      "candles": 18009,
+      "events": 2767,
+      "by_pattern": {
+        "bearish_engulfing": 789,
+        "resistance_breakout": 769,
+        "bullish_engulfing": 744,
+        "resistance_retest": 465
+      },
+      "by_year": {
+        "2018": 283,
+        "2019": 274,
+        "2020": 374,
+        "2021": 357,
+        "2022": 275,
+        "2023": 331,
+        "2024": 388,
+        "2025": 397,
+        "2026": 88
+      }
+    },
+    "1d": {
+      "candles": 2980,
+      "events": 479,
+      "by_pattern": {
+        "bullish_engulfing": 150,
+        "resistance_breakout": 135,
+        "bearish_engulfing": 118,
+        "resistance_retest": 76
+      },
+      "by_year": {
+        "2018": 33,
+        "2019": 32,
+        "2020": 68,
+        "2021": 53,
+        "2022": 41,
+        "2023": 67,
+        "2024": 97,
+        "2025": 72,
+        "2026": 16
+      }
+    }
+  },
+  "snapshot_id": "afb9d5bd8689f40e29c1ab20ce29ff116d0fd859822f32ad68f4cefc5a1f9811"
+}

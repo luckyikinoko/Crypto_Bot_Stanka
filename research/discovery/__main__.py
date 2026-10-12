@@ -43,7 +43,7 @@ def buy_hold(source,start,end):
             'note':'One purchase/one sale, no 5m signal delay. Observed 15m liquidation-value marks; gaps/intrabar extremes omitted. Different exposure from candidate diagnostics.'}
 
 
-def run(stats_root,market_root,out,report_dir):
+def run(stats_root,market_root,out,report_dir,prior_report=None):
     stats_root,market_root,out,report_dir=map(Path,(stats_root,market_root,out,report_dir))
     if out.resolve() in (stats_root.resolve(),market_root.resolve()):raise ValueError('Separate destination required')
     registry_path=Path(__file__).with_name('REGISTRY.json')
@@ -52,7 +52,7 @@ def run(stats_root,market_root,out,report_dir):
     market_bytes=(market_root/'catalog.json').read_bytes();market=json.loads(market_bytes)
     if market['snapshot_id']!=source['source_snapshot']:raise ValueError('Market/research snapshot mismatch')
     repo=Path(__file__).resolve().parents[2]
-    old_path=repo/'reports/statistics/results.json'
+    old_path=Path(prior_report) if prior_report is not None else repo/'reports/statistics/results.json'
     old_bytes=old_path.read_bytes();old=json.loads(old_bytes)
     # Recovery may change runtime/source provenance. Require exact data file identities.
     if old['snapshot']['snapshot_id']!=source['snapshot_id']:

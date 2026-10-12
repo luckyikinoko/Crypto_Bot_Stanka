@@ -1,0 +1,6 @@
+{
+  "command": "python -m unittest discover -s tests",
+  "tests": 119,
+  "status": "passed",
+  "artifact_verification": "python -m research.diagnostics.verify_replay"
+}

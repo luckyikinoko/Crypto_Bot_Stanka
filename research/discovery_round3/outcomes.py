@@ -55,7 +55,7 @@ def select_pool(frame, start, end):
 
 
 def run(source='data/research_discovery_round2', destination='data/research_discovery_round3',
-        report_dir='reports/discovery_round3'):
+        report_dir='reports/discovery_round3', prior_report=None):
     source,destination,report_dir = map(Path,(source,destination,report_dir))
     if source.resolve()==destination.resolve():
         raise ValueError('Separate destination required')
@@ -70,7 +70,8 @@ def run(source='data/research_discovery_round2', destination='data/research_disc
     payload=dict(prior);payload.pop('snapshot_id')
     if hashlib.sha256(json.dumps(payload,sort_keys=True,allow_nan=False).encode()).hexdigest()!=prior['snapshot_id']:
         raise ValueError('Snapshot hash mismatch')
-    frozen_bytes=(repo/'reports/discovery_round2/results.json').read_bytes()
+    prior_path=Path(prior_report) if prior_report is not None else repo/'reports/discovery_round2/results.json'
+    frozen_bytes=prior_path.read_bytes()
     if raw != frozen_bytes:
         raise ValueError('Source differs from frozen prior experiment')
     if prior['costs'] != {k:vars(v) for k,v in SCENARIOS.items()}:
@@ -114,6 +115,7 @@ def run(source='data/research_discovery_round2', destination='data/research_disc
         report={'candidate':CANDIDATE,'source_snapshot':prior['snapshot_id'],
             'provenance':{'registry_sha256':hashlib.sha256(registry_bytes).hexdigest(),
                 'source_report_sha256':hashlib.sha256(raw).hexdigest(),
+                'market_snapshot':prior['provenance']['market_snapshot'],
                 'code_sha256':{p:hashlib.sha256((repo/p).read_bytes()).hexdigest() for p in paths},
                 'runtime':{'python':platform.python_version(),'pandas':pd.__version__,'numpy':np.__version__,'pyarrow':pyarrow.__version__},
                 'files':files},
@@ -122,7 +124,7 @@ def run(source='data/research_discovery_round2', destination='data/research_disc
             'test_ledger':ledger,'gates':gate,'buy_and_hold_context':prior['buy_and_hold_context'],
             'selected_strategy':None,
             'decision':'requires_separate_validation' if gate['passed'] else 'candidate_rejected'}
-        if raw!=(source/'catalog.json').read_bytes() or registry_bytes!=Path(__file__).with_name('REGISTRY.json').read_bytes():
+        if frozen_bytes!=prior_path.read_bytes() or raw!=(source/'catalog.json').read_bytes() or registry_bytes!=Path(__file__).with_name('REGISTRY.json').read_bytes():
             raise ValueError('Inputs changed')
         report['snapshot_id']=hashlib.sha256(json.dumps(report,sort_keys=True,allow_nan=False).encode()).hexdigest()
         encoded=(json.dumps(report,indent=2,allow_nan=False)+'\n').encode()
