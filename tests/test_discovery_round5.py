@@ -65,3 +65,39 @@ class Round5Tests(unittest.TestCase):
             self.assertEqual(r[key],old[key])
         self.assertEqual(r['costs'],prior['costs'])
         self.assertEqual(r['status'],'registered_not_evaluated')
+
+
+class Round5FeasibilityTests(unittest.TestCase):
+    def test_boundary_purge_and_baseline_origin(self):
+        from research.discovery_round5.__main__ import count_pool
+        f=features()
+        start=pd.Timestamp('2020-01-01',tz='UTC')
+        end=start+pd.Timedelta(hours=26)
+        c=count_pool(f,start,end)
+        self.assertEqual(c['raw_events'],2)
+        self.assertEqual(c['timing_eligible'],1)
+        self.assertEqual(c['boundary_purged'],1)
+        self.assertEqual(c['scheduled_nonoverlap'],1)
+        self.assertEqual(c['block_origin'],str(start))
+        self.assertEqual(c['eligible_baseline_decisions'],4)
+        self.assertFalse(c['execution_paths_checked'])
+
+    def test_empty_signal_pool_and_reserved_boundary(self):
+        from research.discovery_round5.__main__ import count_pool
+        f=features();f['ema_200']=np.nan
+        c=count_pool(f,pd.Timestamp('2020-01-01',tz='UTC'),pd.Timestamp('2021-01-01',tz='UTC'))
+        self.assertEqual(c['timing_eligible'],0)
+        self.assertEqual(c['active_28day_blocks'],0)
+        self.assertIsNone(c['block_origin'])
+        with self.assertRaises(ValueError):
+            count_pool(f,pd.Timestamp('2020-01-01',tz='UTC'),pd.Timestamp('2026-04-02',tz='UTC'))
+
+    def test_each_gate_is_required(self):
+        from research.discovery_round5.__main__ import feasibility
+        gates={'training_observations':100,'training_nonoverlap':50,'training_active_28day_blocks':30,'recent_observations':30}
+        counts={'training':{'timing_eligible':100,'scheduled_nonoverlap':50,'active_28day_blocks':30},'reused_recent':{'timing_eligible':30}}
+        self.assertTrue(feasibility(counts,gates)['passed'])
+        for pool,key in [('training','timing_eligible'),('training','scheduled_nonoverlap'),('training','active_28day_blocks'),('reused_recent','timing_eligible')]:
+            counts[pool][key]-=1
+            self.assertFalse(feasibility(counts,gates)['passed'])
+            counts[pool][key]+=1

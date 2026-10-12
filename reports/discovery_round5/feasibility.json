@@ -1,0 +1,85 @@
+{
+  "candidate": "trend_pullback_reclaim_1h",
+  "market_snapshot": "70bcba5fa72e2290b889ebaa8f7ac9a7abed5a321d3dbff56dff801156e3d999",
+  "registry_sha256": "e3af8ea3b4965fc228072db18ada8799bf736e7d0e0843ab974883239a257459",
+  "prior_report_sha256": "b36102ecd50cce420cc91bf5a1aa2a6fba21bc80e4b18e6efbb909d00d7fb823",
+  "features": {
+    "path": "features/8df8d17818b5bdde440d7403a291b2cffd675564b175e391a1f1bd0b9d4c159a.parquet",
+    "sha256": "8df8d17818b5bdde440d7403a291b2cffd675564b175e391a1f1bd0b9d4c159a",
+    "rows": 72139,
+    "columns": [
+      "observation_id",
+      "available_at",
+      "segment_id",
+      "close",
+      "ema_20",
+      "ema_50",
+      "ema_200"
+    ]
+  },
+  "code_sha256": {
+    "research/discovery_round5/__main__.py": "c081c9a15959294040d9941e202dd10079779d09f4e3f257f5779532e243ee25",
+    "research/discovery_round5/engine.py": "4cb70edbc20f560a1c9c4d530a0d66bfcef42f711cddc1efa2c05d447a10a24b",
+    "research/indicators/engine.py": "378308c9409c3f5bbabee27c1fd4b34da2aeed2d6272863b27e4024f9dcc9aa9",
+    "research/discovery/engine.py": "acea0e90d79621e178e903cc397a66672e41feeaa3b31d43a6970cae7c0a7423",
+    "market_data/store.py": "bd321581e4a4d60fdfd60e17bf6128e5f0f431574f981f4d729b23e9f0074ce2",
+    "market_data/schema.py": "a0e41fe14581a35506871f501c7a1a3054a40b8a2b03349fac23fe0fba1dfea5"
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "pandas": "2.2.3",
+    "numpy": "2.3.5",
+    "pyarrow": "23.0.1"
+  },
+  "counts": {
+    "training": {
+      "raw_events": 1603,
+      "boundary_purged": 0,
+      "timing_eligible": 1603,
+      "scheduled_nonoverlap": 589,
+      "active_28day_blocks": 74,
+      "block_origin": "2018-01-12 00:00:00+00:00",
+      "eligible_baseline_decisions": 46967,
+      "counts_by_year": {
+        "2018": 183,
+        "2019": 295,
+        "2020": 318,
+        "2021": 252,
+        "2022": 209,
+        "2023": 346
+      },
+      "execution_paths_checked": false
+    },
+    "reused_recent": {
+      "raw_events": 680,
+      "boundary_purged": 0,
+      "timing_eligible": 680,
+      "scheduled_nonoverlap": 266,
+      "active_28day_blocks": 29,
+      "block_origin": "2024-01-01 00:00:00+00:00",
+      "eligible_baseline_decisions": 19704,
+      "counts_by_year": {
+        "2024": 350,
+        "2025": 288,
+        "2026": 42
+      },
+      "execution_paths_checked": false
+    }
+  },
+  "feasibility": {
+    "passed": true,
+    "checks": {
+      "training_observations": true,
+      "training_nonoverlap": true,
+      "training_active_28day_blocks": true,
+      "recent_observations": true
+    }
+  },
+  "prefix_verification_candles": 1000,
+  "new_return_tests": 0,
+  "prior_return_tests": 35,
+  "selected_strategy": null,
+  "execution_paths_checked": false,
+  "decision": "propose_outcome_screen",
+  "snapshot_id": "b84edb88eb4326272b229960548e4c23d13c5644da902eff5e48cba9785834b6"
+}

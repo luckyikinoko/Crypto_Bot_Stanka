@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "unit_tests": 128,
+  "command": "python -m unittest discover -s tests",
+  "independent_feature_rebuild_identical": true,
+  "feature_roundtrip_and_checksum": "passed",
+  "historical_prefix_candles": 1000,
+  "return_tests_added": 0,
+  "outcomes_computed": false,
+  "snapshot_id": "b84edb88eb4326272b229960548e4c23d13c5644da902eff5e48cba9785834b6"
+}
