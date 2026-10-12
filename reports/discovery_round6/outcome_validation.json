@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "unit_tests": 153,
+  "command": "python -m unittest discover -s tests",
+  "artifact_verification": "python -m research.discovery_round6.verify",
+  "independent_rebuild_identical": true,
+  "snapshot_id": "3f536e42b4ec4bed3f8c0830abd45612711a8855023305d4779645a8c8b388fc",
+  "ledger_tests": 37,
+  "new_return_tests": 1,
+  "selected_strategy": null
+}

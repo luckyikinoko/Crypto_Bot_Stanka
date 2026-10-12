@@ -1,0 +1,1063 @@
+{
+  "candidate": "confirmed_double_bottom_1h",
+  "market_snapshot": "70bcba5fa72e2290b889ebaa8f7ac9a7abed5a321d3dbff56dff801156e3d999",
+  "feature_snapshot": "1bd345f39dda0340545890dca49ec01d7b8409ff7332b29e1d682fce2163d8cb",
+  "registry": {
+    "version": 6,
+    "status": "registered_not_evaluated",
+    "registered_after": "e702dd26cc5ffb56bd9cdccf104e37d974742a6e",
+    "candidate": "confirmed_double_bottom_1h",
+    "pattern": "double_bottom_v1",
+    "timeframe": "1h",
+    "parameters": {
+      "pivot_left": 2,
+      "pivot_right": 2,
+      "minimum_separation": 6,
+      "maximum_separation": 48,
+      "prior_window": 12,
+      "minimum_prior_drop_atr": 2.0,
+      "low_tolerance_atr": 0.5,
+      "minimum_rebound_atr": 1.0,
+      "breakout_buffer_atr": 0.1,
+      "invalidation_buffer_atr": 0.25,
+      "confirmation_expiry_bars": 12
+    },
+    "hypothesis": "A failed revisit of a recent low followed by a confirmed close above the intervening high may precede sustained buying. This is unproven; no historical occurrences or returns for this detector have been scanned.",
+    "definition": "See PROTOCOL.md; consecutive strict 2-left/2-right confirmed lows, frozen ATR14 at first-pivot confirmation, similar lows and intervening rebound, prior-drop requirement, then buffered neckline close crossing. New confirmed pivots supersede pending pairs; gaps reset; expiry and low-price invalidation cancel. Early breakouts are rejected; availability is actual breakout close, never the pivot time.",
+    "execution": {
+      "hold_hours": 24,
+      "delay_minutes": 5,
+      "cooldown_minutes": 60,
+      "secondary_exit": null
+    },
+    "periods": {
+      "training": [
+        "2018-01-01",
+        "2024-01-01"
+      ],
+      "reused_recent": [
+        "2024-01-01",
+        "2026-04-01"
+      ]
+    },
+    "reserved_from": "2026-04-01",
+    "feasibility_gates": {
+      "training_observations": 100,
+      "training_nonoverlap": 50,
+      "training_active_28day_blocks": 30,
+      "recent_observations": 30
+    },
+    "outcome_gates": {
+      "minimum_training_observations": 100,
+      "minimum_training_nonoverlap_observations": 50,
+      "minimum_active_28day_blocks": 30,
+      "training_net_ci95_lower_positive": true,
+      "training_excess_ci95_lower_positive": true,
+      "combined_exploratory_by_q_below": 0.05,
+      "training_stress_mean_positive": true,
+      "minimum_positive_training_years": 4,
+      "training_nonoverlap_mean_positive": true,
+      "minimum_reused_observations": 30,
+      "reused_standard_and_stress_means_positive": true
+    },
+    "bootstrap": {
+      "primary_block_days": 28,
+      "sensitivity_block_days": 7,
+      "draws": 4999,
+      "seed": 20261011
+    },
+    "costs": {
+      "standard": {
+        "fee": 0.001,
+        "half_spread": 5e-05,
+        "slippage": 0.00015
+      },
+      "bnb_conditional": {
+        "fee": 0.00075,
+        "half_spread": 5e-05,
+        "slippage": 0.00015
+      },
+      "stress": {
+        "fee": 0.001,
+        "half_spread": 0.0001,
+        "slippage": 0.0004
+      }
+    },
+    "market_snapshot": "70bcba5fa72e2290b889ebaa8f7ac9a7abed5a321d3dbff56dff801156e3d999",
+    "prior_report": "reports/discovery_round5/outcomes.json",
+    "prior_report_sha256": "e1c6a7931f5469b8caea247759bb11beac7fc0b0f65d73aef2e80926066618ac",
+    "prior_snapshot": "16736aa9e244affa6c4b22be19ada56d2e15dc2067d83c43cf330ca9d5641a61",
+    "prior_tests": 36,
+    "baseline": "All completed 1h decisions with finite positive prior-bar ATR14 and at least 16 completed candles in the current segment. No pattern filter. Identical 5m execution and 24h hold; complete paths required and split-crossing labels purged.",
+    "feasibility_scope": "After registration review, scan causal pattern events only. Report counts, yearly frequency, timing boundary exclusions, 24h-plus-5m scheduled occupancy with 60m cooldown, and active 28-day blocks. Use the earliest eligible baseline decision in each pool floored to UTC day as block origin. No outcomes at feasibility.",
+    "multiplicity": "Registration and feature feasibility add no return test. If outcomes are later evaluated, append exactly M5R6/confirmed_double_bottom_1h as test 37 to the pinned 36-test ledger. Preserve prior IDs/p-values and recalculate BY; no other primary hypothesis.",
+    "adaptive_disclosure": "All eight prior candidates and their failures were seen. This is adaptive exploratory research, not fresh confirmation. Parameters were chosen as a single interpretable definition without historical tuning; they are not asserted to be optimal or standard.",
+    "stopping_rule": "Stop after registration and synthetic tests for review. Later feature-only feasibility must pass all unchanged gates before an outcome proposal. Failure stops the candidate without loosening thresholds. No automatic historical scan, alternate parameter set, additional hold, or new round.",
+    "live_trading": false,
+    "paper_trading": false,
+    "selected_strategy": null
+  },
+  "provenance": {
+    "registry_sha256": "f682deb4bdf422ecad34948c05370c5959d79e833dccc7fd2d4d8aac948bc6f6",
+    "feature_report_sha256": "4ae7bdaed8f51dc502d8721d162c7ea6f197cca9027418685108f6279a1db299",
+    "prior_report_sha256": "e1c6a7931f5469b8caea247759bb11beac7fc0b0f65d73aef2e80926066618ac",
+    "files": {
+      "labels": {
+        "path": "labels/25f599faee6c460965af8d5e442ce615ec9339234bd5f3c56abf3ab8e963fc42.parquet",
+        "sha256": "25f599faee6c460965af8d5e442ce615ec9339234bd5f3c56abf3ab8e963fc42",
+        "rows": 71659
+      },
+      "candidate_observations": {
+        "path": "candidate_observations/ef6524046cb34b72d992a5c4418cc14c5af2a1e30e4fcef23e0b3aa2452f0e52.parquet",
+        "sha256": "ef6524046cb34b72d992a5c4418cc14c5af2a1e30e4fcef23e0b3aa2452f0e52",
+        "rows": 233
+      }
+    },
+    "code_sha256": {
+      "research/discovery_round6/outcomes.py": "d6d6ddadd84dd61f03b18bee4f8da38885e7f47fe62c8b71e0137639e492ec73",
+      "research/patterns/double_bottom.py": "a97d6c35d7b36d02c46bf59c50c4769e5f586f7d05877c3c64fc514ab87f5f36",
+      "research/discovery_round3/outcomes.py": "57732e3d5e58fd47a87650d7b59e35bc055fbbe74d521b66121ed47fbc780506",
+      "research/statistics/outcomes.py": "e9bd1f04208e8918e624366a0afcb2935f83e5eec36b7a91b2b2a50f12baa91d",
+      "research/statistics/metrics.py": "0289ef1160556c40b636c7b387f94338703ab0bdb658aa6900c1d4f219868db3",
+      "research/discovery/__main__.py": "aba9a6484f73e4f2c54507c12ee58efb131f9f17def670f2d27ec3b22ac7d762",
+      "research/discovery/engine.py": "acea0e90d79621e178e903cc397a66672e41feeaa3b31d43a6970cae7c0a7423",
+      "market_data/store.py": "bd321581e4a4d60fdfd60e17bf6128e5f0f431574f981f4d729b23e9f0074ce2"
+    },
+    "runtime": {
+      "python": "3.12.14",
+      "pandas": "2.2.3",
+      "numpy": "2.3.5",
+      "pyarrow": "23.0.1"
+    }
+  },
+  "costs": {
+    "standard": {
+      "fee": 0.001,
+      "half_spread": 5e-05,
+      "slippage": 0.00015
+    },
+    "bnb_conditional": {
+      "fee": 0.00075,
+      "half_spread": 5e-05,
+      "slippage": 0.00015
+    },
+    "stress": {
+      "fee": 0.001,
+      "half_spread": 0.0001,
+      "slippage": 0.0004
+    }
+  },
+  "results": {
+    "training": {
+      "candidate": {
+        "standard": {
+          "n": 170,
+          "win_rate": 0.3941176470588235,
+          "mean": -0.00172838865823257,
+          "median": -0.006026202732607011,
+          "average_winner": 0.03431493332764925,
+          "average_loser": -0.025174044707301318,
+          "profit_factor": 0.8866816857254225,
+          "p05": -0.06332995283482164,
+          "p95": 0.07451085731423487,
+          "mfe_median": 0.016533083841482554,
+          "mfe_p05": 0.0011742906596097892,
+          "mfe_p95": 0.09021384485138609,
+          "mae_median": -0.019438331178221524,
+          "mae_p05": -0.0741665160969557,
+          "mae_p95": -0.002522787287244063
+        },
+        "bnb_conditional": {
+          "n": 170,
+          "win_rate": 0.40588235294117647,
+          "mean": -0.0012291276628672615,
+          "median": -0.00552909118325251,
+          "average_winner": 0.033824546538687196,
+          "average_loser": -0.02517668726590942,
+          "profit_factor": 0.9178276030667125,
+          "p05": -0.06286150034677779,
+          "p95": 0.0750482474934793,
+          "mfe_median": 0.016533083841482554,
+          "mfe_p05": 0.0011742906596097892,
+          "mfe_p95": 0.09021384485138609,
+          "mae_median": -0.019438331178221524,
+          "mae_p05": -0.0741665160969557,
+          "mae_p95": -0.002522787287244063
+        },
+        "stress": {
+          "n": 170,
+          "win_rate": 0.38235294117647056,
+          "mean": -0.002327172049898388,
+          "median": -0.006622408208944941,
+          "average_winner": 0.03473422654070974,
+          "average_loser": -0.025269942605989137,
+          "profit_factor": 0.850897866083433,
+          "p05": -0.06389178636924386,
+          "p95": 0.07386634408936263,
+          "mfe_median": 0.016533083841482554,
+          "mfe_p05": 0.0011742906596097892,
+          "mfe_p95": 0.09021384485138609,
+          "mae_median": -0.019438331178221524,
+          "mae_p05": -0.0741665160969557,
+          "mae_p95": -0.002522787287244063
+        },
+        "nonoverlap": {
+          "n": 161,
+          "win_rate": 0.39751552795031053,
+          "mean": -0.0015962142766598564,
+          "median": -0.0063942703307966475,
+          "average_winner": 0.03379611976775328,
+          "average_loser": -0.024947857357509762,
+          "profit_factor": 0.8938030410811152,
+          "p05": -0.061289373059620456,
+          "p95": 0.07598643081361178,
+          "mfe_median": 0.0160603306134528,
+          "mfe_p05": 0.001284821585002538,
+          "mfe_p95": 0.09047348728315607,
+          "mae_median": -0.019374743325320742,
+          "mae_p05": -0.06758667693862608,
+          "mae_p95": -0.0026077839170862704,
+          "closed_trade_drawdown": -0.4850971041276484
+        },
+        "years": {
+          "2018": {
+            "n": 27,
+            "win_rate": 0.4074074074074074,
+            "mean": 0.001304084249169012,
+            "median": -0.006597474840286721,
+            "average_winner": 0.037199810431045345,
+            "average_loser": -0.023374227500870967,
+            "profit_factor": 1.094148231011729,
+            "p05": -0.06695863091923829,
+            "p95": 0.09217203762088437,
+            "mfe_median": 0.016438813190479573,
+            "mfe_p05": 0.00192458093406207,
+            "mfe_p95": 0.10595416377885847,
+            "mae_median": -0.021860285252837675,
+            "mae_p05": -0.0773546075733398,
+            "mae_p95": -0.0014154721560001417
+          },
+          "2019": {
+            "n": 28,
+            "win_rate": 0.39285714285714285,
+            "mean": 0.0060594050405421195,
+            "median": -0.002069024814606857,
+            "average_winner": 0.04075356310084983,
+            "average_loser": -0.016389756057304045,
+            "profit_factor": 1.6089289250230083,
+            "p05": -0.0374090083703021,
+            "p95": 0.08998978131394773,
+            "mfe_median": 0.018034296599098276,
+            "mfe_p05": 0.00029953592038807215,
+            "mfe_p95": 0.10986702989458375,
+            "mae_median": -0.015208992717356373,
+            "mae_p05": -0.054559388855857066,
+            "mae_p95": -0.0020867841750502676
+          },
+          "2020": {
+            "n": 20,
+            "win_rate": 0.45,
+            "mean": 0.0034234647923501726,
+            "median": -0.0014696214602964996,
+            "average_winner": 0.029235193381096022,
+            "average_loser": -0.017695222234805522,
+            "profit_factor": 1.3517605689287964,
+            "p05": -0.039558441112170634,
+            "p95": 0.04611303154498975,
+            "mfe_median": 0.015433647660259786,
+            "mfe_p05": 0.0013668779546416655,
+            "mfe_p95": 0.0646738611445073,
+            "mae_median": -0.01687379644907544,
+            "mae_p05": -0.048822467587735265,
+            "mae_p95": -0.003636007664199031
+          },
+          "2021": {
+            "n": 36,
+            "win_rate": 0.4166666666666667,
+            "mean": -0.009248895375749458,
+            "median": -0.017392610539407938,
+            "average_winner": 0.03173688717867879,
+            "average_loser": -0.038524454343198206,
+            "profit_factor": 0.5884367608604464,
+            "p05": -0.06592202672204286,
+            "p95": 0.057957545141738454,
+            "mfe_median": 0.023851565273430797,
+            "mfe_p05": 0.0015575841731503282,
+            "mfe_p95": 0.0844605026356009,
+            "mae_median": -0.035346890356343696,
+            "mae_p05": -0.08994200247214265,
+            "mae_p95": -0.004366958576720564
+          },
+          "2022": {
+            "n": 29,
+            "win_rate": 0.3793103448275862,
+            "mean": -0.00941101199991499,
+            "median": -0.009622324688651873,
+            "average_winner": 0.03351426811420333,
+            "average_loser": -0.03564312762520952,
+            "profit_factor": 0.5746112361604543,
+            "p05": -0.07868810344045571,
+            "p95": 0.05087583182172394,
+            "mfe_median": 0.015190632476843824,
+            "mfe_p05": 0.0013555363100433925,
+            "mfe_p95": 0.07217909650758465,
+            "mae_median": -0.018916075731343573,
+            "mae_p05": -0.08449313574426269,
+            "mae_p95": -0.0026853069982292204
+          },
+          "2023": {
+            "n": 30,
+            "win_rate": 0.3333333333333333,
+            "mean": 0.001290353263841071,
+            "median": -0.003976313134767817,
+            "average_winner": 0.033378642673537004,
+            "average_loser": -0.014753791441006896,
+            "profit_factor": 1.1311886441868744,
+            "p05": -0.03469047591451633,
+            "p95": 0.06810126531656317,
+            "mfe_median": 0.01304330196706549,
+            "mfe_p05": 0.001431377712747073,
+            "mfe_p95": 0.08049926142827857,
+            "mae_median": -0.009775288036944108,
+            "mae_p05": -0.045367657283962914,
+            "mae_p95": -0.0028044705595778436
+          }
+        },
+        "positive_years": 4,
+        "return_std": 0.03929815895422135
+      },
+      "unconditional": {
+        "standard": {
+          "n": 51220,
+          "win_rate": 0.4606794221007419,
+          "mean": -0.0012967072675860152,
+          "median": -0.0017370954847332754,
+          "average_winner": 0.025287544675677436,
+          "average_loser": -0.02400457031613961,
+          "profit_factor": 0.8998384544700535,
+          "p05": -0.05943422709372895,
+          "p95": 0.05600043147804146,
+          "mfe_median": 0.01664604337579867,
+          "mfe_p05": 0.0014945527072097735,
+          "mfe_p95": 0.07999255037360564,
+          "mae_median": -0.016759551616962798,
+          "mae_p05": -0.08272158624221045,
+          "mae_p95": -0.0014341439689487465
+        },
+        "bnb_conditional": {
+          "n": 51220,
+          "win_rate": 0.4728035923467396,
+          "mean": -0.0007972303773897573,
+          "median": -0.0012378388438731291,
+          "average_winner": 0.025145052411404478,
+          "average_loser": -0.024062951308257804,
+          "profit_factor": 0.937156190422014,
+          "p05": -0.05896382625426542,
+          "p95": 0.05652856412304108,
+          "mfe_median": 0.01664604337579867,
+          "mfe_p05": 0.0014945527072097735,
+          "mfe_p95": 0.07999255037360564,
+          "mae_median": -0.016759551616962798,
+          "mae_p05": -0.08272158624221045,
+          "mae_p95": -0.0014341439689487465
+        },
+        "stress": {
+          "n": 51220,
+          "win_rate": 0.44795001952362357,
+          "mean": -0.0018957495904327755,
+          "median": -0.0023358736538693914,
+          "average_winner": 0.025382238594051438,
+          "average_loser": -0.02402993267519745,
+          "profit_factor": 0.8570941465508688,
+          "p05": -0.059998397362808875,
+          "p95": 0.05536702117890344,
+          "mfe_median": 0.01664604337579867,
+          "mfe_p05": 0.0014945527072097735,
+          "mfe_p95": 0.07999255037360564,
+          "mae_median": -0.016759551616962798,
+          "mae_p05": -0.08272158624221045,
+          "mae_p95": -0.0014341439689487465
+        },
+        "nonoverlap": {
+          "n": 1987,
+          "win_rate": 0.4614997483643684,
+          "mean": -0.0014377572324123446,
+          "median": -0.0018039551758957106,
+          "average_winner": 0.025119152872133947,
+          "average_loser": -0.024197277387430056,
+          "profit_factor": 0.8896599574066059,
+          "p05": -0.05933363620521986,
+          "p95": 0.052790405391004096,
+          "mfe_median": 0.016331089938679044,
+          "mfe_p05": 0.0017949148063103777,
+          "mfe_p95": 0.07614685772552078,
+          "mae_median": -0.016875402669491057,
+          "mae_p05": -0.08369264634814715,
+          "mae_p95": -0.0013256971218160842,
+          "closed_trade_drawdown": -0.9914453438157715
+        },
+        "years": {
+          "2018": {
+            "n": 8370,
+            "win_rate": 0.44814814814814813,
+            "mean": -0.00490153887712527,
+            "median": -0.003262960349004751,
+            "average_winner": 0.030092762155896662,
+            "average_loser": -0.03331972964890818,
+            "profit_factor": 0.7334317146702621,
+            "p05": -0.08111953191196387,
+            "p95": 0.06828491227889895,
+            "mfe_median": 0.018902325193086544,
+            "mfe_p05": 0.0016080275580131033,
+            "mfe_p95": 0.09363768034775605,
+            "mae_median": -0.021545482479030653,
+            "mae_p05": -0.11338374367756883,
+            "mae_p95": -0.001860630274752501
+          },
+          "2019": {
+            "n": 8490,
+            "win_rate": 0.46383981154299175,
+            "mean": 0.0002508098889582263,
+            "median": -0.0015668599791965887,
+            "average_winner": 0.025344744197099343,
+            "average_loser": -0.02145830990573854,
+            "profit_factor": 1.0217999039232484,
+            "p05": -0.053855278566152,
+            "p95": 0.056503004202119275,
+            "mfe_median": 0.015186461243230975,
+            "mfe_p05": 0.0014409399698947281,
+            "mfe_p95": 0.08092914811368869,
+            "mae_median": -0.015261939972807281,
+            "mae_p05": -0.07484836778459568,
+            "mae_p95": -0.0014558719205493282
+          },
+          "2020": {
+            "n": 8443,
+            "win_rate": 0.5219708634371669,
+            "mean": 0.001855315146360427,
+            "median": 0.0009154589233983934,
+            "average_winner": 0.023261479047430155,
+            "average_loser": -0.021518561045912692,
+            "profit_factor": 1.1803640984235657,
+            "p05": -0.04653930708538869,
+            "p95": 0.05267645051914753,
+            "mfe_median": 0.01658708218145266,
+            "mfe_p05": 0.0016600384655674595,
+            "mfe_p95": 0.08030361263362439,
+            "mae_median": -0.015098628889639087,
+            "mae_p05": -0.07022522204786755,
+            "mae_p95": -0.0013592428333365388
+          },
+          "2021": {
+            "n": 8462,
+            "win_rate": 0.486291656818719,
+            "mean": -0.0007852480766250149,
+            "median": -0.0011502804280464907,
+            "average_winner": 0.032016701235721805,
+            "average_loser": -0.03183655275118383,
+            "profit_factor": 0.9519864048989264,
+            "p05": -0.07257884842822995,
+            "p95": 0.06731456301360741,
+            "mfe_median": 0.024703280014909845,
+            "mfe_p05": 0.002240991662514047,
+            "mfe_p95": 0.09016151160085199,
+            "mae_median": -0.02524274017019923,
+            "mae_p05": -0.10775458123276613,
+            "mae_p95": -0.0022866727825395687
+          },
+          "2022": {
+            "n": 8760,
+            "win_rate": 0.40970319634703195,
+            "mean": -0.004701979555663751,
+            "median": -0.003820628237763579,
+            "average_winner": 0.022500428125611018,
+            "average_loser": -0.02358216543230176,
+            "profit_factor": 0.6622256840117692,
+            "p05": -0.05975893138439708,
+            "p95": 0.04534530935993405,
+            "mfe_median": 0.015810348232451976,
+            "mfe_p05": 0.0014614987834623118,
+            "mfe_p95": 0.06564410174224085,
+            "mae_median": -0.01786453479311445,
+            "mae_p05": -0.07665654305915841,
+            "mae_p95": -0.001683402173194191
+          },
+          "2023": {
+            "n": 8695,
+            "win_rate": 0.4365727429557217,
+            "mean": 0.000534656992503936,
+            "median": -0.001676584087859312,
+            "average_winner": 0.01817261601225011,
+            "average_loser": -0.013132151017080974,
+            "profit_factor": 1.0722605943916106,
+            "p05": -0.03265350211250825,
+            "p95": 0.040661732010194726,
+            "mfe_median": 0.011245997865528379,
+            "mfe_p05": 0.0010800366191033419,
+            "mfe_p95": 0.058881559624774725,
+            "mae_median": -0.010300630730725513,
+            "mae_p05": -0.04407638142965231,
+            "mae_p95": -0.0008824153237631771
+          }
+        },
+        "positive_years": 3,
+        "return_std": 0.03705648242982289
+      }
+    },
+    "reused_recent": {
+      "candidate": {
+        "standard": {
+          "n": 63,
+          "win_rate": 0.4444444444444444,
+          "mean": 0.00011873662682472375,
+          "median": -0.0019652194115260535,
+          "average_winner": 0.02152171421660894,
+          "average_loser": -0.017003645445002647,
+          "profit_factor": 1.0125694180683658,
+          "p05": -0.04034291916943228,
+          "p95": 0.038077964808253956,
+          "mfe_median": 0.01505083267963614,
+          "mfe_p05": 0.0013838624991627136,
+          "mfe_p95": 0.05055714284324,
+          "mae_median": -0.011178781925343828,
+          "mae_p05": -0.05072164028612599,
+          "mae_p95": -0.0012869240793980333
+        },
+        "bnb_conditional": {
+          "n": 63,
+          "win_rate": 0.4603174603174603,
+          "mean": 0.0006189214164739654,
+          "median": -0.001466076861237453,
+          "average_winner": 0.021277998440587507,
+          "average_loser": -0.01700205604526994,
+          "profit_factor": 1.0674521348788968,
+          "p05": -0.03986297028183353,
+          "p95": 0.038597133972325975,
+          "mfe_median": 0.01505083267963614,
+          "mfe_p05": 0.0013838624991627136,
+          "mfe_p95": 0.05055714284324,
+          "mae_median": -0.011178781925343828,
+          "mae_p05": -0.05072164028612599,
+          "mae_p95": -0.0012869240793980333
+        },
+        "stress": {
+          "n": 63,
+          "win_rate": 0.4444444444444444,
+          "mean": -0.00048115470774007154,
+          "median": -0.0025638607473422725,
+          "average_winner": 0.0209089849455874,
+          "average_loser": -0.017593266430402047,
+          "profit_factor": 0.950772161760962,
+          "p05": -0.04091854078900657,
+          "p95": 0.03745530476511602,
+          "mfe_median": 0.01505083267963614,
+          "mfe_p05": 0.0013838624991627136,
+          "mfe_p95": 0.05055714284324,
+          "mae_median": -0.011178781925343828,
+          "mae_p05": -0.05072164028612599,
+          "mae_p95": -0.0012869240793980333
+        },
+        "nonoverlap": {
+          "n": 61,
+          "win_rate": 0.4426229508196721,
+          "mean": -8.57596471232488e-05,
+          "median": -0.0019652194115260535,
+          "average_winner": 0.02154650096928247,
+          "average_loser": -0.017264319548386614,
+          "profit_factor": 0.9910878099841626,
+          "p05": -0.040771768507644524,
+          "p95": 0.03835850901838134,
+          "mfe_median": 0.014567485234170618,
+          "mfe_p05": 0.0013145421126670165,
+          "mfe_p95": 0.05087992416272735,
+          "mae_median": -0.011299497159839578,
+          "mae_p05": -0.05103881822815348,
+          "mae_p95": -0.0014921533988579982,
+          "closed_trade_drawdown": -0.18557232513004118
+        },
+        "years": {
+          "2024": {
+            "n": 35,
+            "win_rate": 0.4857142857142857,
+            "mean": 0.002709847109657759,
+            "median": -0.0003508841588082401,
+            "average_winner": 0.024348770028115543,
+            "average_loser": -0.017726913424441257,
+            "profit_factor": 1.2972399667955137,
+            "p05": -0.042256828867076775,
+            "p95": 0.039276511331443824,
+            "mfe_median": 0.016128632270272503,
+            "mfe_p05": 0.0032063819093856253,
+            "mfe_p95": 0.05172661382427434,
+            "mae_median": -0.012660774508663875,
+            "mae_p05": -0.05375117097117312,
+            "mae_p95": -0.0011591272536037654
+          },
+          "2025": {
+            "n": 21,
+            "win_rate": 0.3333333333333333,
+            "mean": -0.007231688615180584,
+            "median": -0.0027721186179693325,
+            "average_winner": 0.01211761133289405,
+            "average_loser": -0.0169063385892179,
+            "profit_factor": 0.3583747973858194,
+            "p05": -0.036483275125522074,
+            "p95": 0.02307029529586302,
+            "mfe_median": 0.01093442733292127,
+            "mfe_p05": 0.0006966799949639224,
+            "mfe_p95": 0.03205252359681432,
+            "mae_median": -0.010084788710035375,
+            "mae_p05": -0.05103881822815348,
+            "mae_p95": -0.0019521309767583928
+          },
+          "2026": {
+            "n": 7,
+            "win_rate": 0.5714285714285714,
+            "mean": 0.00921445993867547,
+            "median": 0.013227464566054836,
+            "average_winner": 0.025963907064206926,
+            "average_loser": -0.013118136228699803,
+            "profit_factor": 2.638983324211682,
+            "p05": -0.022762636293086256,
+            "p95": 0.03945429748463863,
+            "mfe_median": 0.027128768436721407,
+            "mfe_p05": 0.010512397534991691,
+            "mfe_p95": 0.04529303324427244,
+            "mae_median": -0.008101813060832463,
+            "mae_p05": -0.028006799729234488,
+            "mae_p95": -0.0016178177682954157
+          }
+        },
+        "positive_years": 2,
+        "return_std": 0.024929279734366087
+      },
+      "unconditional": {
+        "standard": {
+          "n": 19680,
+          "win_rate": 0.45904471544715447,
+          "mean": -0.0015339428534574947,
+          "median": -0.0016234438044498423,
+          "average_winner": 0.01789339984429793,
+          "average_loser": -0.01801962892630387,
+          "profit_factor": 0.8426372381353487,
+          "p05": -0.04202855265605989,
+          "p95": 0.039528527647287724,
+          "mfe_median": 0.013236115418667982,
+          "mfe_p05": 0.0011289656345213506,
+          "mfe_p95": 0.053722117968519785,
+          "mae_median": -0.013148357953389478,
+          "mae_p05": -0.057529035569392366,
+          "mae_p95": -0.0010245407614775286
+        },
+        "bnb_conditional": {
+          "n": 19680,
+          "win_rate": 0.4715955284552846,
+          "mean": -0.0010345846108050444,
+          "median": -0.0011241303234969524,
+          "average_winner": 0.017919191708554157,
+          "average_loser": -0.017950634040555285,
+          "profit_factor": 0.8909263775043798,
+          "p05": -0.0415494467965938,
+          "p95": 0.04004842227468895,
+          "mfe_median": 0.013236115418667982,
+          "mfe_p05": 0.0011289656345213506,
+          "mfe_p95": 0.053722117968519785,
+          "mae_median": -0.013148357953389478,
+          "mae_p05": -0.057529035569392366,
+          "mae_p95": -0.0010245407614775286
+        },
+        "stress": {
+          "n": 19680,
+          "win_rate": 0.4447662601626016,
+          "mean": -0.0021328428776281054,
+          "median": -0.002222290144150152,
+          "average_winner": 0.01784715849975009,
+          "average_loser": -0.01813768886062356,
+          "profit_factor": 0.7882121378819482,
+          "p05": -0.0426031631987645,
+          "p95": 0.0389049975273824,
+          "mfe_median": 0.013236115418667982,
+          "mfe_p05": 0.0011289656345213506,
+          "mfe_p95": 0.053722117968519785,
+          "mae_median": -0.013148357953389478,
+          "mae_p05": -0.057529035569392366,
+          "mae_p95": -0.0010245407614775286
+        },
+        "nonoverlap": {
+          "n": 757,
+          "win_rate": 0.4583883751651255,
+          "mean": -0.0015204882478466596,
+          "median": -0.0019409895285956713,
+          "average_winner": 0.017900654959912783,
+          "average_loser": -0.01795740701148697,
+          "profit_factor": 0.8436667111884161,
+          "p05": -0.043193733551489456,
+          "p95": 0.039553534168808815,
+          "mfe_median": 0.013023871845879942,
+          "mfe_p05": 0.0010968187869031091,
+          "mfe_p95": 0.05167289383669368,
+          "mae_median": -0.013320685181393621,
+          "mae_p05": -0.0550378967956334,
+          "mae_p95": -0.0009832225911198102,
+          "closed_trade_drawdown": -0.8078385473357544
+        },
+        "years": {
+          "2024": {
+            "n": 8784,
+            "win_rate": 0.4828096539162113,
+            "mean": 0.00010721319331086271,
+            "median": -0.0006723398895516208,
+            "average_winner": 0.02024049480150874,
+            "average_loser": -0.018687690460743107,
+            "profit_factor": 1.0110928257220066,
+            "p05": -0.04318245458569423,
+            "p95": 0.046567607983731066,
+            "mfe_median": 0.015181810289309317,
+            "mfe_p05": 0.0013736493650485682,
+            "mfe_p95": 0.06018384548721543,
+            "mae_median": -0.013995730136092122,
+            "mae_p05": -0.06026490217861551,
+            "mae_p95": -0.001075540813037183
+          },
+          "2025": {
+            "n": 8760,
+            "win_rate": 0.446689497716895,
+            "mean": -0.002333950136570091,
+            "median": -0.0019038436185033758,
+            "average_winner": 0.015118972725017277,
+            "average_loser": -0.016423755615710047,
+            "profit_factor": 0.74316737789526,
+            "p05": -0.037615441635527075,
+            "p95": 0.03258376761538959,
+            "mfe_median": 0.01155778996829171,
+            "mfe_p05": 0.001024045781517291,
+            "mfe_p95": 0.04552542213970427,
+            "mae_median": -0.011635258009815685,
+            "mae_p05": -0.05200507030210767,
+            "mae_p95": -0.0009270605711843965
+          },
+          "2026": {
+            "n": 2136,
+            "win_rate": 0.41198501872659177,
+            "mean": -0.005002037850998182,
+            "median": -0.004206436998015428,
+            "average_winner": 0.01891874484908676,
+            "average_loser": -0.02176182190838254,
+            "profit_factor": 0.6091021057942645,
+            "p05": -0.04827990216760383,
+            "p95": 0.03786842245863731,
+            "mfe_median": 0.013221847926464525,
+            "mfe_p05": 0.0009392421563486075,
+            "mfe_p95": 0.055822692516129424,
+            "mae_median": -0.017253057133839178,
+            "mae_p05": -0.06324047273674341,
+            "mae_p95": -0.0014078632361563537
+          }
+        },
+        "positive_years": 1,
+        "return_std": 0.024863120533440898
+      }
+    }
+  },
+  "quality": {
+    "training/unconditional": {
+      "decisions": 51955,
+      "incomplete_by_status": {
+        "path_gap": 689,
+        "missing_entry": 22
+      },
+      "complete_boundary_purged": 24,
+      "usable": 51220
+    },
+    "training/confirmed_double_bottom_1h": {
+      "decisions": 172,
+      "incomplete_by_status": {
+        "path_gap": 2
+      },
+      "complete_boundary_purged": 0,
+      "usable": 170
+    },
+    "reused_recent/unconditional": {
+      "decisions": 19704,
+      "incomplete_by_status": {
+        "insufficient_future": 24
+      },
+      "complete_boundary_purged": 0,
+      "usable": 19680
+    },
+    "reused_recent/confirmed_double_bottom_1h": {
+      "decisions": 63,
+      "incomplete_by_status": {},
+      "complete_boundary_purged": 0,
+      "usable": 63
+    }
+  },
+  "comparisons": {
+    "28": {
+      "eligible": true,
+      "block_days": 28,
+      "active_blocks": 70,
+      "calendar_blocks": 79,
+      "net_ci95": [
+        -0.0074960275631173225,
+        0.004735317165421171
+      ],
+      "excess_mean": -0.00043168139064655477,
+      "excess_ci95": [
+        -0.005913457839084222,
+        0.005568461411020625
+      ],
+      "p_one_sided": 0.57,
+      "draws": 4999
+    },
+    "7": {
+      "eligible": true,
+      "block_days": 7,
+      "active_blocks": 127,
+      "calendar_blocks": 313,
+      "net_ci95": [
+        -0.007330118363105272,
+        0.0041844425543478446
+      ],
+      "excess_mean": -0.00043168139064655477,
+      "excess_ci95": [
+        -0.005687515728597849,
+        0.0051491627767626166
+      ],
+      "p_one_sided": 0.5604,
+      "draws": 4999
+    }
+  },
+  "test_ledger": [
+    {
+      "id": "M4/bull_flag/1h",
+      "p": 1.0,
+      "by_q": 1.0
+    },
+    {
+      "id": "M4/resistance_breakout/1h",
+      "p": 0.8236,
+      "by_q": 1.0
+    },
+    {
+      "id": "M4/resistance_retest/1h",
+      "p": 0.9706,
+      "by_q": 1.0
+    },
+    {
+      "id": "M4/bullish_engulfing/1h",
+      "p": 0.998,
+      "by_q": 1.0
+    },
+    {
+      "id": "M4/bearish_engulfing/1h",
+      "p": 0.0002,
+      "by_q": 0.03109173805628033
+    },
+    {
+      "id": "M4/trend_rsi_volume/1h",
+      "p": 0.3452,
+      "by_q": 1.0
+    },
+    {
+      "id": "M4/trend_rsi_volume_flag/1h",
+      "p": 1.0,
+      "by_q": 1.0
+    },
+    {
+      "id": "M4/bull_flag/4h",
+      "p": 1.0,
+      "by_q": 1.0
+    },
+    {
+      "id": "M4/resistance_breakout/4h",
+      "p": 0.9398,
+      "by_q": 1.0
+    },
+    {
+      "id": "M4/resistance_retest/4h",
+      "p": 0.986,
+      "by_q": 1.0
+    },
+    {
+      "id": "M4/bullish_engulfing/4h",
+      "p": 0.8542,
+      "by_q": 1.0
+    },
+    {
+      "id": "M4/bearish_engulfing/4h",
+      "p": 0.0034,
+      "by_q": 0.2642797734783828
+    },
+    {
+      "id": "M4/trend_rsi_volume/4h",
+      "p": 0.6064,
+      "by_q": 1.0
+    },
+    {
+      "id": "M4/trend_rsi_volume_flag/4h",
+      "p": 1.0,
+      "by_q": 1.0
+    },
+    {
+      "id": "M4/bull_flag/12h",
+      "p": 1.0,
+      "by_q": 1.0
+    },
+    {
+      "id": "M4/resistance_breakout/12h",
+      "p": 0.0572,
+      "by_q": 1.0
+    },
+    {
+      "id": "M4/resistance_retest/12h",
+      "p": 0.2028,
+      "by_q": 1.0
+    },
+    {
+      "id": "M4/bullish_engulfing/12h",
+      "p": 0.4474,
+      "by_q": 1.0
+    },
+    {
+      "id": "M4/bearish_engulfing/12h",
+      "p": 0.0936,
+      "by_q": 1.0
+    },
+    {
+      "id": "M4/trend_rsi_volume/12h",
+      "p": 0.253,
+      "by_q": 1.0
+    },
+    {
+      "id": "M4/trend_rsi_volume_flag/12h",
+      "p": 1.0,
+      "by_q": 1.0
+    },
+    {
+      "id": "M4/bull_flag/24h",
+      "p": 1.0,
+      "by_q": 1.0
+    },
+    {
+      "id": "M4/resistance_breakout/24h",
+      "p": 0.047,
+      "by_q": 1.0
+    },
+    {
+      "id": "M4/resistance_retest/24h",
+      "p": 0.0996,
+      "by_q": 1.0
+    },
+    {
+      "id": "M4/bullish_engulfing/24h",
+      "p": 0.318,
+      "by_q": 1.0
+    },
+    {
+      "id": "M4/bearish_engulfing/24h",
+      "p": 0.3926,
+      "by_q": 1.0
+    },
+    {
+      "id": "M4/trend_rsi_volume/24h",
+      "p": 0.2392,
+      "by_q": 1.0
+    },
+    {
+      "id": "M4/trend_rsi_volume_flag/24h",
+      "p": 1.0,
+      "by_q": 1.0
+    },
+    {
+      "id": "M5/trend_breakout",
+      "p": 0.9944,
+      "by_q": 1.0
+    },
+    {
+      "id": "M5/trend_retest",
+      "p": 0.9726,
+      "by_q": 1.0
+    },
+    {
+      "id": "M5/range_rsi_recovery",
+      "p": 1.0,
+      "by_q": 1.0
+    },
+    {
+      "id": "M5R2/trend_breakout_4h",
+      "p": 1.0,
+      "by_q": 1.0
+    },
+    {
+      "id": "M5R2/trend_rsi_recovery_4h",
+      "p": 1.0,
+      "by_q": 1.0
+    },
+    {
+      "id": "M5R3/unfiltered_breakout_4h",
+      "p": 0.0306,
+      "by_q": 1.0
+    },
+    {
+      "id": "M5R4/lower_band_reentry_1h",
+      "p": 0.5332,
+      "by_q": 1.0
+    },
+    {
+      "id": "M5R5/trend_pullback_reclaim_1h",
+      "p": 0.5894,
+      "by_q": 1.0
+    },
+    {
+      "id": "M5R6/confirmed_double_bottom_1h",
+      "p": 0.57,
+      "by_q": 1.0
+    }
+  ],
+  "gates": {
+    "passed": false,
+    "checks": {
+      "training_count": true,
+      "training_nonoverlap_count": true,
+      "active_blocks": true,
+      "positive_net_ci": false,
+      "positive_excess_ci": false,
+      "multiplicity": false,
+      "positive_stress": false,
+      "positive_training_years": true,
+      "positive_nonoverlap": false,
+      "recent_count": true,
+      "recent_standard": true,
+      "recent_stress": false
+    },
+    "failed": [
+      "positive_net_ci",
+      "positive_excess_ci",
+      "multiplicity",
+      "positive_stress",
+      "positive_nonoverlap",
+      "recent_stress"
+    ]
+  },
+  "buy_and_hold_context": {
+    "training": {
+      "start_open": "2018-01-01 00:00:00+00:00",
+      "last_close": "2024-01-01 00:00:00+00:00",
+      "period_total_net": 2.075481005931253,
+      "observed_close_drawdown": -0.8155889407050321,
+      "note": "One purchase/one sale, no 5m signal delay. Observed 15m liquidation-value marks; gaps/intrabar extremes omitted. Different exposure from candidate diagnostics."
+    },
+    "reused_recent": {
+      "start_open": "2024-01-01 00:00:00+00:00",
+      "last_close": "2026-04-01 00:00:00+00:00",
+      "period_total_net": 0.6110460302626246,
+      "observed_close_drawdown": -0.5218229842780617,
+      "note": "One purchase/one sale, no 5m signal delay. Observed 15m liquidation-value marks; gaps/intrabar extremes omitted. Different exposure from candidate diagnostics."
+    }
+  },
+  "selected_strategy": null,
+  "decision": "candidate_rejected",
+  "limits": "Adaptive exploratory research; recent data reused. Event means are not portfolio returns. Missing paths excluded. Reserved data remains sealed. No strategy or trading activated.",
+  "snapshot_id": "3f536e42b4ec4bed3f8c0830abd45612711a8855023305d4779645a8c8b388fc"
+}
