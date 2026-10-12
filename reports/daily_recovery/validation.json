@@ -1,0 +1,12 @@
+{
+  "unit_tests_passed": 110,
+  "byte_identical_cached_replay": true,
+  "candidate_file_checksum_verified": true,
+  "candidate_schema_valid": true,
+  "candidate_rows_absent_from_existing_store": true,
+  "candidate_count": 240,
+  "conflicting_existing_candles": 7,
+  "missing_slots_accounted_for": 1860,
+  "market_snapshot_unchanged": true,
+  "report_sha256": "646e1ef8e2406286ce4730196257e89282185980a32d6f3e6c71d06b91762d44"
+}

@@ -2,7 +2,7 @@
 
 Four discovery rounds are complete: seven registered candidates, none passing the statistical criteria. The cumulative Research Engine ledger contains 35 tests; earlier project experiments are disclosed separately.
 
-See the [consolidated evidence review](reports/research_review/REVIEW.md) for results and limitations. The [coverage audit](reports/coverage_audit/COVERAGE.md) is now complete: 30 development gaps, exact higher-timeframe reaggregation, and substantial post-gap warm-up loss. Next is an independent official-source recovery check; the existing data remains unchanged. Reserved data remains blocked. No strategy is selected and paper/live trading is inactive.
+See the [consolidated evidence review](reports/research_review/REVIEW.md) for results and limitations. The [coverage audit](reports/coverage_audit/COVERAGE.md) is now complete: 30 development gaps, exact higher-timeframe reaggregation, and substantial post-gap warm-up loss. The [daily-archive cross-check](reports/daily_recovery/RECOVERY.md) found 240 staged missing-candle candidates and seven conflicting existing candles. A public-API reconciliation is next; the existing data remains unchanged. Reserved data remains blocked. No strategy is selected and paper/live trading is inactive.
 
 ## Initial discovery checkpoint (round 1)
 

@@ -1,0 +1,1387 @@
+{
+  "source_snapshot": "ed2167a0ac3a875972f5cead7bdfc7b332a0b436ca2db8b84eb06fef9ff1a44d",
+  "code_sha256": "6fa81e8470f9cf58086e3e0b584b95dcfc6573e245b73106dd7d76dd9f6c9754",
+  "scope": [
+    "2018-01-01",
+    "2026-04-01"
+  ],
+  "planned_gap_ranges": 30,
+  "planned_days": 32,
+  "daily_archives_verified": 32,
+  "source_errors_or_missing": 0,
+  "missing_slots": 1860,
+  "evidence_counts": {
+    "quarantined_exact_open": 12,
+    "absent_from_cached_archive": 1608,
+    "valid_daily_recovery_candidate": 240
+  },
+  "candidate_count": 240,
+  "candidate_file": {
+    "path": "candidate_candles/2a6738a8dc7d41d07be4635c798ce3031edd9f4c5656416c3d55b1d4b17021bf.parquet",
+    "sha256": "2a6738a8dc7d41d07be4635c798ce3031edd9f4c5656416c3d55b1d4b17021bf",
+    "rows": 240
+  },
+  "conflicts": [
+    {
+      "day": "2020-12-21",
+      "open_time": "2020-12-21 13:15:00+00:00",
+      "fields": [
+        "high",
+        "close",
+        "volume",
+        "quote_volume",
+        "trades",
+        "taker_base",
+        "taker_quote"
+      ],
+      "values": {
+        "high": {
+          "stored": 22661.57,
+          "daily": 22666.66
+        },
+        "close": {
+          "stored": 22646.53,
+          "daily": 22637.92
+        },
+        "volume": {
+          "stored": 496.200806,
+          "daily": 558.33538
+        },
+        "quote_volume": {
+          "stored": 11217453.04463482,
+          "daily": 12624625.36115557
+        },
+        "trades": {
+          "stored": 7440,
+          "daily": 8818
+        },
+        "taker_base": {
+          "stored": 254.208892,
+          "daily": 286.75025
+        },
+        "taker_quote": {
+          "stored": 5746432.93095698,
+          "daily": 6483572.03162911
+        }
+      }
+    },
+    {
+      "day": "2020-12-21",
+      "open_time": "2020-12-21 13:20:00+00:00",
+      "fields": [
+        "open",
+        "high",
+        "low",
+        "close",
+        "volume",
+        "quote_volume",
+        "trades",
+        "taker_base",
+        "taker_quote"
+      ],
+      "values": {
+        "open": {
+          "stored": 22646.53,
+          "daily": 22641.66
+        },
+        "high": {
+          "stored": 22646.53,
+          "daily": 22750.0
+        },
+        "low": {
+          "stored": 22646.53,
+          "daily": 22626.02
+        },
+        "close": {
+          "stored": 22646.53,
+          "daily": 22683.0
+        },
+        "volume": {
+          "stored": 0.0,
+          "daily": 241.338571
+        },
+        "quote_volume": {
+          "stored": 0.0,
+          "daily": 5471425.37681308
+        },
+        "trades": {
+          "stored": 0,
+          "daily": 5419
+        },
+        "taker_base": {
+          "stored": 0.0,
+          "daily": 128.500968
+        },
+        "taker_quote": {
+          "stored": 0.0,
+          "daily": 2914726.97829146
+        }
+      }
+    },
+    {
+      "day": "2020-12-21",
+      "open_time": "2020-12-21 13:25:00+00:00",
+      "fields": [
+        "open",
+        "high",
+        "low",
+        "close",
+        "volume",
+        "quote_volume",
+        "trades",
+        "taker_base",
+        "taker_quote"
+      ],
+      "values": {
+        "open": {
+          "stored": 22646.53,
+          "daily": 22675.01
+        },
+        "high": {
+          "stored": 22646.53,
+          "daily": 22771.15
+        },
+        "low": {
+          "stored": 22646.53,
+          "daily": 22645.75
+        },
+        "close": {
+          "stored": 22646.53,
+          "daily": 22695.72
+        },
+        "volume": {
+          "stored": 0.0,
+          "daily": 162.73185
+        },
+        "quote_volume": {
+          "stored": 0.0,
+          "daily": 3693931.12541803
+        },
+        "trades": {
+          "stored": 0,
+          "daily": 3074
+        },
+        "taker_base": {
+          "stored": 0.0,
+          "daily": 72.742235
+        },
+        "taker_quote": {
+          "stored": 0.0,
+          "daily": 1651599.69694784
+        }
+      }
+    },
+    {
+      "day": "2020-12-21",
+      "open_time": "2020-12-21 13:30:00+00:00",
+      "fields": [
+        "open",
+        "high",
+        "low",
+        "close",
+        "volume",
+        "quote_volume",
+        "trades",
+        "taker_base",
+        "taker_quote"
+      ],
+      "values": {
+        "open": {
+          "stored": 22646.53,
+          "daily": 22695.7
+        },
+        "high": {
+          "stored": 22646.53,
+          "daily": 22728.58
+        },
+        "low": {
+          "stored": 22646.53,
+          "daily": 22642.01
+        },
+        "close": {
+          "stored": 22646.53,
+          "daily": 22651.73
+        },
+        "volume": {
+          "stored": 0.0,
+          "daily": 119.291239
+        },
+        "quote_volume": {
+          "stored": 0.0,
+          "daily": 2703703.15011872
+        },
+        "trades": {
+          "stored": 0,
+          "daily": 2707
+        },
+        "taker_base": {
+          "stored": 0.0,
+          "daily": 35.135099
+        },
+        "taker_quote": {
+          "stored": 0.0,
+          "daily": 796744.18748793
+        }
+      }
+    },
+    {
+      "day": "2020-12-21",
+      "open_time": "2020-12-21 13:35:00+00:00",
+      "fields": [
+        "open",
+        "high",
+        "low",
+        "close",
+        "volume",
+        "quote_volume",
+        "trades",
+        "taker_base",
+        "taker_quote"
+      ],
+      "values": {
+        "open": {
+          "stored": 22646.53,
+          "daily": 22651.74
+        },
+        "high": {
+          "stored": 22646.53,
+          "daily": 22700.0
+        },
+        "low": {
+          "stored": 22646.53,
+          "daily": 22627.93
+        },
+        "close": {
+          "stored": 22646.53,
+          "daily": 22650.73
+        },
+        "volume": {
+          "stored": 0.0,
+          "daily": 137.813756
+        },
+        "quote_volume": {
+          "stored": 0.0,
+          "daily": 3123458.6444358
+        },
+        "trades": {
+          "stored": 0,
+          "daily": 2427
+        },
+        "taker_base": {
+          "stored": 0.0,
+          "daily": 66.249746
+        },
+        "taker_quote": {
+          "stored": 0.0,
+          "daily": 1502570.9515752
+        }
+      }
+    },
+    {
+      "day": "2020-12-21",
+      "open_time": "2020-12-21 13:40:00+00:00",
+      "fields": [
+        "open",
+        "high",
+        "low",
+        "close",
+        "volume",
+        "quote_volume",
+        "trades",
+        "taker_base",
+        "taker_quote"
+      ],
+      "values": {
+        "open": {
+          "stored": 22646.53,
+          "daily": 22656.38
+        },
+        "high": {
+          "stored": 22646.53,
+          "daily": 22730.72
+        },
+        "low": {
+          "stored": 22646.53,
+          "daily": 22637.87
+        },
+        "close": {
+          "stored": 22646.53,
+          "daily": 22730.72
+        },
+        "volume": {
+          "stored": 0.0,
+          "daily": 87.022271
+        },
+        "quote_volume": {
+          "stored": 0.0,
+          "daily": 1973124.49247551
+        },
+        "trades": {
+          "stored": 0,
+          "daily": 1711
+        },
+        "taker_base": {
+          "stored": 0.0,
+          "daily": 40.503444
+        },
+        "taker_quote": {
+          "stored": 0.0,
+          "daily": 918989.36735043
+        }
+      }
+    },
+    {
+      "day": "2021-12-24",
+      "open_time": "2021-12-24 03:25:00+00:00",
+      "fields": [
+        "high",
+        "volume",
+        "quote_volume",
+        "trades",
+        "taker_base",
+        "taker_quote"
+      ],
+      "values": {
+        "high": {
+          "stored": 51139.52,
+          "daily": 51143.74
+        },
+        "volume": {
+          "stored": 68.13481,
+          "daily": 91.02804
+        },
+        "quote_volume": {
+          "stored": 3480593.3453995,
+          "daily": 4651214.9227393
+        },
+        "trades": {
+          "stored": 2546,
+          "daily": 3313
+        },
+        "taker_base": {
+          "stored": 38.845,
+          "daily": 45.56632
+        },
+        "taker_quote": {
+          "stored": 1984666.3495309,
+          "daily": 2328333.2392213
+        }
+      }
+    }
+  ],
+  "days": [
+    {
+      "day": "2018-01-04",
+      "missing_slots": 25,
+      "status": "verified",
+      "source": {
+        "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/5m/BTCUSDT-5m-2018-01-04.zip",
+        "sha256": "dfeb3053b2aa9aa50147fc4e27ceaa4be307ede78446835a5b3a6e38b6412ace",
+        "bytes": 14115
+      },
+      "valid_rows": 263,
+      "quarantined_rows": 1,
+      "shared_candles_compared": 263,
+      "conflicts": 0,
+      "candidate_count": 0,
+      "candidate_open_times": []
+    },
+    {
+      "day": "2018-02-08",
+      "missing_slots": 283,
+      "status": "verified",
+      "source": {
+        "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02-08.zip",
+        "sha256": "7253d9873c59bd180aeff86bc5466d31c9147b812d832ece943e442bfdc2ff00",
+        "bytes": 497
+      },
+      "valid_rows": 5,
+      "quarantined_rows": 1,
+      "shared_candles_compared": 5,
+      "conflicts": 0,
+      "candidate_count": 0,
+      "candidate_open_times": []
+    },
+    {
+      "day": "2018-02-09",
+      "missing_slots": 288,
+      "status": "verified",
+      "source": {
+        "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02-09.zip",
+        "sha256": "d96c65c474e11697fa58f272558676b008b1f541ff08bf402a0e0cef7e5d1b27",
+        "bytes": 9208
+      },
+      "valid_rows": 168,
+      "quarantined_rows": 0,
+      "shared_candles_compared": 0,
+      "conflicts": 0,
+      "candidate_count": 168,
+      "candidate_open_times": [
+        "2018-02-09 10:00:00+00:00",
+        "2018-02-09 10:05:00+00:00",
+        "2018-02-09 10:10:00+00:00",
+        "2018-02-09 10:15:00+00:00",
+        "2018-02-09 10:20:00+00:00",
+        "2018-02-09 10:25:00+00:00",
+        "2018-02-09 10:30:00+00:00",
+        "2018-02-09 10:35:00+00:00",
+        "2018-02-09 10:40:00+00:00",
+        "2018-02-09 10:45:00+00:00",
+        "2018-02-09 10:50:00+00:00",
+        "2018-02-09 10:55:00+00:00",
+        "2018-02-09 11:00:00+00:00",
+        "2018-02-09 11:05:00+00:00",
+        "2018-02-09 11:10:00+00:00",
+        "2018-02-09 11:15:00+00:00",
+        "2018-02-09 11:20:00+00:00",
+        "2018-02-09 11:25:00+00:00",
+        "2018-02-09 11:30:00+00:00",
+        "2018-02-09 11:35:00+00:00",
+        "2018-02-09 11:40:00+00:00",
+        "2018-02-09 11:45:00+00:00",
+        "2018-02-09 11:50:00+00:00",
+        "2018-02-09 11:55:00+00:00",
+        "2018-02-09 12:00:00+00:00",
+        "2018-02-09 12:05:00+00:00",
+        "2018-02-09 12:10:00+00:00",
+        "2018-02-09 12:15:00+00:00",
+        "2018-02-09 12:20:00+00:00",
+        "2018-02-09 12:25:00+00:00",
+        "2018-02-09 12:30:00+00:00",
+        "2018-02-09 12:35:00+00:00",
+        "2018-02-09 12:40:00+00:00",
+        "2018-02-09 12:45:00+00:00",
+        "2018-02-09 12:50:00+00:00",
+        "2018-02-09 12:55:00+00:00",
+        "2018-02-09 13:00:00+00:00",
+        "2018-02-09 13:05:00+00:00",
+        "2018-02-09 13:10:00+00:00",
+        "2018-02-09 13:15:00+00:00",
+        "2018-02-09 13:20:00+00:00",
+        "2018-02-09 13:25:00+00:00",
+        "2018-02-09 13:30:00+00:00",
+        "2018-02-09 13:35:00+00:00",
+        "2018-02-09 13:40:00+00:00",
+        "2018-02-09 13:45:00+00:00",
+        "2018-02-09 13:50:00+00:00",
+        "2018-02-09 13:55:00+00:00",
+        "2018-02-09 14:00:00+00:00",
+        "2018-02-09 14:05:00+00:00",
+        "2018-02-09 14:10:00+00:00",
+        "2018-02-09 14:15:00+00:00",
+        "2018-02-09 14:20:00+00:00",
+        "2018-02-09 14:25:00+00:00",
+        "2018-02-09 14:30:00+00:00",
+        "2018-02-09 14:35:00+00:00",
+        "2018-02-09 14:40:00+00:00",
+        "2018-02-09 14:45:00+00:00",
+        "2018-02-09 14:50:00+00:00",
+        "2018-02-09 14:55:00+00:00",
+        "2018-02-09 15:00:00+00:00",
+        "2018-02-09 15:05:00+00:00",
+        "2018-02-09 15:10:00+00:00",
+        "2018-02-09 15:15:00+00:00",
+        "2018-02-09 15:20:00+00:00",
+        "2018-02-09 15:25:00+00:00",
+        "2018-02-09 15:30:00+00:00",
+        "2018-02-09 15:35:00+00:00",
+        "2018-02-09 15:40:00+00:00",
+        "2018-02-09 15:45:00+00:00",
+        "2018-02-09 15:50:00+00:00",
+        "2018-02-09 15:55:00+00:00",
+        "2018-02-09 16:00:00+00:00",
+        "2018-02-09 16:05:00+00:00",
+        "2018-02-09 16:10:00+00:00",
+        "2018-02-09 16:15:00+00:00",
+        "2018-02-09 16:20:00+00:00",
+        "2018-02-09 16:25:00+00:00",
+        "2018-02-09 16:30:00+00:00",
+        "2018-02-09 16:35:00+00:00",
+        "2018-02-09 16:40:00+00:00",
+        "2018-02-09 16:45:00+00:00",
+        "2018-02-09 16:50:00+00:00",
+        "2018-02-09 16:55:00+00:00",
+        "2018-02-09 17:00:00+00:00",
+        "2018-02-09 17:05:00+00:00",
+        "2018-02-09 17:10:00+00:00",
+        "2018-02-09 17:15:00+00:00",
+        "2018-02-09 17:20:00+00:00",
+        "2018-02-09 17:25:00+00:00",
+        "2018-02-09 17:30:00+00:00",
+        "2018-02-09 17:35:00+00:00",
+        "2018-02-09 17:40:00+00:00",
+        "2018-02-09 17:45:00+00:00",
+        "2018-02-09 17:50:00+00:00",
+        "2018-02-09 17:55:00+00:00",
+        "2018-02-09 18:00:00+00:00",
+        "2018-02-09 18:05:00+00:00",
+        "2018-02-09 18:10:00+00:00",
+        "2018-02-09 18:15:00+00:00",
+        "2018-02-09 18:20:00+00:00",
+        "2018-02-09 18:25:00+00:00",
+        "2018-02-09 18:30:00+00:00",
+        "2018-02-09 18:35:00+00:00",
+        "2018-02-09 18:40:00+00:00",
+        "2018-02-09 18:45:00+00:00",
+        "2018-02-09 18:50:00+00:00",
+        "2018-02-09 18:55:00+00:00",
+        "2018-02-09 19:00:00+00:00",
+        "2018-02-09 19:05:00+00:00",
+        "2018-02-09 19:10:00+00:00",
+        "2018-02-09 19:15:00+00:00",
+        "2018-02-09 19:20:00+00:00",
+        "2018-02-09 19:25:00+00:00",
+        "2018-02-09 19:30:00+00:00",
+        "2018-02-09 19:35:00+00:00",
+        "2018-02-09 19:40:00+00:00",
+        "2018-02-09 19:45:00+00:00",
+        "2018-02-09 19:50:00+00:00",
+        "2018-02-09 19:55:00+00:00",
+        "2018-02-09 20:00:00+00:00",
+        "2018-02-09 20:05:00+00:00",
+        "2018-02-09 20:10:00+00:00",
+        "2018-02-09 20:15:00+00:00",
+        "2018-02-09 20:20:00+00:00",
+        "2018-02-09 20:25:00+00:00",
+        "2018-02-09 20:30:00+00:00",
+        "2018-02-09 20:35:00+00:00",
+        "2018-02-09 20:40:00+00:00",
+        "2018-02-09 20:45:00+00:00",
+        "2018-02-09 20:50:00+00:00",
+        "2018-02-09 20:55:00+00:00",
+        "2018-02-09 21:00:00+00:00",
+        "2018-02-09 21:05:00+00:00",
+        "2018-02-09 21:10:00+00:00",
+        "2018-02-09 21:15:00+00:00",
+        "2018-02-09 21:20:00+00:00",
+        "2018-02-09 21:25:00+00:00",
+        "2018-02-09 21:30:00+00:00",
+        "2018-02-09 21:35:00+00:00",
+        "2018-02-09 21:40:00+00:00",
+        "2018-02-09 21:45:00+00:00",
+        "2018-02-09 21:50:00+00:00",
+        "2018-02-09 21:55:00+00:00",
+        "2018-02-09 22:00:00+00:00",
+        "2018-02-09 22:05:00+00:00",
+        "2018-02-09 22:10:00+00:00",
+        "2018-02-09 22:15:00+00:00",
+        "2018-02-09 22:20:00+00:00",
+        "2018-02-09 22:25:00+00:00",
+        "2018-02-09 22:30:00+00:00",
+        "2018-02-09 22:35:00+00:00",
+        "2018-02-09 22:40:00+00:00",
+        "2018-02-09 22:45:00+00:00",
+        "2018-02-09 22:50:00+00:00",
+        "2018-02-09 22:55:00+00:00",
+        "2018-02-09 23:00:00+00:00",
+        "2018-02-09 23:05:00+00:00",
+        "2018-02-09 23:10:00+00:00",
+        "2018-02-09 23:15:00+00:00",
+        "2018-02-09 23:20:00+00:00",
+        "2018-02-09 23:25:00+00:00",
+        "2018-02-09 23:30:00+00:00",
+        "2018-02-09 23:35:00+00:00",
+        "2018-02-09 23:40:00+00:00",
+        "2018-02-09 23:45:00+00:00",
+        "2018-02-09 23:50:00+00:00",
+        "2018-02-09 23:55:00+00:00"
+      ]
+    },
+    {
+      "day": "2018-02-10",
+      "missing_slots": 75,
+      "status": "verified",
+      "source": {
+        "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02-10.zip",
+        "sha256": "a33e4f40247f01ca48cfc87eb312cd23d8b7f969637c1b38fa1408fa248a97f5",
+        "bytes": 15598
+      },
+      "valid_rows": 285,
+      "quarantined_rows": 0,
+      "shared_candles_compared": 213,
+      "conflicts": 0,
+      "candidate_count": 72,
+      "candidate_open_times": [
+        "2018-02-10 00:00:00+00:00",
+        "2018-02-10 00:05:00+00:00",
+        "2018-02-10 00:10:00+00:00",
+        "2018-02-10 00:15:00+00:00",
+        "2018-02-10 00:20:00+00:00",
+        "2018-02-10 00:25:00+00:00",
+        "2018-02-10 00:30:00+00:00",
+        "2018-02-10 00:35:00+00:00",
+        "2018-02-10 00:40:00+00:00",
+        "2018-02-10 00:45:00+00:00",
+        "2018-02-10 00:50:00+00:00",
+        "2018-02-10 00:55:00+00:00",
+        "2018-02-10 01:00:00+00:00",
+        "2018-02-10 01:05:00+00:00",
+        "2018-02-10 01:10:00+00:00",
+        "2018-02-10 01:15:00+00:00",
+        "2018-02-10 01:20:00+00:00",
+        "2018-02-10 01:25:00+00:00",
+        "2018-02-10 01:30:00+00:00",
+        "2018-02-10 01:35:00+00:00",
+        "2018-02-10 01:40:00+00:00",
+        "2018-02-10 01:45:00+00:00",
+        "2018-02-10 01:50:00+00:00",
+        "2018-02-10 01:55:00+00:00",
+        "2018-02-10 02:00:00+00:00",
+        "2018-02-10 02:05:00+00:00",
+        "2018-02-10 02:10:00+00:00",
+        "2018-02-10 02:15:00+00:00",
+        "2018-02-10 02:20:00+00:00",
+        "2018-02-10 02:25:00+00:00",
+        "2018-02-10 02:30:00+00:00",
+        "2018-02-10 02:35:00+00:00",
+        "2018-02-10 02:40:00+00:00",
+        "2018-02-10 02:45:00+00:00",
+        "2018-02-10 02:50:00+00:00",
+        "2018-02-10 02:55:00+00:00",
+        "2018-02-10 03:00:00+00:00",
+        "2018-02-10 03:05:00+00:00",
+        "2018-02-10 03:10:00+00:00",
+        "2018-02-10 03:15:00+00:00",
+        "2018-02-10 03:20:00+00:00",
+        "2018-02-10 03:25:00+00:00",
+        "2018-02-10 03:30:00+00:00",
+        "2018-02-10 03:35:00+00:00",
+        "2018-02-10 03:40:00+00:00",
+        "2018-02-10 03:45:00+00:00",
+        "2018-02-10 03:50:00+00:00",
+        "2018-02-10 03:55:00+00:00",
+        "2018-02-10 04:00:00+00:00",
+        "2018-02-10 04:05:00+00:00",
+        "2018-02-10 04:10:00+00:00",
+        "2018-02-10 04:15:00+00:00",
+        "2018-02-10 04:20:00+00:00",
+        "2018-02-10 04:25:00+00:00",
+        "2018-02-10 04:30:00+00:00",
+        "2018-02-10 04:35:00+00:00",
+        "2018-02-10 04:40:00+00:00",
+        "2018-02-10 04:45:00+00:00",
+        "2018-02-10 04:50:00+00:00",
+        "2018-02-10 04:55:00+00:00",
+        "2018-02-10 05:00:00+00:00",
+        "2018-02-10 05:05:00+00:00",
+        "2018-02-10 05:10:00+00:00",
+        "2018-02-10 05:15:00+00:00",
+        "2018-02-10 05:20:00+00:00",
+        "2018-02-10 05:25:00+00:00",
+        "2018-02-10 05:30:00+00:00",
+        "2018-02-10 05:35:00+00:00",
+        "2018-02-10 05:40:00+00:00",
+        "2018-02-10 05:45:00+00:00",
+        "2018-02-10 05:50:00+00:00",
+        "2018-02-10 05:55:00+00:00"
+      ]
+    },
+    {
+      "day": "2018-02-11",
+      "missing_slots": 7,
+      "status": "verified",
+      "source": {
+        "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/5m/BTCUSDT-5m-2018-02-11.zip",
+        "sha256": "9fb1ba34a48244ad8090c9dd1a7b590ae2ff6e023a81784b5afcabfe3f5f74a4",
+        "bytes": 15478
+      },
+      "valid_rows": 281,
+      "quarantined_rows": 1,
+      "shared_candles_compared": 281,
+      "conflicts": 0,
+      "candidate_count": 0,
+      "candidate_open_times": []
+    },
+    {
+      "day": "2018-06-26",
+      "missing_slots": 120,
+      "status": "verified",
+      "source": {
+        "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/5m/BTCUSDT-5m-2018-06-26.zip",
+        "sha256": "699dff7f7a3e1d224200200f9d7a19dcabec12fad3e8f6013fc15348626d3049",
+        "bytes": 8951
+      },
+      "valid_rows": 168,
+      "quarantined_rows": 0,
+      "shared_candles_compared": 168,
+      "conflicts": 0,
+      "candidate_count": 0,
+      "candidate_open_times": []
+    },
+    {
+      "day": "2018-06-27",
+      "missing_slots": 21,
+      "status": "verified",
+      "source": {
+        "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/5m/BTCUSDT-5m-2018-06-27.zip",
+        "sha256": "9913d89a487324035390ccec16f52ce739d0d015246d6bf4f4266415bd12d029",
+        "bytes": 13890
+      },
+      "valid_rows": 267,
+      "quarantined_rows": 0,
+      "shared_candles_compared": 267,
+      "conflicts": 0,
+      "candidate_count": 0,
+      "candidate_open_times": []
+    },
+    {
+      "day": "2018-07-04",
+      "missing_slots": 92,
+      "status": "verified",
+      "source": {
+        "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/5m/BTCUSDT-5m-2018-07-04.zip",
+        "sha256": "c9dbe52f52eea6a4fd51edd7beaf492e3e3327562e956fa53de0a43d4058c4c4",
+        "bytes": 10428
+      },
+      "valid_rows": 196,
+      "quarantined_rows": 1,
+      "shared_candles_compared": 196,
+      "conflicts": 0,
+      "candidate_count": 0,
+      "candidate_open_times": []
+    },
+    {
+      "day": "2018-10-19",
+      "missing_slots": 42,
+      "status": "verified",
+      "source": {
+        "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/5m/BTCUSDT-5m-2018-10-19.zip",
+        "sha256": "1586e57a812fdd628b674097c487c17e1277ced96f18c74b573e37cc5fe45884",
+        "bytes": 12903
+      },
+      "valid_rows": 246,
+      "quarantined_rows": 0,
+      "shared_candles_compared": 246,
+      "conflicts": 0,
+      "candidate_count": 0,
+      "candidate_open_times": []
+    },
+    {
+      "day": "2018-11-14",
+      "missing_slots": 84,
+      "status": "verified",
+      "source": {
+        "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/5m/BTCUSDT-5m-2018-11-14.zip",
+        "sha256": "872224629c39e6f306e82e89e4a8a1f41ef391538f0640139cf835c4fc1317fe",
+        "bytes": 11180
+      },
+      "valid_rows": 204,
+      "quarantined_rows": 0,
+      "shared_candles_compared": 204,
+      "conflicts": 0,
+      "candidate_count": 0,
+      "candidate_open_times": []
+    },
+    {
+      "day": "2019-03-12",
+      "missing_slots": 72,
+      "status": "verified",
+      "source": {
+        "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/5m/BTCUSDT-5m-2019-03-12.zip",
+        "sha256": "f1a971e0ccf8f65a750f23368f70edf7ce9bb34dbf19604826aa56d9ea305e5a",
+        "bytes": 11391
+      },
+      "valid_rows": 216,
+      "quarantined_rows": 0,
+      "shared_candles_compared": 216,
+      "conflicts": 0,
+      "candidate_count": 0,
+      "candidate_open_times": []
+    },
+    {
+      "day": "2019-05-15",
+      "missing_slots": 120,
+      "status": "verified",
+      "source": {
+        "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/5m/BTCUSDT-5m-2019-05-15.zip",
+        "sha256": "10a3a8bda13825f7cf43f3b7ef95b3e88ab907bcce8fe6ddab7027e59b78641b",
+        "bytes": 9410
+      },
+      "valid_rows": 168,
+      "quarantined_rows": 0,
+      "shared_candles_compared": 168,
+      "conflicts": 0,
+      "candidate_count": 0,
+      "candidate_open_times": []
+    },
+    {
+      "day": "2019-06-07",
+      "missing_slots": 13,
+      "status": "verified",
+      "source": {
+        "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/5m/BTCUSDT-5m-2019-06-07.zip",
+        "sha256": "9de48d919cbd9e6265967c9905d8447a9e50e528f037c2d114988e74250086c3",
+        "bytes": 14411
+      },
+      "valid_rows": 275,
+      "quarantined_rows": 1,
+      "shared_candles_compared": 275,
+      "conflicts": 0,
+      "candidate_count": 0,
+      "candidate_open_times": []
+    },
+    {
+      "day": "2019-08-15",
+      "missing_slots": 96,
+      "status": "verified",
+      "source": {
+        "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/5m/BTCUSDT-5m-2019-08-15.zip",
+        "sha256": "ed46cf5e001aa41ce7b8e6e7a5ed203c0d9a8698965e41b687d81dc4d188f5da",
+        "bytes": 10782
+      },
+      "valid_rows": 192,
+      "quarantined_rows": 0,
+      "shared_candles_compared": 192,
+      "conflicts": 0,
+      "candidate_count": 0,
+      "candidate_open_times": []
+    },
+    {
+      "day": "2019-11-13",
+      "missing_slots": 28,
+      "status": "verified",
+      "source": {
+        "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/5m/BTCUSDT-5m-2019-11-13.zip",
+        "sha256": "c4ed9f5dec3c28ee545a68569aa876661284f43e3199524e852e2258c991df51",
+        "bytes": 13969
+      },
+      "valid_rows": 260,
+      "quarantined_rows": 0,
+      "shared_candles_compared": 260,
+      "conflicts": 0,
+      "candidate_count": 0,
+      "candidate_open_times": []
+    },
+    {
+      "day": "2019-11-25",
+      "missing_slots": 24,
+      "status": "verified",
+      "source": {
+        "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/5m/BTCUSDT-5m-2019-11-25.zip",
+        "sha256": "4f8b3ec09d9a6e0077bdac3358624155b6ed25c9709b7aab25a8619637d2e84e",
+        "bytes": 14872
+      },
+      "valid_rows": 264,
+      "quarantined_rows": 0,
+      "shared_candles_compared": 264,
+      "conflicts": 0,
+      "candidate_count": 0,
+      "candidate_open_times": []
+    },
+    {
+      "day": "2020-02-09",
+      "missing_slots": 12,
+      "status": "verified",
+      "source": {
+        "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/5m/BTCUSDT-5m-2020-02-09.zip",
+        "sha256": "d73c201323e72fdf94948735153a4b89b128d79de7a13bfdbd4766842b0b17b4",
+        "bytes": 15083
+      },
+      "valid_rows": 276,
+      "quarantined_rows": 0,
+      "shared_candles_compared": 276,
+      "conflicts": 0,
+      "candidate_count": 0,
+      "candidate_open_times": []
+    },
+    {
+      "day": "2020-02-19",
+      "missing_slots": 71,
+      "status": "verified",
+      "source": {
+        "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/5m/BTCUSDT-5m-2020-02-19.zip",
+        "sha256": "fb19616d7b9f3c2ed561343951a5ffc165e857a6b1fadbb64a4e40a6d1290fc0",
+        "bytes": 12066
+      },
+      "valid_rows": 217,
+      "quarantined_rows": 1,
+      "shared_candles_compared": 217,
+      "conflicts": 0,
+      "candidate_count": 0,
+      "candidate_open_times": []
+    },
+    {
+      "day": "2020-03-04",
+      "missing_slots": 26,
+      "status": "verified",
+      "source": {
+        "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/5m/BTCUSDT-5m-2020-03-04.zip",
+        "sha256": "e4025e5cdbafcb747ff109c314b346d21fdcabee75d118156f46b7063bea079a",
+        "bytes": 14341
+      },
+      "valid_rows": 262,
+      "quarantined_rows": 1,
+      "shared_candles_compared": 262,
+      "conflicts": 0,
+      "candidate_count": 0,
+      "candidate_open_times": []
+    },
+    {
+      "day": "2020-04-25",
+      "missing_slots": 30,
+      "status": "verified",
+      "source": {
+        "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/5m/BTCUSDT-5m-2020-04-25.zip",
+        "sha256": "bc0cb0003366ed00a34e20f333aa8ad71a1f37b0257ac271a19f24841f463003",
+        "bytes": 13906
+      },
+      "valid_rows": 258,
+      "quarantined_rows": 0,
+      "shared_candles_compared": 258,
+      "conflicts": 0,
+      "candidate_count": 0,
+      "candidate_open_times": []
+    },
+    {
+      "day": "2020-06-28",
+      "missing_slots": 42,
+      "status": "verified",
+      "source": {
+        "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/5m/BTCUSDT-5m-2020-06-28.zip",
+        "sha256": "aec9fbd7c9db5f34a3c68e9eeb569779dd28ea291e38ee4d1a9af9ce8f513502",
+        "bytes": 13328
+      },
+      "valid_rows": 246,
+      "quarantined_rows": 0,
+      "shared_candles_compared": 246,
+      "conflicts": 0,
+      "candidate_count": 0,
+      "candidate_open_times": []
+    },
+    {
+      "day": "2020-11-30",
+      "missing_slots": 12,
+      "status": "verified",
+      "source": {
+        "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/5m/BTCUSDT-5m-2020-11-30.zip",
+        "sha256": "de3e15fc0234db9fdcc66b11e3f038374a15186587501bb3e6914d350ce7ee59",
+        "bytes": 15722
+      },
+      "valid_rows": 276,
+      "quarantined_rows": 0,
+      "shared_candles_compared": 276,
+      "conflicts": 0,
+      "candidate_count": 0,
+      "candidate_open_times": []
+    },
+    {
+      "day": "2020-12-21",
+      "missing_slots": 47,
+      "status": "verified",
+      "source": {
+        "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/5m/BTCUSDT-5m-2020-12-21.zip",
+        "sha256": "b21d0cdd4d29b8a8cfbfbaafd9f926e12989233290daeb0f4977eefb6489525b",
+        "bytes": 13702
+      },
+      "valid_rows": 237,
+      "quarantined_rows": 1,
+      "shared_candles_compared": 237,
+      "conflicts": 6,
+      "candidate_count": 0,
+      "candidate_open_times": []
+    },
+    {
+      "day": "2020-12-25",
+      "missing_slots": 12,
+      "status": "verified",
+      "source": {
+        "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/5m/BTCUSDT-5m-2020-12-25.zip",
+        "sha256": "1743016ade013d0e29e233259128563016713ab9accf29b98fa7fb0702c0c953",
+        "bytes": 15682
+      },
+      "valid_rows": 276,
+      "quarantined_rows": 0,
+      "shared_candles_compared": 276,
+      "conflicts": 0,
+      "candidate_count": 0,
+      "candidate_open_times": []
+    },
+    {
+      "day": "2021-02-11",
+      "missing_slots": 16,
+      "status": "verified",
+      "source": {
+        "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/5m/BTCUSDT-5m-2021-02-11.zip",
+        "sha256": "0ce434cb4b83a528b5fb543d19aaeca6c6aa5bf96ff8363eec24c3eb7e28ac96",
+        "bytes": 15194
+      },
+      "valid_rows": 272,
+      "quarantined_rows": 1,
+      "shared_candles_compared": 272,
+      "conflicts": 0,
+      "candidate_count": 0,
+      "candidate_open_times": []
+    },
+    {
+      "day": "2021-03-06",
+      "missing_slots": 18,
+      "status": "verified",
+      "source": {
+        "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/5m/BTCUSDT-5m-2021-03-06.zip",
+        "sha256": "75c869e0729eb2c2a4cba1a163f5ed72cc6a57a508242ef07960e174820a66fb",
+        "bytes": 15495
+      },
+      "valid_rows": 270,
+      "quarantined_rows": 0,
+      "shared_candles_compared": 270,
+      "conflicts": 0,
+      "candidate_count": 0,
+      "candidate_open_times": []
+    },
+    {
+      "day": "2021-04-20",
+      "missing_slots": 30,
+      "status": "verified",
+      "source": {
+        "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/5m/BTCUSDT-5m-2021-04-20.zip",
+        "sha256": "7f548cd9609a4cbf8ef947bef650d746dc92aff32e84217d94c373a7bb10e0df",
+        "bytes": 15070
+      },
+      "valid_rows": 258,
+      "quarantined_rows": 0,
+      "shared_candles_compared": 258,
+      "conflicts": 0,
+      "candidate_count": 0,
+      "candidate_open_times": []
+    },
+    {
+      "day": "2021-04-25",
+      "missing_slots": 57,
+      "status": "verified",
+      "source": {
+        "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/5m/BTCUSDT-5m-2021-04-25.zip",
+        "sha256": "76baa2d6a9f55e6f2c20fde0fa9bbd8204d66617b07e2018e5fce84c5b9edbd0",
+        "bytes": 13447
+      },
+      "valid_rows": 231,
+      "quarantined_rows": 1,
+      "shared_candles_compared": 231,
+      "conflicts": 0,
+      "candidate_count": 0,
+      "candidate_open_times": []
+    },
+    {
+      "day": "2021-08-13",
+      "missing_slots": 55,
+      "status": "verified",
+      "source": {
+        "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/5m/BTCUSDT-5m-2021-08-13.zip",
+        "sha256": "6648cd0fc734cafea26dcfee1d5d38911b314dbc19e015975aa965f8d85a673e",
+        "bytes": 13369
+      },
+      "valid_rows": 233,
+      "quarantined_rows": 1,
+      "shared_candles_compared": 233,
+      "conflicts": 0,
+      "candidate_count": 0,
+      "candidate_open_times": []
+    },
+    {
+      "day": "2021-09-29",
+      "missing_slots": 24,
+      "status": "verified",
+      "source": {
+        "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/5m/BTCUSDT-5m-2021-09-29.zip",
+        "sha256": "39178d1821a85b5d9e42446988fa1d5147918082e654dce0267bf56c08478b99",
+        "bytes": 14475
+      },
+      "valid_rows": 264,
+      "quarantined_rows": 0,
+      "shared_candles_compared": 264,
+      "conflicts": 0,
+      "candidate_count": 0,
+      "candidate_open_times": []
+    },
+    {
+      "day": "2021-12-24",
+      "missing_slots": 1,
+      "status": "verified",
+      "source": {
+        "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/5m/BTCUSDT-5m-2021-12-24.zip",
+        "sha256": "59538cdee3fc9d0a510d9d1be6fc85a9c77ceecb854efae95445a2fc39982818",
+        "bytes": 15671
+      },
+      "valid_rows": 287,
+      "quarantined_rows": 1,
+      "shared_candles_compared": 287,
+      "conflicts": 1,
+      "candidate_count": 0,
+      "candidate_open_times": []
+    },
+    {
+      "day": "2023-03-24",
+      "missing_slots": 17,
+      "status": "verified",
+      "source": {
+        "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/5m/BTCUSDT-5m-2023-03-24.zip",
+        "sha256": "e9574b36967bd423f0c277baa91798aa17520830087cc6cbfe7fb9295e3bc839",
+        "bytes": 14337
+      },
+      "valid_rows": 271,
+      "quarantined_rows": 1,
+      "shared_candles_compared": 271,
+      "conflicts": 0,
+      "candidate_count": 0,
+      "candidate_open_times": []
+    }
+  ],
+  "gaps": [
+    {
+      "start": "2018-01-04 03:00:00+00:00",
+      "end_exclusive": "2018-01-04 05:05:00+00:00",
+      "candles": 25,
+      "daily_evidence": {
+        "quarantined_exact_open": 1,
+        "absent_from_cached_archive": 24
+      }
+    },
+    {
+      "start": "2018-02-08 00:25:00+00:00",
+      "end_exclusive": "2018-02-10 06:15:00+00:00",
+      "candles": 646,
+      "daily_evidence": {
+        "quarantined_exact_open": 1,
+        "absent_from_cached_archive": 405,
+        "valid_daily_recovery_candidate": 240
+      }
+    },
+    {
+      "start": "2018-02-11 04:00:00+00:00",
+      "end_exclusive": "2018-02-11 04:35:00+00:00",
+      "candles": 7,
+      "daily_evidence": {
+        "quarantined_exact_open": 1,
+        "absent_from_cached_archive": 6
+      }
+    },
+    {
+      "start": "2018-06-26 02:00:00+00:00",
+      "end_exclusive": "2018-06-26 12:00:00+00:00",
+      "candles": 120,
+      "daily_evidence": {
+        "absent_from_cached_archive": 120
+      }
+    },
+    {
+      "start": "2018-06-27 13:00:00+00:00",
+      "end_exclusive": "2018-06-27 14:45:00+00:00",
+      "candles": 21,
+      "daily_evidence": {
+        "absent_from_cached_archive": 21
+      }
+    },
+    {
+      "start": "2018-07-04 00:20:00+00:00",
+      "end_exclusive": "2018-07-04 08:00:00+00:00",
+      "candles": 92,
+      "daily_evidence": {
+        "quarantined_exact_open": 1,
+        "absent_from_cached_archive": 91
+      }
+    },
+    {
+      "start": "2018-10-19 06:00:00+00:00",
+      "end_exclusive": "2018-10-19 09:30:00+00:00",
+      "candles": 42,
+      "daily_evidence": {
+        "absent_from_cached_archive": 42
+      }
+    },
+    {
+      "start": "2018-11-14 02:00:00+00:00",
+      "end_exclusive": "2018-11-14 09:00:00+00:00",
+      "candles": 84,
+      "daily_evidence": {
+        "absent_from_cached_archive": 84
+      }
+    },
+    {
+      "start": "2019-03-12 02:00:00+00:00",
+      "end_exclusive": "2019-03-12 08:00:00+00:00",
+      "candles": 72,
+      "daily_evidence": {
+        "absent_from_cached_archive": 72
+      }
+    },
+    {
+      "start": "2019-05-15 03:00:00+00:00",
+      "end_exclusive": "2019-05-15 13:00:00+00:00",
+      "candles": 120,
+      "daily_evidence": {
+        "absent_from_cached_archive": 120
+      }
+    },
+    {
+      "start": "2019-06-07 21:10:00+00:00",
+      "end_exclusive": "2019-06-07 22:15:00+00:00",
+      "candles": 13,
+      "daily_evidence": {
+        "quarantined_exact_open": 1,
+        "absent_from_cached_archive": 12
+      }
+    },
+    {
+      "start": "2019-08-15 02:00:00+00:00",
+      "end_exclusive": "2019-08-15 10:00:00+00:00",
+      "candles": 96,
+      "daily_evidence": {
+        "absent_from_cached_archive": 96
+      }
+    },
+    {
+      "start": "2019-11-13 02:00:00+00:00",
+      "end_exclusive": "2019-11-13 04:20:00+00:00",
+      "candles": 28,
+      "daily_evidence": {
+        "absent_from_cached_archive": 28
+      }
+    },
+    {
+      "start": "2019-11-25 02:00:00+00:00",
+      "end_exclusive": "2019-11-25 04:00:00+00:00",
+      "candles": 24,
+      "daily_evidence": {
+        "absent_from_cached_archive": 24
+      }
+    },
+    {
+      "start": "2020-02-09 02:00:00+00:00",
+      "end_exclusive": "2020-02-09 03:00:00+00:00",
+      "candles": 12,
+      "daily_evidence": {
+        "absent_from_cached_archive": 12
+      }
+    },
+    {
+      "start": "2020-02-19 11:35:00+00:00",
+      "end_exclusive": "2020-02-19 17:30:00+00:00",
+      "candles": 71,
+      "daily_evidence": {
+        "quarantined_exact_open": 1,
+        "absent_from_cached_archive": 70
+      }
+    },
+    {
+      "start": "2020-03-04 09:20:00+00:00",
+      "end_exclusive": "2020-03-04 11:30:00+00:00",
+      "candles": 26,
+      "daily_evidence": {
+        "quarantined_exact_open": 1,
+        "absent_from_cached_archive": 25
+      }
+    },
+    {
+      "start": "2020-04-25 02:00:00+00:00",
+      "end_exclusive": "2020-04-25 04:30:00+00:00",
+      "candles": 30,
+      "daily_evidence": {
+        "absent_from_cached_archive": 30
+      }
+    },
+    {
+      "start": "2020-06-28 02:00:00+00:00",
+      "end_exclusive": "2020-06-28 05:30:00+00:00",
+      "candles": 42,
+      "daily_evidence": {
+        "absent_from_cached_archive": 42
+      }
+    },
+    {
+      "start": "2020-11-30 06:00:00+00:00",
+      "end_exclusive": "2020-11-30 07:00:00+00:00",
+      "candles": 12,
+      "daily_evidence": {
+        "absent_from_cached_archive": 12
+      }
+    },
+    {
+      "start": "2020-12-21 14:05:00+00:00",
+      "end_exclusive": "2020-12-21 18:00:00+00:00",
+      "candles": 47,
+      "daily_evidence": {
+        "absent_from_cached_archive": 47
+      }
+    },
+    {
+      "start": "2020-12-25 02:00:00+00:00",
+      "end_exclusive": "2020-12-25 03:00:00+00:00",
+      "candles": 12,
+      "daily_evidence": {
+        "absent_from_cached_archive": 12
+      }
+    },
+    {
+      "start": "2021-02-11 03:40:00+00:00",
+      "end_exclusive": "2021-02-11 05:00:00+00:00",
+      "candles": 16,
+      "daily_evidence": {
+        "quarantined_exact_open": 1,
+        "absent_from_cached_archive": 15
+      }
+    },
+    {
+      "start": "2021-03-06 02:00:00+00:00",
+      "end_exclusive": "2021-03-06 03:30:00+00:00",
+      "candles": 18,
+      "daily_evidence": {
+        "absent_from_cached_archive": 18
+      }
+    },
+    {
+      "start": "2021-04-20 02:00:00+00:00",
+      "end_exclusive": "2021-04-20 04:30:00+00:00",
+      "candles": 30,
+      "daily_evidence": {
+        "absent_from_cached_archive": 30
+      }
+    },
+    {
+      "start": "2021-04-25 04:00:00+00:00",
+      "end_exclusive": "2021-04-25 08:45:00+00:00",
+      "candles": 57,
+      "daily_evidence": {
+        "quarantined_exact_open": 1,
+        "absent_from_cached_archive": 56
+      }
+    },
+    {
+      "start": "2021-08-13 01:55:00+00:00",
+      "end_exclusive": "2021-08-13 06:30:00+00:00",
+      "candles": 55,
+      "daily_evidence": {
+        "quarantined_exact_open": 1,
+        "absent_from_cached_archive": 54
+      }
+    },
+    {
+      "start": "2021-09-29 07:00:00+00:00",
+      "end_exclusive": "2021-09-29 09:00:00+00:00",
+      "candles": 24,
+      "daily_evidence": {
+        "absent_from_cached_archive": 24
+      }
+    },
+    {
+      "start": "2021-12-24 04:55:00+00:00",
+      "end_exclusive": "2021-12-24 05:00:00+00:00",
+      "candles": 1,
+      "daily_evidence": {
+        "quarantined_exact_open": 1
+      }
+    },
+    {
+      "start": "2023-03-24 12:35:00+00:00",
+      "end_exclusive": "2023-03-24 14:00:00+00:00",
+      "candles": 17,
+      "daily_evidence": {
+        "quarantined_exact_open": 1,
+        "absent_from_cached_archive": 16
+      }
+    }
+  ],
+  "decision": "conflicts_require_review",
+  "market_data_changed": false,
+  "new_hypothesis_tests": 0,
+  "reserved_data_read": false,
+  "limits": "Daily and monthly archives can share upstream defects. Archive absence does not prove an exchange outage. No API or trade-level reconstruction is included."
+}
