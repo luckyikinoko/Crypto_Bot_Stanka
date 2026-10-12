@@ -1,0 +1,95 @@
+{
+  "version": 6,
+  "status": "registered_not_evaluated",
+  "registered_after": "e702dd26cc5ffb56bd9cdccf104e37d974742a6e",
+  "candidate": "confirmed_double_bottom_1h",
+  "pattern": "double_bottom_v1",
+  "timeframe": "1h",
+  "parameters": {
+    "pivot_left": 2,
+    "pivot_right": 2,
+    "minimum_separation": 6,
+    "maximum_separation": 48,
+    "prior_window": 12,
+    "minimum_prior_drop_atr": 2.0,
+    "low_tolerance_atr": 0.5,
+    "minimum_rebound_atr": 1.0,
+    "breakout_buffer_atr": 0.1,
+    "invalidation_buffer_atr": 0.25,
+    "confirmation_expiry_bars": 12
+  },
+  "hypothesis": "A failed revisit of a recent low followed by a confirmed close above the intervening high may precede sustained buying. This is unproven; no historical occurrences or returns for this detector have been scanned.",
+  "definition": "See PROTOCOL.md; consecutive strict 2-left/2-right confirmed lows, frozen ATR14 at first-pivot confirmation, similar lows and intervening rebound, prior-drop requirement, then buffered neckline close crossing. New confirmed pivots supersede pending pairs; gaps reset; expiry and low-price invalidation cancel. Early breakouts are rejected; availability is actual breakout close, never the pivot time.",
+  "execution": {
+    "hold_hours": 24,
+    "delay_minutes": 5,
+    "cooldown_minutes": 60,
+    "secondary_exit": null
+  },
+  "periods": {
+    "training": [
+      "2018-01-01",
+      "2024-01-01"
+    ],
+    "reused_recent": [
+      "2024-01-01",
+      "2026-04-01"
+    ]
+  },
+  "reserved_from": "2026-04-01",
+  "feasibility_gates": {
+    "training_observations": 100,
+    "training_nonoverlap": 50,
+    "training_active_28day_blocks": 30,
+    "recent_observations": 30
+  },
+  "outcome_gates": {
+    "minimum_training_observations": 100,
+    "minimum_training_nonoverlap_observations": 50,
+    "minimum_active_28day_blocks": 30,
+    "training_net_ci95_lower_positive": true,
+    "training_excess_ci95_lower_positive": true,
+    "combined_exploratory_by_q_below": 0.05,
+    "training_stress_mean_positive": true,
+    "minimum_positive_training_years": 4,
+    "training_nonoverlap_mean_positive": true,
+    "minimum_reused_observations": 30,
+    "reused_standard_and_stress_means_positive": true
+  },
+  "bootstrap": {
+    "primary_block_days": 28,
+    "sensitivity_block_days": 7,
+    "draws": 4999,
+    "seed": 20261011
+  },
+  "costs": {
+    "standard": {
+      "fee": 0.001,
+      "half_spread": 5e-05,
+      "slippage": 0.00015
+    },
+    "bnb_conditional": {
+      "fee": 0.00075,
+      "half_spread": 5e-05,
+      "slippage": 0.00015
+    },
+    "stress": {
+      "fee": 0.001,
+      "half_spread": 0.0001,
+      "slippage": 0.0004
+    }
+  },
+  "market_snapshot": "70bcba5fa72e2290b889ebaa8f7ac9a7abed5a321d3dbff56dff801156e3d999",
+  "prior_report": "reports/discovery_round5/outcomes.json",
+  "prior_report_sha256": "e1c6a7931f5469b8caea247759bb11beac7fc0b0f65d73aef2e80926066618ac",
+  "prior_snapshot": "16736aa9e244affa6c4b22be19ada56d2e15dc2067d83c43cf330ca9d5641a61",
+  "prior_tests": 36,
+  "baseline": "All completed 1h decisions with finite positive prior-bar ATR14 and at least 16 completed candles in the current segment. No pattern filter. Identical 5m execution and 24h hold; complete paths required and split-crossing labels purged.",
+  "feasibility_scope": "After registration review, scan causal pattern events only. Report counts, yearly frequency, timing boundary exclusions, 24h-plus-5m scheduled occupancy with 60m cooldown, and active 28-day blocks. Use the earliest eligible baseline decision in each pool floored to UTC day as block origin. No outcomes at feasibility.",
+  "multiplicity": "Registration and feature feasibility add no return test. If outcomes are later evaluated, append exactly M5R6/confirmed_double_bottom_1h as test 37 to the pinned 36-test ledger. Preserve prior IDs/p-values and recalculate BY; no other primary hypothesis.",
+  "adaptive_disclosure": "All eight prior candidates and their failures were seen. This is adaptive exploratory research, not fresh confirmation. Parameters were chosen as a single interpretable definition without historical tuning; they are not asserted to be optimal or standard.",
+  "stopping_rule": "Stop after registration and synthetic tests for review. Later feature-only feasibility must pass all unchanged gates before an outcome proposal. Failure stops the candidate without loosening thresholds. No automatic historical scan, alternate parameter set, additional hold, or new round.",
+  "live_trading": false,
+  "paper_trading": false,
+  "selected_strategy": null
+}
